@@ -619,16 +619,18 @@
       }
 
       .selector__section {
-        display: none;
-        /* display: flex; */
-        width: 100%;
+        align-items: center;
+        background-color: var(--color-main);
+        display: flex;
         height: 80px;
         justify-content: center;
-        background-color: var(--color-main);
+        width: 100%;
       }
 
       .select-item {
         color: var(--color-white);
+        font-size: var(--font-size-25);
+        font-weight: 500;
       }
 
     </style>
@@ -636,14 +638,14 @@
       <div name="baby-monthly-guide">
         <ul class="select-box">
           <li class="select-item" value="준비기 4-5개월">준비기 4-5개월</li>
-          <li class="select-item" value="초기 6개월 전후">초기 6개월 전후</li>
+          <!-- <li class="select-item" value="초기 6개월 전후">초기 6개월 전후</li>
           <li class="select-item" value="중기 7-8개월">중기 7-8개월</li>
           <li class="select-item" value="후기 2식 9-10개월">후기 2식 9-10개월</li>
           <li class="select-item" value="후기 3식 9-10개월">후기 3식 9-10개월</li>
           <li class="select-item" value="병행기 10-11개월">병행기 10-11개월</li>
           <li class="select-item" value="완료기 12-14개월">완료기 12-14개월</li>
           <li class="select-item" value="첫밥 13개월 이후">첫밥 13개월 이후</li>
-          <li class="select-item" value="반찬·국 13개월 이후">반찬·국 13개월 이후</li>
+          <li class="select-item" value="반찬·국 13개월 이후">반찬·국 13개월 이후</li> -->
         </ul>
       </div>
     </section>
@@ -758,6 +760,10 @@
         color: var(--color-white);
         text-align: center;
       }
+      
+      .m-text {
+        display: none;
+      }
 
       /* 1025 반응형 */
       @media all and (max-width: 1024px) {
@@ -782,6 +788,14 @@
           display: block;
         }
 
+        .selector__section {
+          margin-top: 10px;
+        }
+
+        .product__section {
+          margin-top: 5px
+        }
+
         .product__section .item-box .right {
           padding-left: 0;
         }
@@ -794,6 +808,14 @@
 
         .product__section .item-box .info-box .detail__box .title__box .title {
           font-size: var(--font-size-35);
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box {
+          margin-top: 35px;
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item {
+          margin-bottom: 10px;
         }
 
         .product__section .item-box .info-box .detail__box .text__box .text__item .text {
@@ -810,6 +832,7 @@
           justify-content: center;
           align-items: center;
         }
+        
       }
 
     </style>
@@ -904,7 +927,9 @@
         padding: 15px;
         text-align: center;
         cursor: pointer;
-        border: 1px solid #9c9c9c;
+        border-right: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #9c9c9c;
         border-top: 0;
       }
 
@@ -1162,7 +1187,7 @@
         color: var(--color-text);
         padding: 30px 0;
         text-align: center;
-        border-bottom: 1px solid #f1f1f1;
+        border-bottom: 1px solid var(--color-trLine);
       }
 
       .detail__section .item.link__item {
@@ -1286,8 +1311,17 @@
           font-size: var(--font-size-25);
         }
 
+        .detail__section .item.step__item .table__box .thead__box .tr .tr__title__box .title {
+          padding: 25px 0;
+        }
+
         .detail__section .item.step__item .table__box .tbody__box .tr .tr__text__box .text {
           font-size: var(--font-size-16);
+          padding: 20px 0;
+        }
+
+        .detail__section .item.step__item .table__box .tbody__box .tr .tr__text__box.for-line {
+          border-right: 1px solid var(--color-trLine);
         }
 
         .detail__section .item.link__item {
@@ -1324,16 +1358,25 @@
         }
 
         .detail__section .item.schedule__item .table__box .tr .column__box .col .tr__text__box .text {
-          padding-left: 90px;
+          padding-left: 60px;
           padding-top: 12px;
           padding-bottom: 12px;
-          border-bottom: 1px #f1f1f1 solid;
+        }
+
+        .detail__section .item.schedule__item .table__box .tr .tr__text__box .text {
+          padding-left: 60px;
         }
 
         .detail__section .item.schedule__item .table__box .tr .tr__title__box .title {
           padding: 20px 15px;
         }
+
+        .detail__section .item.schedule__item .table__box .tr .tr__title__box.tr-title-big{
+          width: 50%;
+        }
+
         
+
       }
       
     </style>
@@ -1401,7 +1444,7 @@
                 </div>
                 <div class="table__box">
                   <div class="tr">
-                    <div class="tr__title__box">
+                    <div class="tr__title__box tr-title-big">
                       <p class="title">하루 총 수유량</p>
                     </div>
                     <div class="tr__text__box">
@@ -1411,7 +1454,7 @@
                     </div>
                   </div>
                   <div class="tr">
-                    <div class="tr__title__box">
+                    <div class="tr__title__box tr-title-big">
                       <p class="title">1회 이유식 양(g)</p>
                     </div>
                     <div class="tr__text__box">
@@ -1479,7 +1522,7 @@
                 <div class="table__box">
                   <div class="thead__box">
                     <div class="tr">
-                      <div class="tr__title__box">
+                      <div class="tr__title__box for-line">
                         <p class="title">단계</p>
                       </div>
                       <div class="tr__title__box">
@@ -1498,7 +1541,7 @@
                   </div>
                   <div class="tbody__box">
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">준비기</p>
                       </div>
                       <div class="tr__text__box">
@@ -1516,7 +1559,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">초기</p>
                       </div>
                       <div class="tr__text__box">
@@ -1534,7 +1577,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">중기</p>
                       </div>
                       <div class="tr__text__box">
@@ -1552,7 +1595,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">후기2식</p>
                       </div>
                       <div class="tr__text__box">
@@ -1570,7 +1613,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">후기3식</p>
                       </div>
                       <div class="tr__text__box">
@@ -1588,7 +1631,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">병행기</p>
                       </div>
                       <div class="tr__text__box">
@@ -1606,7 +1649,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">완료기</p>
                       </div>
                       <div class="tr__text__box">
@@ -1624,7 +1667,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">유아식(첫밥)</p>
                       </div>
                       <div class="tr__text__box">
@@ -1642,7 +1685,7 @@
                     </div>
 
                     <div class="tr">
-                      <div class="tr__text__box">
+                      <div class="tr__text__box for-line">
                         <p class="text">유아식(반찬 · 국)</p>
                       </div>
                       <div class="tr__text__box">

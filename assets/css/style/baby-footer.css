@@ -74,10 +74,16 @@
   color: var(--color-footer-data);
 }
 
+.cs_td02 p {
+  font-size: var(--font-size-20);
+  font-weight: 500;
+}
+
 .cs_td02 span {
-  font-size: var(--font-size-14);
-  line-height: var(--line-height-14);
-  letter-spacing: var(--letter-spacing-14);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-16);
+  letter-spacing: var(--letter-spacing-16);
+  font-weight: 500;
   margin-left: 10px;
 }
 
@@ -162,6 +168,7 @@
 
   .footer01 {
     border-top: none;
+    border-top: 2px solid var(--color-footer-line);
     border-bottom: 1px solid var(--color-footer-line);
   }
 
