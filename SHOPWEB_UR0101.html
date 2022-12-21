@@ -570,7 +570,12 @@
         background-color: var(--color-main);
         color: var(--color-white);
         border: transparent 1px solid;
+
       }
+      .selector__section {
+        display: none;
+      }
+
     </style>
     <section class="button__section">
       <div class="container">
@@ -614,7 +619,8 @@
 
     <!-- 모바일 상단 월령별 셀렉터 -->
     <style>
-      .button__section {
+      @media all and (max-width: 767px) {
+        .button__section {
         display: none;
       }
 
@@ -630,7 +636,7 @@
       .select-item {
         color: var(--color-white);
         font-size: var(--font-size-25);
-        font-weight: 500;
+        }
       }
 
     </style>
@@ -690,7 +696,6 @@
       .product__section .item-box .info-box .detail__box .title__box .title {
         font-size: var(--font-size-45);
         color: var(--color-text);
-        font-weight: 500;
         line-height: 1;
       }
 
@@ -835,6 +840,61 @@
         
       }
 
+      /* 480 반응형 */
+      @media all and (max-width: 480px) {
+        .selector__section {
+          height: 50px;
+        }
+
+        .product__section .item-box .info-box .detail__box .title__box .title, .product__section .item-box .info-box .detail__box .text__box .text__item .title {
+          min-width: 100px;
+        }
+
+        .select-item {
+          color: var(--color-white);
+          font-size: var(--font-size-22);
+        }
+
+        .product__section .item-box .img-box, .product__section .item-box .info-box {
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .product__section .item-box .info-box .detail__box .title__box .title {
+          font-size: var(--font-size-30);
+        }
+        
+        .product__section .item-box .info-box .detail__box .title__box .text {
+          font-size: var(--font-size-22);
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box {
+          margin-top: 25px;
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item .title {
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item .text {
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .banner__box .banner__item {
+          margin-bottom: 5px;
+        }
+
+        .product__section .item-box .info-box .banner__box .banner__item .banner__text {
+          padding: 10px 10px;
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .button__box .button__item .button__text {
+          height: 50px;
+          font-size: var(--font-size-22);
+        }
+      }
+
     </style>
     <section class="product__section">
       <div class="container">
@@ -885,7 +945,7 @@
                 </div>
                 <div class="button__box">
                   <div class="button__item">
-                    <a href="" class="button__text">식단주문하기</a>
+                    <a href="" class="button__text">식단 주문하기</a>
                   </div>
                 </div>
                 <!-- <form class="button__box">
