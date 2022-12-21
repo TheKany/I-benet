@@ -18,7 +18,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 
   <!-- css 기본 속성 -->
   <link rel="stylesheet" href="../assets/css/base/_variable.css">
@@ -26,7 +27,7 @@
   <link rel="stylesheet" href="../assets/css/base/_normalize.css">
   <link rel="stylesheet" href="../assets/css/base/_reset.css">
 
-  
+
 </head>
 
 <body>
@@ -34,10 +35,10 @@
   <link rel="stylesheet" href="../assets/css/style/_baby-001.css">
   <article class="header_top">
     <a class="web-banner">신규가입 시, 배냇밀 이유식 2팩 <strong>무료체험 신청하기</strong></a>
-  
+
     <a class="mobile-banner">배냇밀 타임특가 구매하러가기</a>
   </article>
-  
+
   <!-- 페이지 공통 헤더 -->
   <header>
     <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
@@ -228,7 +229,7 @@
               <div class="menu01 big_menu big ">
 
                 <!-- 임의로 페이지 이동 함수 추가 -->
-                <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button> 
+                <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button>
                 <div class="gnb_itemList drop01">
                   <p>이유식</p>
                   <a href="#">준비기(4-5개월)</a>
@@ -628,7 +629,6 @@
       .select-item {
         color: var(--color-white);
       }
-
     </style>
     <section class="selector__section">
       <div name="baby-monthly-guide">
@@ -784,7 +784,8 @@
           padding-left: 0;
         }
 
-        .product__section .item-box .img-box, .product__section .item-box .info-box {
+        .product__section .item-box .img-box,
+        .product__section .item-box .info-box {
           width: 100%;
           margin-top: 30px;
           margin-bottom: 50px;
@@ -809,7 +810,6 @@
           align-items: center;
         }
       }
-
     </style>
     <section class="product__section">
       <div class="container">
@@ -880,14 +880,13 @@
     </section>
 
 
-    <!-- 상세정보 -->
+    <!-- 이용안내 -->
     <style>
       .detail__section {
         margin-top: 80px;
       }
 
-      .detail__section .item {}
-
+      /* 메인 내용 버튼 */
       .detail__section .item.button__item {}
 
       .detail__section .item.button__item .button__box {
@@ -912,413 +911,93 @@
         border-bottom: 0;
       }
 
-      .detail__section .item.img__item {
-        margin-top: 50px;
-        background: url(/assets/image/SHOPWEB_UR0101/detail__info.png);
-        min-height: 790px;
-        padding: 0 35px;
-        padding-top: 80px;
-        background-position: right;
+      /* 매인 베너 */
+      .detail__section .item.banner__item {}
+
+      .detail__section .item.banner__item .img__box {
+        margin-top: 55px;
       }
 
-      .detail__section .item.img__item .title__box {}
-
-      .detail__section .item.img__item .title__box .title {
-        font-size: 40px;
-        font-weight: 600;
-        line-height: 1.2;
-        white-space: pre-line;
-        color: var(--color-text);
-        margin-top: 20px;
+      .detail__section .item.banner__item .img__box img {
+        width: 100%;
+        display: flex;
       }
 
-      .detail__section .item.img__item .title__box .text {
-        font-size: var(--font-size-30);
-        color: var(--color-main);
-        font-weight: 500;
+      /* 맛있게 먹이는 방법 */
+      .detail__section .item.eating__item {
+        margin-top: 70px;
       }
 
-      .detail__section .item.img__item .content__box {
-        margin-top: 50px;
+      .detail__section .item.eating__item .title__box {
+        border-bottom: 1px solid var(--color-subText);
       }
 
-      .detail__section .item.img__item .content__box .text {
-        font-size: var(--font-size-22);
-        color: var(--color-text);
-        font-weight: 300;
-        white-space: pre-line;
-        line-height: 1.3;
-      }
-
-      .detail__section .item.process__item {
-        margin-top: 150px;
-      }
-
-      .detail__section .item.process__item .title__box {}
-
-      .detail__section .item.process__item .title__box .title {
-        font-size: 35px;
-        color: var(--color-text);
-        line-height: 1.2;
+      .detail__section .item.eating__item .title__box .title {
+        padding: 15px 0;
+        font-size: var(--font-size-35);
+        line-height: var(--line-height-35);
         font-weight: 700;
-        margin-top: 10px;
       }
 
-      .detail__section .item.process__item .title__box .text {
-        font-size: var(--font-size-26);
-        color: var(--color-main);
+      .detail__section .item.eating__item .content__boxes {
+        display: flex;
+        margin-top: 50px;
+      }
+
+      .detail__section .item.eating__item .content__boxes .content {
+        flex: 1 1 0%;
+        margin-right: 5%;
+
+      }
+
+      .detail__section .item.eating__item .content__boxes .content .content__title__box {
+        position: relative;
+        margin-top: 60px;
+      }
+
+      .detail__section .item.eating__item .content__boxes .content .content__title__box .icon {
+        position: absolute;
+        top: -70px;
+      }
+
+      .detail__section .item.eating__item .content__boxes .content .content__title__box .icon img {
+        display: flex;
+      }
+
+      .detail__section .item.eating__item .content__boxes .content .content__title__box .title {
+        font-size: var(--font-size-25);
+        line-height: var(--line-height-25);
         font-weight: 500;
-        line-height: 1.2;
+        margin-top: 10px;
+        color: var(--color-main);
       }
 
-      .detail__section .item.process__item .content__box {
-        margin-top: 15px;
-        padding-top: 30px;
-        border-top: 1px solid var(--color-subText);
+      .detail__section .item.eating__item .content__boxes .content .content__text__box {
+        margin-top: 40px;
       }
 
-      .detail__section .item.process__item .content__box .text {
+      .detail__section .item.eating__item .content__boxes .content .content__text__box .text__line {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+
+      .detail__section .item.eating__item .content__boxes .content .content__text__box .text__line .number {
         font-size: var(--font-size-20);
-        color: var(--color-text);
-        line-height: 2;
-        margin-bottom: 5px;
+        line-height: var(--line-height-20);
+        margin-right: 10px;
+      }
+
+      .detail__section .item.eating__item .content__boxes .content .content__text__box .text__line .text {
+        font-size: var(--font-size-20);
+        line-height: var(--line-height-20);
         word-break: keep-all;
       }
 
-      .detail__section .item.tip__item {
-        margin-top: 150px;
+      .detail__section .item.eating__item .content__boxes .content .content__text__box .detail__text {
+        font-size: var(--font-size-16);
+        line-height: var(--line-height-16);
       }
-
-      .detail__section .item.tip__item .title__box {}
-
-      .detail__section .item.tip__item .title__box .title {
-        font-size: 35px;
-        color: var(--color-text);
-        line-height: 1.2;
-        font-weight: 700;
-        margin-top: 10px;
-      }
-
-      .detail__section .item.tip__item .content__box {
-        margin-top: 15px;
-        padding-top: 30px;
-        border-top: 1px solid var(--color-subText);
-      }
-
-      .detail__section .item.tip__item .content__box .text {
-        font-size: var(--font-size-20);
-        color: var(--color-text);
-        line-height: 2;
-        margin-bottom: 5px;
-        word-break: keep-all;
-      }
-
-      .detail__section .item.schedule__item {
-        margin-top: 150px;
-      }
-
-      .detail__section .item.schedule__item .title__box {}
-
-      .detail__section .item.schedule__item .title__box .title {
-        font-size: 35px;
-        color: var(--color-text);
-        line-height: 1.2;
-        font-weight: 700;
-        margin-top: 10px;
-      }
-
-      .detail__section .item.schedule__item .img__box {
-        margin-top: 20px;
-      }
-
-      .detail__section .item.schedule__item .img__box img {
-        width: 100%;
-        display: block;
-      }
-
-      .detail__section .item.schedule__item .table__box {
-        /* display: flex; */
-      }
-
-      .detail__section .item.schedule__item .table__box .tr {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #f1f1f1;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .tr__title__box {
-        background-color: #fafafa;
-        max-width: 350px;
-        width: 100%;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .tr__title__box .title {
-        color: var(--color-text);
-        font-size: var(--font-size-20);
-        padding: 40px 15px;
-        text-align: center;
-
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .tr__text__box .text {
-        color: var(--color-text);
-        font-size: var(--font-size-18);
-        padding-left: 90px;
-        white-space: pre-line;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .tr__text__box .text.point {
-        color: var(--color-main);
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .column__box {
-        width: 100%;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .column__box.tr__title__box {
-        display: flex;
-        max-width: 350px;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .column__box .col {
-        width: 100%;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .column__box .col .tr__text__box .text {
-        padding-left: 90px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px #f1f1f1 solid;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .column__box .col.one {
-        background-color: #fafafa;
-        display: flex;
-        align-items: center;
-        border-right: 1px solid #f1f1f1;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .column__box .col .tr__title__box .title {
-        padding: 20px 0;
-        border-bottom: 1px solid #f1f1f1;
-      }
-
-      .detail__section .item.schedule__item .table__box .tr .column__box .col.one .tr__title__box .title {
-        border-bottom: none;
-      }
-
-      .detail__section .item.step__item {
-        margin-top: 130px;
-      }
-
-      .detail__section .item.step__item .title__box {}
-
-      .detail__section .item.step__item .title__box .title {
-        font-size: 35px;
-        color: var(--color-text);
-        line-height: 1.2;
-        font-weight: 700;
-        margin-top: 10px;
-      }
-
-      .detail__section .item.step__item .table__box {
-        margin-top: 10px;
-      }
-
-      .detail__section .item.step__item .table__box .thead__box {}
-
-      .detail__section .item.step__item .table__box .thead__box .tr {
-        display: flex;
-      }
-
-      .detail__section .item.step__item .table__box .thead__box .tr .tr__title__box {
-        flex: 1 1 0%;
-        background-color: #fafafa;
-        border-top: 1px solid var(--color-subText);
-      }
-
-      .detail__section .item.step__item .table__box .thead__box .tr .tr__title__box .title {
-        font-size: var(--font-size-20);
-        color: var(--color-text);
-        padding: 30px 0;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      .detail__section .item.step__item .table__box .tbody__box {}
-
-      .detail__section .item.step__item .table__box .tbody__box .tr {
-        display: flex;
-      }
-
-      .detail__section .item.step__item .table__box .tbody__box .tr .tr__text__box {
-        flex: 1 1 0%;
-      }
-
-      .detail__section .item.step__item .table__box .tbody__box .tr .tr__text__box .text {
-        font-size: var(--font-size-20);
-        color: var(--color-text);
-        padding: 30px 0;
-        text-align: center;
-        border-bottom: 1px solid #f1f1f1;
-      }
-
-      .detail__section .item.link__item {
-        margin-top: 130px;
-        margin-bottom: 200px;
-      }
-
-      .detail__section .item.link__item .button__box {
-        display: flex;
-
-      }
-
-      .detail__section .item.link__item .button__box .button {
-        flex: 1 1 0%;
-        background-color: var(--color-info);
-        margin-right: 20px;
-      }
-
-      .detail__section .item.link__item .button__box .button:last-child {
-        margin: 0;
-      }
-
-      .detail__section .item.link__item .button__box .button a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .detail__section .item.link__item .button__box .button .text {
-        color: var(--color-white);
-        font-size: var(--font-size-26);
-        font-weight: 700;
-        padding: 30px 0;
-        text-align: center;
-        margin-right: 20px;
-      }
-
-      .detail__section .item.link__item .button__box .button .icon {
-        width: var(--font-size-26);
-        height: var(--font-size-26);
-      }
-
-      @media all and (max-width: 1024px) {
-        .detail__section .item.img__item .title__box .title {
-          font-size: var(--font-size-35);;
-        }
-
-        .detail__section .item.img__item .content__box .text {
-          font-size: var(--font-size-20);
-          line-height: 1.5;
-        }
-
-        .detail__section .item.img__item .content__box {
-          margin-top: 20px;
-        }
-
-      }
-
-
-      @media all and (max-width: 767px) {
-        .detail__section .item.img__item .title__box .text {
-          font-size: var(--font-size-22);
-        }
-
-        .detail__section .item.img__item .title__box .title {
-          font-size: var(--font-size-25);
-        }
-
-        .detail__section .item.img__item {
-          background-position: right;
-          background-position-x: -500px;
-        }
-
-        .detail__section .item.process__item {
-          margin-top: 50px;
-         }
-
-         .detail__section .item.process__item .title__box .text {
-          font-size: var(--font-size-20);
-        }
-
-        .detail__section .item.process__item .title__box .title {
-          font-size: 25px;
-          margin-top: 0;
-        }
-
-        .detail__section .item.process__item .content__box .text {
-          font-size: 15px;
-          color: var(--color-text);
-          line-height: 1.7;
-        }
-
-        .detail__section .item.tip__item {
-          margin-top: 90px;
-        }
-
-        .detail__section .item.tip__item .title__box .title {
-          font-size: 25px;
-          margin-top: 0;
-        }
-
-        .detail__section .item.tip__item .content__box .text {
-          font-size: 15px;
-          line-height: 1.6;
-        }
-
-        .detail__section .item.schedule__item {
-          margin-top: 80px;
-        }
-
-        .detail__section .item.schedule__item .title__box .title {
-          font-size: 25px;
-        }
-
-
-        .detail__section .item.step__item {
-          margin-top: 100px;
-        }
-
-        .detail__section .item.step__item .title__box .title {
-          font-size: var(--font-size-25);
-        }
-
-        .detail__section .item.step__item .table__box .tbody__box .tr .tr__text__box .text {
-          font-size: var(--font-size-16);
-        }
-
-        .detail__section .item.link__item {
-          margin-top: 70px;
-          margin-bottom: 70px;
-        }
-
-        .detail__section .item.link__item .button__box {
-          display: block;
-        }
-
-        .detail__section .item.link__item .button__box .button {
-          height: 165px;
-          margin: 10px 0;
-          margin-right: 0;
-          position: relative;
-          width: 100%;
-        }
-
-        .detail__section .item.link__item .button__box .button a {
-          position: absolute;
-          top: 10%;
-          left: 5%;
-          width: fit-content;
-        }
-
-        .detail__section .item.link__item .button__box .button .text {
-          font-size: var(--font-size-28);
-          padding: 0;
-
-        }
-      }
-      
     </style>
     <section class="detail__section">
       <div class="container">
@@ -1327,340 +1006,73 @@
 
             <div class="item-box">
 
+              <!-- 메인 내용 버튼 -->
               <div class="item button__item">
                 <div class="button__box">
-                  <p class="button__text active">상세정보</p>
-                  <p class="button__text">이용안내</p>
+                  <p class="button__text ">상세정보</p>
+                  <p class="button__text active">이용안내</p>
                 </div>
               </div>
 
-              <div class="item img__item">
-                <div class="title__box">
-                  <p class="text">준비기 4-5개월</p>
-                  <p class="title">배냇밀과 함께하는 이유식의 첫 걸음,
-                    준비기 단계
-                  </p>
-                </div>
-                <div class="content__box">
-                  <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다.
-                    처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                    한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜줍니다.
-                  </p>
-                </div>
-              </div>
-
-              <div class="item process__item">
-                <div class="title__box">
-                  <p class="text">준비기 단계 시작 방법</p>
-                  <p class="title">배냇밀과 처음하는 준비기 단계</p>
-                </div>
-                <div class="content__box">
-                  <p class="text">1. 아기의 기분좋고 건강 상태가 좋을 때, 아기가 음식에 관심을 보일 때 시작하는 것이 좋습니다.</p>
-                  <p class="text">2. 모유나 분유 외에는 처음 접하는 음식으로 아직 삼키는 연습이 되어 있지 않아 흘리고 뱉어내는(밀어내기 반사) 양이 많으며 맛보기 시기로 섭취량은
-                    중요하지 않습니다.</p>
-                  <p class="text">3. 매일 일정한 시간을 정해서 주는 것이 좋으며 하루 한 번 오전 중에 먹이시고, 알레르기 관찰해 주시기 바랍니다.</p>
-                  <p class="text">4. 단일 식품으로 쌀 미음부터 야채, 과일 순서로 진행해 주시며, 달달한 종류의 고구마, 단호박 같은 채소는 과일 순서에 먹여주시는 게 좋습니다.</p>
-                  <p class="text">5.처음 먹여보는 식재료의 경우 동일한 메뉴로 2~4일 진행 권장 드립니다.</p>
-                </div>
-              </div>
-
-              <div class="item tip__item">
-                <div class="title__box">
-                  <p class="title">단계 TIP</p>
-                </div>
-                <div class="content__box">
-                  <p class="text">1. 처음 수저로 먹는 것을 익히는 시기이므로 처음 1-2숟가락씩 주다가 양을 점차 늘려주세요</p>
-                  <p class="text">2. 오전 시간 중 아이의 컨디션이 좋을 때 주어 이유식에 거부감이 없도록 합니다.</p>
-                  <p class="text">3. 알레르기 등을 파악하기 위해 동일한 메뉴 2~4일 먹여보고 다른 증상이 있는지 확인해 주세요.</p>
-                </div>
-              </div>
-
-              <div class="item schedule__item">
-                <div class="title__box">
-                  <p class="title">하루 스케줄</p>
-                </div>
+              <!-- 메인 배너 -->
+              <div class="item banner__item">
                 <div class="img__box">
-                  <img src="/assets/image/SHOPWEB_UR0101/schedule__itempng.png" alt="">
-                </div>
-                <div class="table__box">
-                  <div class="tr">
-                    <div class="tr__title__box">
-                      <p class="title">하루 총 수유량</p>
-                    </div>
-                    <div class="tr__text__box">
-                      <p class="text">800 - 1000ml
-                        * 1회 160 - 200ml
-                      </p>
-                    </div>
-                  </div>
-                  <div class="tr">
-                    <div class="tr__title__box">
-                      <p class="title">1회 이유식 양(g)</p>
-                    </div>
-                    <div class="tr__text__box">
-                      <p class="text">30 - 60g</p>
-                    </div>
-                  </div>
-                  <div class="tr">
-                    <div class="column__box tr__title__box">
-                      <div class="col one">
-                        <div class="tr__title__box">
-                          <p class="title">식사패턴</p>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="tr__title__box">
-                          <p class="title">06:00</p>
-                        </div>
-                        <div class="tr__title__box">
-                          <p class="title">10:00</p>
-                        </div>
-                        <div class="tr__title__box">
-                          <p class="title">12:00</p>
-                        </div>
-                        <div class="tr__title__box">
-                          <p class="title">14:00</p>
-                        </div>
-                        <div class="tr__title__box">
-                          <p class="title">18:00</p>
-                        </div>
-                        <div class="tr__title__box">
-                          <p class="title">22:00</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="column__box">
-                      <div class="col">
-                        <div class="tr__text__box">
-                          <p class="text">모유(분유)</p>
-                        </div>
-                        <div class="tr__text__box">
-                          <p class="text point">이유식</p>
-                        </div>
-                        <div class="tr__text__box">
-                          <p class="text">모유(분유)</p>
-                        </div>
-                        <div class="tr__text__box">
-                          <p class="text">모유(분유)</p>
-                        </div>
-                        <div class="tr__text__box">
-                          <p class="text">모유(분유)</p>
-                        </div>
-                        <div class="tr__text__box">
-                          <p class="text">모유(분유)</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <img src="/assets/image/SHOPWEB_UR0102/banner.png" alt="">
                 </div>
               </div>
 
-              <div class="item step__item">
+              <!-- 맛있게 먹이는 방법 -->
+              <div class="item eating__item">
                 <div class="title__box">
-                  <p class="title">월령별 단계 가이드</p>
+                  <p class="title">맛있게 먹이는 방법</p>
                 </div>
-                <div class="table__box">
-                  <div class="thead__box">
-                    <div class="tr">
-                      <div class="tr__title__box">
-                        <p class="title">단계</p>
+                <div class="content__boxes">
+                  <div class="content">
+                    <div class="content__title__box">
+                      <div class="icon">
+                        <img src="/assets/image/SHOPWEB_UR0102/microoven.png" alt="">
                       </div>
-                      <div class="tr__title__box">
-                        <p class="title">권장시기</p>
-                      </div>
-                      <div class="tr__title__box">
-                        <p class="title">1회 섭취량</p>
-                      </div>
-                      <div class="tr__title__box">
-                        <p class="title">횟수</p>
-                      </div>
-                      <div class="tr__title__box">
-                        <p class="title">농도</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tbody__box">
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">준비기</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">4 - 5개월</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">30 - 60g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">1회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">10배 미음</p>
+                      <p class="title point">전자레인지</p>
+                      <div class="content__text__box">
+                        <div class="text__line">
+                          <p class="number">1.</p>
+                          <p class="text">리드지를 1/3가량 벗긴 후 물을 1-2 스푼 넣어주세요.</p>
+                        </div>
+                        <div class="text__line">
+                          <p class="number">2.</p>
+                          <p class="text">이유식은 1-2분(700W), 유아식(첫밥)은 2-3분(700W)정도 돌려줍니다.</p>
+                        </div>
+                        <div class="text__line">
+                          <p class="number">3.</p>
+                          <p class="text">가열 후 가볍게 저어 아이가 먹기 좋은 온도로 식혀 먹입니다.</p>
+                        </div>
+                        <p class="detail__text">* 가열시간은 제품 용량, 전자레인 지 사양 등에 따라 달라질 수 있습니다.</p>
                       </div>
                     </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">초기</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">6개월 전후</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">50 - 75g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">2회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">8배 미음</p>
-                      </div>
-                    </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">중기</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">7 - 8개월</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">70 - 110g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">2회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">6 - 7배 미음</p>
-                      </div>
-                    </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">후기2식</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">9 - 10개월</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">100 - 160g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">2회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">5배죽</p>
-                      </div>
-                    </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">후기3식</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">9 - 10개월</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">100 - 160g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">2회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">5배죽</p>
-                      </div>
-                    </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">병행기</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">10 - 11개월</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">120 - 175g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">3회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">5배죽 + 2배진밥</p>
-                      </div>
-                    </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">완료기</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">12 - 14개월</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">120 - 180g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">2회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">2배진밥</p>
-                      </div>
-                    </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">유아식(첫밥)</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">13개월 이후</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">160 - 180g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">3회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">진밥</p>
-                      </div>
-                    </div>
-
-                    <div class="tr">
-                      <div class="tr__text__box">
-                        <p class="text">유아식(반찬 · 국)</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">13개월 이후</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">100 - 150g</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">3회</p>
-                      </div>
-                      <div class="tr__text__box">
-                        <p class="text">7mm - 1cm</p>
-                      </div>
-                    </div>
-
-
 
                   </div>
-                </div>
-              </div>
+                  <div class="content">
+                    <div class="content__title__box">
+                      <div class="icon">
+                        <img src="/assets/image/SHOPWEB_UR0102/hitting-pot.png" alt="">
+                      </div>
+                      <p class="title point">중탕으로 데우기</p>
+                      <div class="content__text__box">
+                        <div class="text__line">
+                          <p class="number">1.</p>
+                          <p class="text">물이 끓으면 불을 끄고 제품을 그대로 넣어 10분 정도 데워줍니다.</p>
+                        </div>
+                        <div class="text__line">
+                          <p class="number">2.</p>
+                          <p class="text">가열 후 집게 등을 이용하여 건져 냅니다.</p>
+                        </div>
+                        <div class="text__line">
+                          <p class="number">3.</p>
+                          <p class="text">먹기 좋은 온도로 식혀서 아이에게 먹입니다.</p>
+                        </div>
+                      </div>
+                    </div>
 
-              <div class="item link__item">
-                <div class="button__box">
-                  <div class="button">
-                    <a class="" href="">
-                      <span class="text">배냇밀 충주팩토리</span>
-                      <img class="icon" src="/assets/icon/link__item.png" alt="">
-                    </a>
-                  </div>
-                  <div class="button">
-                    <a class="" href="">
-                      <span class="text">신선함을 위한 약속</span>
-                      <img class="icon" src="/assets/icon/link__item.png" alt="">
-                    </a>
                   </div>
                 </div>
               </div>
