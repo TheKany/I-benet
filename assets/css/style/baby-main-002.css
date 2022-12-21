@@ -1,0 +1,134 @@
+.info_img {
+  display: flex;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.info_list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.info_list_item {
+  display: block;
+  /* width: 175px; */
+  height: auto;
+  margin: 0 15px;
+  white-space: nowrap;
+}
+
+.info_list_item > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.il_imgBox {
+  display: block;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 100px 100px 20px 20px;
+  transition: .2s;
+}
+
+.info_list_item .il_imgBox:hover{
+  background-image: url('/baby/assets/image/intro-hover.png');
+}
+
+.info_list_item img{
+  width: 100%;
+  display: flex;
+}
+.info_list_item .intro-hover{
+  display: none;
+}
+.info_list_item:hover .intro-hover{
+  display: block;
+}
+.info_list_item:hover .intro-img{
+  display: none;
+}
+
+.il_comment,
+.w-il_comment {
+  text-align: center;
+  padding-top: 17px;
+  font-size: var(--font-size-19);
+  line-height: var(--line-height-19);
+  letter-spacing: var(--letter-spacing-19);
+  color: var(--color-text);
+}
+
+.intro-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 모바일 */
+.m-info-item {
+  display: none;
+}
+@media all and (max-width: 1025px){
+  .info_list_item{
+    min-width: calc(480px / 6);
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .m-del,
+  .w-il_comment {
+    display: none;
+  }
+
+  .m-info-item {
+    display: block;
+  }
+
+  .info_list_item {
+    margin: 0 8px;
+  }
+
+  .info_list_item:first-child {
+    margin-left: 0;
+  }
+
+  .info_list_item:last-child {
+    margin-right: 0;
+  }
+
+  .m-il_comment,
+  .il_comment {
+    text-align: center;
+    padding-top: 10px;
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-20);
+    letter-spacing: var(--letter-spacing-20);
+    color: var(--color-text);
+    font-weight: 500;
+  }
+}
+
+
+@media all and (max-width: 480px) {
+  .info_img {
+    margin-top: 60px;
+  }
+
+  .m-il_comment,
+  .il_comment {
+    text-align: center;
+    padding-top: 10px;
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-18);
+    letter-spacing: var(--letter-spacing-18);
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+}

@@ -1,0 +1,44 @@
+.header_top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: var(--color-banner);
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.header_top > a {
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.header_top > a > strong {
+  color: var(--color-banner-emp);
+  font-weight: 400;
+}
+
+.header_top .mobile-banner {
+  display: none;
+}
+
+
+/* 모바일 반응형 */
+
+@media all and (max-width: 767px) {
+
+  .header_top {
+    margin-bottom: 10px;
+  }
+  
+  .header_top .web-banner {
+    display: none;
+  }
+  .header_top .mobile-banner {
+    display: block;
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-18);
+    letter-spacing: var(--letter-spacing-18);
+  }
+}
