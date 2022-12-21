@@ -13,13 +13,14 @@ window.addEventListener('DOMContentLoaded', () => {
       appendArrows: ".slick-list",
       dotsClass: "custom-dot",
       asNavFor: '.carousel-box',
-      // slidesToShow : 1,
+      centerPadding: '230px',
+      focusOnSelect: true,
       infinite: true,
       responsive: [
         {
           breakpoint: 1440,
           settings: {
-            centerPadding: '230px',
+            centerPadding: '100px',
           }
         },
         {
@@ -44,6 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
       asNavFor: '.slick',
       infinite: true,
       swipeToSlide: true,
+      focusOnSelect: true,
       responsive: [
         {
           breakpoint: 1440,
