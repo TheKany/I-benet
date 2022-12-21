@@ -32,7 +32,6 @@
 }
 
 .main_banner .carousel-navigation .carousel-box .item {
-  max-width: 270px;
   transition: .2s;
 }
 
@@ -153,7 +152,7 @@
     width: 100%;
   }
 
-  .slick-list {
+  .carousel-navigation .slick-list {
     border: 1px solid var(--color-tmp2);
   }
   

@@ -114,8 +114,9 @@
 .babyGuide_img_list{
   width: 100%;
 }
-.baby_guide_imgSlide{
+.babyGuide_img .baby_guide_imgSlide{
   width: 100%;
+  display: none;
 }
 
 .babyGuide_carousel {
@@ -135,9 +136,9 @@
 }
 
 .m__text__box{
-  display: none;
-  background-color: #fbfbfb;
-  padding: 30px;
+  background: url(/assets/image/bg01.png) center / cover no-repeat;
+  
+  padding: 40px;
 }
 
 .m__text__box .title__box{
@@ -177,7 +178,7 @@
   color: var(--color-best-product-text);
 }
 .m__text__box .button__box{
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
 
 }
@@ -220,6 +221,14 @@
 }
 
 @media all and (max-width: 767px) {
+  .babyGuide_img .baby_guide_imgSlide{
+    display: block;
+  }
+  .m__text__box{
+    background: #fbfbfb;
+    padding: 30px;
+  }
+
   .baby_guide_btn,
   .w-il_comment,
   .bg-row-name {
