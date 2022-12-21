@@ -45,14 +45,6 @@
   width: 100%;
 }
 
-.carousel-navigation {
-  /* position: absolute;
-  left: 320px;
-  bottom: -30px;
-  cursor: pointer;
-  color: var(--color-text); */
-}
-
 .carousel-box .item, .arrow {
   display: flex;
   justify-content: center;
