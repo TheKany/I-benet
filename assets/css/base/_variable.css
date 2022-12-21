@@ -95,6 +95,7 @@
   --color-best-product-bg: #fafafa; /* 베스트제품 한눈에 보기 배경 */
   --color-best-product-text: #666666; /* 베스트제품 간단한 제품명 공지사항 */
   --color-benetpick: #ffadbd; /* 모바일 배냇밀 pick */
+  --color-trLine: #eeeeee; /* 월령별 단계 가이드 표 라인 */
 }
 
 @media all and (max-width: 1440px) {
