@@ -1110,6 +1110,7 @@
         padding: 15px 0;
         font-size: var(--font-size-35);
         line-height: var(--line-height-35);
+        color: var(--color-text);
         font-weight: 700;
       }
 
@@ -1174,17 +1175,20 @@
         font-size: var(--font-size-20);
         line-height: var(--line-height-20);
         margin-right: 10px;
+        color: var(--color-text);
       }
 
       .detail__section .item.eating__item .content__boxes .content .content__text__box .text__line .text {
         font-size: var(--font-size-20);
         line-height: var(--line-height-20);
+        color: var(--color-text);
         word-break: keep-all;
       }
 
       .detail__section .item.eating__item .content__boxes .content .content__text__box .detail__text {
         font-size: var(--font-size-16);
         line-height: var(--line-height-16);
+        color: var(--color-text);
       }
 
       /* 보관하는 방법 */
@@ -1273,6 +1277,134 @@
         color: var(--color-tmp1);
         margin-top: 10px;
       }
+
+
+      @media all and (max-width: 1024px) {
+        .detail__section .item.eating__item .content__boxes .content .content__text__box .detail__text {
+          letter-spacing: -1px;
+        }
+      }
+
+      @media all and (max-width: 767px) {
+        .detail__section {
+          margin-top: 40px;
+        }
+        
+        .detail__section .item.eating__item .title__box .title, .detail__section .item.keeping__item .title__box .title, .detail__section .item.delivery__item .title__box .title, .detail__section .item.trade__item .title__box .title {
+          font-size: var(--font-size-25);
+          line-height: var(--line-height-25);
+        }
+
+        .detail__section .item.eating__item .content__boxes .content, .detail__section .item.keeping__item .content__boxes .content {
+          margin-right: 2%;
+        }
+
+        .detail__section .item.eating__item .content__boxes .content.left .content__title__box .icon {
+          top: -40px;
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__title__box .icon, .detail__section .item.keeping__item .content__boxes .content .content__title__box .icon {
+           top: -55px;
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__title__box .icon img, .detail__section .item.keeping__item .content__boxes .content .content__title__box .icon img {
+          width: 80%;
+        }
+
+        .detail__section .item.eating__item .content__boxes, .detail__section .item.keeping__item .content__boxes {
+          display: block;
+          margin-top: 20px;
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__title__box .title, .detail__section .item.keeping__item .content__boxes .content .content__title__box .title {
+          font-size: var(--font-size-22);
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__text__box {
+          margin-top: 10px;
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__text__box .text__line .number {
+          font-size: var(--font-size-18);
+          margin-right: 5px;
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__text__box .text__line .text {
+          font-size: var(--font-size-18);
+        }.detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list .text
+
+        .detail__section .item.eating__item .content__boxes .content .content__text__box .detail__text {
+          font-size: var(--font-size-14);
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__text__box .text__line {
+          margin-bottom: 5px;
+        }
+
+        .detail__section .item.keeping__item, .detail__section .item.trade__item, .detail__section .item.delivery__item {
+          margin-top: 90px;
+        }
+
+        .detail__section .item.keeping__item .content__boxes .content.right .content__title__box .icon {
+          top: -55px;
+        }
+
+        .detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list {
+          margin-top: 15px;
+        }
+
+        .detail__section .item.eating__item .content__boxes .content .content__title__box, .detail__section .item.keeping__item .content__boxes .content .content__title__box {
+          margin-top: 80px;
+        }
+
+        .detail__section .item.eating__item .title__box .title, .detail__section .item.keeping__item .title__box .title, .detail__section .item.delivery__item .title__box .title, .detail__section .item.trade__item .title__box .title {
+          padding-bottom: 15px;
+        }
+
+        .detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list .text {
+          font-size: var(--font-size-18);
+          margin-top: 5px;
+        }
+
+        .detail__section .item.delivery__item .content__boxes .content__list .content__title .title, .detail__section .item.trade__item .content__boxes .content__list .content__title .title {
+          font-size: var(--font-size-20);
+        }
+
+        .detail__section .item.delivery__item .content__boxes .content__list .content__text .text, .detail__section .item.trade__item .content__boxes .content__list .content__text .text {
+          font-size: var(--font-size-18);
+        }
+
+      }
+
+      @media all and (max-width: 480px) {
+        .detail__section {
+          margin-top: 20px;
+        }
+
+        .detail__section .item.eating__item {
+          margin-top: 30px;
+        }
+
+        .detail__section .item.keeping__item .title__box .text {
+          font-size: var(--font-size-18);
+        }
+
+        .detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list .detail {
+          margin-top: 0;
+        }
+
+        .detail__section .item.delivery__item .content__boxes .content__list .content__title .title, .detail__section .item.trade__item .content__boxes .content__list .content__title .title {
+          font-size: var(--font-size-22);
+        }
+
+        .detail__section .item.delivery__item .content__boxes .content__list .content__text .text, .detail__section .item.trade__item .content__boxes .content__list .content__text .text {
+          margin-bottom: 5px;
+        }
+        .detail__section .item.delivery__item .content__boxes .content__list .content__text .detail, .detail__section .item.trade__item .content__boxes .content__list .content__text .detail {
+          font-size: var(--font-size-16);
+        }
+      }
+
     </style>
     <section class="detail__section">
       <div class="container">
@@ -1371,7 +1503,7 @@
                         <p class="title">이유식 / 유아식(첫밥)</p>
                         <p class="text">- 수령일로부터 13일 이내 섭취 권장</p>
                       </div>
-                      <div class="content__list">
+                      <div class="content__list for-margin-01">
                         <p class="title">유아식(반찬 · 국)</p>
                         <p class="text">- 제조일로부터 7일 이내 섭취</p>
                         <p class="detail">* 피클류는 14일 이내</p>
@@ -1580,6 +1712,14 @@
 
   </footer>
 
+  <script>
+    let selectMenu = document.querySelector('.selector__section .baby-monthly-guide .select-box');
+    let optionBox = document.querySelector('.selector__section .baby-monthly-guide');
+
+
+    selectMenu.addEventListener('click', () => optionBox.classList.toggle('active'))
+
+  </script>
   <script src="../assets/js/dropdown.js"></script>
   <script src="../assets/js/mainCarousel.js"></script>
 </body>
