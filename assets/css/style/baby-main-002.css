@@ -60,6 +60,7 @@
   line-height: var(--line-height-19);
   letter-spacing: var(--letter-spacing-19);
   color: var(--color-text);
+  font-weight: 500;
 }
 
 .intro-img {

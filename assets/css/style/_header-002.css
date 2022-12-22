@@ -6,8 +6,12 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 8px;
   white-space: nowrap;
+}
+.big_menu.menu00{
+  min-width: fit-content;
 }
 
 .big_menu.total{
@@ -37,7 +41,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  min-width: 742px;
+  padding-top: 10px;
 }
 .total_menu .gnb_itemList{
   width: fit-content;
@@ -52,7 +56,8 @@
   display: none;
   position: absolute;
   z-index: 9999;
-  width: 100%;
+  width: 120%;
+  min-width: 150px;
   text-align: center;
   background-color: var(--color-white);
   left: 50%;
@@ -61,6 +66,9 @@
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
   overflow: hidden;
+}
+.gnb_itemList.total{
+  min-width: fit-content;
 }
 
 .big_menu.active .gnb_itemList,
@@ -89,7 +97,8 @@
   line-height: var(--line-height-14);
   letter-spacing: var(--letter-spacing-14);
   color: var(--color-main);
-  padding-top: 10px;
+  padding: 3px 0;
+  font-weight: 500;
 }
 
 .gnb_itemList a{
@@ -98,8 +107,8 @@
   line-height: var(--line-height-14);
   letter-spacing: var(--letter-spacing-14);
   color: var(--color-text);
-  margin: 5px 0;
-  padding: 5px 0;
+  margin: 3px 0;
+  padding: 3px 0;
 }
 .gnb_itemList a:hover{
   background-color: var(--color-main);
@@ -111,7 +120,7 @@
 }
 .gnb_itemList a:last-child {
   margin-bottom: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 
@@ -185,7 +194,8 @@
 }
 
 .total_menu .display_box .text_box p{
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-16);
+  color: var(--color-text);
 }
 
 .m-gnb {
@@ -207,7 +217,10 @@
     max-width: 100px;
   }
   .gnb_itemList a{
-    font-size: var(--font-size-12);
+    font-size: var(--font-size-14);
+  }
+  .big_menu > button{
+    font-size: var(--font-size-16);
   }
   
 }
