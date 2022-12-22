@@ -208,4 +208,38 @@ window.addEventListener('DOMContentLoaded', () => {
       dots: true,
     });
   }
+
+  //팝업 캐러셀
+  {
+    let popUp = document.querySelector('.popup__background');
+    let popupImgs = document.querySelectorAll('.popup__box .popup__img__slick .popup__link');
+    let popupTexts = document.querySelectorAll('.popup__box .popup__text__slick .text__item');
+    let popupImgCount = popupImgs.length > 3 ? 3 : popupImgs.length;
+    let currentIndex = 0;
+    let popupCloseBtn = document.querySelector('.popup__banner .close__button .button__img');
+
+    $('.popup__img__slick').slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      arrows: false,
+    });
+
+    $('.popup__img__slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      currentIndex = nextSlide;
+      popupTexts[currentIndex].click()
+
+    });
+
+    $('.popup__text__slick').slick({
+      slidesToShow: popupImgCount,
+      asNavFor: '.popup__img__slick',
+      slidesToScroll: 1,
+      arrows: false,
+      focusOnSelect: true,
+    });
+
+    popupCloseBtn.addEventListener('click', () => {
+      popUp.remove()
+    })
+  }
 })
