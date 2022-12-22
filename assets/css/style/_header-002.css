@@ -242,9 +242,7 @@
 @media all and (max-width: 480px) {
   .gnb-menu button {
     color: var(--color-text);
-    font-size: var(--font-size-18);
-    line-height: var(--line-height-18);
-    letter-spacing: var(--letter-spacing-18);
+    font-size: var(--font-size-16);
   }
 
   .m-gnb{
