@@ -569,6 +569,17 @@
         background-color: var(--color-main);
         color: var(--color-white);
         border: transparent 1px solid;
+
+      }
+
+      .selector__section {
+        display: none;
+      }
+
+      @media all and (max-width: 767px) {
+        .button__section {
+          display: none;
+        }
       }
     </style>
     <section class="button__section">
@@ -611,6 +622,129 @@
       </div>
     </section>
 
+    <!-- 모바일 상단 월령별 셀렉터 -->
+    <style>
+      @media all and (max-width: 767px) {
+        .selector__section {
+          display: block;
+        }
+
+        .selector__section .baby-monthly-guide {
+          position: relative;
+        }
+
+        .selector__section .baby-monthly-guide .select-box {
+          background-color: var(--color-main);
+        }
+
+        .selector__section .baby-monthly-guide .select-box .selected {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .selector__section .baby-monthly-guide .select-box .selected .text {
+          font-size: var(--font-size-25);
+          color: var(--color-white);
+          font-weight: 500;
+          padding: 20px 0;
+        }
+
+        .selector__section .baby-monthly-guide .select-box .selected img {
+          margin-left: 10px;
+          margin-top: 3px;
+        }
+
+        .selector__section .baby-monthly-guide.active .option-box {
+          display: block;
+        }
+
+        .selector__section .baby-monthly-guide .option-box {
+          display: none;
+          position: absolute;
+          width: 100%;
+          background-color: #fff;
+          border-bottom: 1px solid #aaa;
+        }
+
+        .selector__section .baby-monthly-guide .option-box .option-item {
+          display: flex;
+        }
+
+        .selector__section .baby-monthly-guide .option-box .option-item.option-selected {}
+
+        .selector__section .baby-monthly-guide .option-box .option-item .text {
+          font-size: var(--font-size-18);
+          color: var(--color-text);
+          padding: 15px 0;
+          width: 100%;
+          font-weight: 300;
+          border-bottom: 1px var(--color-footer-line) solid;
+          text-align: center;
+        }
+
+        .selector__section .baby-monthly-guide .option-box .option-item:last-of-type .text {
+          border-bottom: none;
+        }
+
+        @media all and (max-width: 480px) {
+          .selector__section .baby-monthly-guide .select-box .selected .text {
+            font-size: var(--font-size-22);
+            padding: 15px 0;
+          }
+
+          .selector__section .baby-monthly-guide .select-box .selected img {
+            width: 5%;
+          }
+
+          .selector__section .baby-monthly-guide .option-box .option-item .text {
+            padding: 10px 0;
+          }
+        }
+      }
+    </style>
+    <section class="selector__section">
+      <div class="baby-monthly-guide" name="baby-monthly-guide">
+        <ul class="select-box">
+          <li class="selected" value="준비기 4-5개월">
+            <span class="text">준비기 4-5개월</span>
+            <img src="/assets/icon/circle_down_arrow_white.png" alt="">
+          </li>
+        </ul>
+        <ul class="option-box">
+          <li class="option-item option-selected" value="준비기 4-5개월">
+            <span class="text">준비기 4-5개월</span>
+          </li>
+          <li class="option-item" value="초기 6개월 전후">
+            <span class="text">초기 6개월 전후</span>
+          </li>
+          <li class="option-item" value="중기 7-8개월">
+            <span class="text">중기 7-8개월</span>
+          </li>
+          <li class="option-item" value="후기 2식 9-10개월">
+            <span class="text">후기 2식 9-10개월</span>
+          </li>
+          <li class="option-item" value="후기 3식 9-10개월">
+            <span class="text">후기 3식 9-10개월</span>
+          </li>
+          <li class="option-item" value="병행기 10-11개월">
+            <span class="text">병행기 10-11개월</span>
+          </li>
+          <li class="option-item" value="완료기 12-14개월">
+            <span class="text">완료기 12-14개월</span>
+          </li>
+          <li class="option-item" value="첫밥 13개월 이후">
+            <span class="text">첫밥 13개월 이후</span>
+          </li>
+          <li class="option-item" value="반찬·국 13개월 이후">
+            <span class="text">반찬·국 13개월 이후</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
     <!-- 월령별 상품 요약 정보 -->
     <style>
       .product__section {
@@ -649,7 +783,6 @@
       .product__section .item-box .info-box .detail__box .title__box .title {
         font-size: var(--font-size-45);
         color: var(--color-text);
-        font-weight: 500;
         line-height: 1;
       }
 
@@ -720,6 +853,10 @@
         text-align: center;
       }
 
+      .m-text {
+        display: none;
+      }
+
       /* 1025 반응형 */
       @media all and (max-width: 1024px) {
         .product__section .item-box .right {
@@ -743,6 +880,14 @@
           display: block;
         }
 
+        .selector__section {
+          margin-top: 10px;
+        }
+
+        .product__section {
+          margin-top: 5px
+        }
+
         .product__section .item-box .right {
           padding-left: 0;
         }
@@ -758,6 +903,14 @@
           font-size: var(--font-size-35);
         }
 
+        .product__section .item-box .info-box .detail__box .text__box {
+          margin-top: 35px;
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item {
+          margin-bottom: 10px;
+        }
+
         .product__section .item-box .info-box .detail__box .text__box .text__item .text {
           font-weight: 400;
         }
@@ -771,6 +924,58 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          font-size: var(--font-size-28);
+          font-weight: 500;
+        }
+
+      }
+
+      /* 480 반응형 */
+      @media all and (max-width: 480px) {
+
+        .product__section .item-box .info-box .detail__box .title__box .title,
+        .product__section .item-box .info-box .detail__box .text__box .text__item .title {
+          min-width: 90px;
+        }
+
+        .product__section .item-box .img-box,
+        .product__section .item-box .info-box {
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .product__section .item-box .info-box .detail__box .title__box .title {
+          font-size: var(--font-size-30);
+        }
+
+        .product__section .item-box .info-box .detail__box .title__box .text {
+          font-size: var(--font-size-22);
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box {
+          margin-top: 25px;
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item .title {
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item .text {
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .banner__box .banner__item {
+          margin-bottom: 5px;
+        }
+
+        .product__section .item-box .info-box .banner__box .banner__item .banner__text {
+          padding: 10px 10px;
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .button__box .button__item .button__text {
+          height: 50px;
+          font-size: var(--font-size-22);
         }
       }
     </style>
@@ -841,7 +1046,6 @@
         </div>
       </div>
     </section>
-
     <!-- 이용안내 -->
     <style>
       .detail__section {
