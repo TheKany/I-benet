@@ -81,7 +81,9 @@
 }
 
 @media all and (max-width: 767px) {
-
+  .info_img{
+    margin-top: 100px;
+  }
   .m-del,
   .w-il_comment {
     display: none;
@@ -89,6 +91,9 @@
 
   .m-info-item {
     display: block;
+  }
+  .info_list{
+    padding: 0 20px;
   }
 
   .info_list_item {
@@ -117,6 +122,12 @@
 
 
 @media all and (max-width: 480px) {
+  .info_list{
+    padding: 0;
+  }
+  .info_list_item{
+    min-width: auto;
+  }
   .info_img {
     margin-top: 60px;
   }

@@ -15,6 +15,7 @@
   line-height: var(--line-height-25);
   letter-spacing: var(--letter-spacing-25);
   color: var(--color-tmp1);
+  font-weight: 500;
 }
 
 .hot_item_text > span {
@@ -292,7 +293,7 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
 
 
@@ -308,6 +309,7 @@
   .hot_item_each {
     width: calc(100% / 2);
     padding-right: 14px;
+    max-width: none;
   }
 
   .hot_item_each:nth-child(2n) {
@@ -391,6 +393,12 @@
 }
 
 @media all and (max-width: 480px) {
+  .hot_item_each{
+    padding-right: 7px;
+  }
+  .hot_item_each:nth-child(2n){
+    padding-left: 7px;
+  }
   .hot_item_category {
     margin-bottom: 25px;
   }
@@ -414,9 +422,9 @@
   }
 
   .hic-btn > p {
-    font-size: var(--font-size-12);
-    line-height: var(--line-height-12);
-    letter-spacing: var(--letter-spacing-12);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-16);
+    letter-spacing: var(--letter-spacing-16);
     min-width: 55px;
     min-height: 30px;
     padding: 0 5px;
@@ -442,7 +450,6 @@
 
   .view-more {
     margin-top: 15px;
-    margin-bottom: 30px;
   }
 
   .item_price > p:first-child {

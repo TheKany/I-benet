@@ -16,6 +16,8 @@
   line-height: var(--line-height-25);
   letter-spacing: var(--letter-spacing-25);
   color: var(--color-tmp1);
+  font-weight: 500;
+
 }
 
 .baby_guide_text > span {
@@ -221,6 +223,12 @@
 }
 
 @media all and (max-width: 767px) {
+  .baby_guide{
+    margin-top: 100px;
+  }
+  .babyGuide_img{
+    margin-top: 35px;
+  }
   .babyGuide_img .baby_guide_imgSlide{
     display: block;
   }
@@ -252,7 +260,6 @@
 
   .baby_guide_text > p {
     padding-bottom: 0;
-    font-weight: 500;
   }
 
   .baby_guide_text > span {
@@ -306,9 +313,9 @@
 
 @media all and (max-width: 480px) {
   .mg-btn p {
-    font-size: var(--font-size-14);
-    line-height: var(--line-height-14);
-    letter-spacing: var(--letter-spacing-14);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-16);
+    letter-spacing: var(--letter-spacing-16);
     min-width: 57px;
     padding: 5px 0px;
   }
@@ -328,5 +335,8 @@
     font-size: var(--font-size-26);
     line-height: var(--line-height-26);
     letter-spacing: var(--letter-spacing-26);
+  }
+  .baby_guide{
+    margin-top: 70px;
   }
 }
