@@ -1,6 +1,7 @@
 .footer01 {
   border-top: 1px solid var(--color-footer-line);
   border-bottom: 1px solid var(--color-footer-line);
+  overflow: hidden;
 }
 
 .footer_main {
@@ -146,10 +147,15 @@
 @media all and (max-width: 767px) {
   .customer_service {
     order: 1;
+    position: relative;
   }
-  
-  .ci-tr {
-    order: 2;
+  .customer_service::after{
+    content: "";
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    left: -25%;
+    border-bottom: 1px var(--color-footer-line) solid;
   }
 
   .customer_service td {
@@ -236,11 +242,12 @@
   }
 
   .ci-tr {
+    order: 2;
     font-size: var(--font-size-20);
     line-height: var(--line-height-20);
     letter-spacing: var(--letter-spacing-20);
     color: var(--color-best-product-text);
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
