@@ -81,7 +81,7 @@
 .hot_item_each {
   position: relative;
   display: block;
-  padding-right: 30px;
+  padding-right: 20px;
   padding-bottom: 50px;
   width: 25%
 }
@@ -138,9 +138,12 @@
 }
 
 .item_title {
-  display: block;
+  display: -webkit-box;
   color: var(--color-text);
   margin-top: 25px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .item_subTitle{
@@ -148,8 +151,16 @@
   line-height: var(--line-height-14);
   letter-spacing: var(--letter-spacing-14);
   color: var(--color-tmp1);
-  max-width: 270px;
   text-overflow: ellipsis;
+  height: 50px;
+}
+
+.item_subTitle .is-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: var(--font-size-14);
 }
 
 .item_price {
