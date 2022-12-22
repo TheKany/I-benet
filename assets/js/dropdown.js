@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
     // 웹 네브바
     let navBigMenus = document.querySelectorAll('.big_menu');
     let navTotlaMenuLists = document.querySelectorAll('.gnb_itemList.total');
@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', function () {
     let navBigTotalBox = document.querySelector('.big_menu.total');
     let navBigTotalButton = document.querySelector('.gnb_item.toggle_btn');
     let gnbBox = document.querySelector('.gnb_main');
-
     function initNavBigMenu() {
         for (let i = 0; i < navBigMenuButtons.length; i++) {
             navBigMenuButtons[i].classList.remove('active')
@@ -32,8 +31,6 @@ window.addEventListener('DOMContentLoaded', function () {
         } else {
             navBigTotalBox.classList.add('active')
         }
-        console.log(this)
-        // console.log(e.currentTarget)
     }
 
     function closeTotalMenuBox() {

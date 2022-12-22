@@ -1,11 +1,11 @@
-window.addEventListener('DOMContentLoaded', function(){
+window.addEventListener('load', function () {
   let deliveryPoint = document.querySelector('.header-tracking > .tracking');
 
-  let closeDeliveryPoint = () =>{
+  let closeDeliveryPoint = () => {
     deliveryPoint.classList.add('hide')
   }
 
-  function init(){
+  function init() {
     setTimeout(closeDeliveryPoint, 3000)
   }
   init()
