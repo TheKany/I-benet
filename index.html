@@ -27,161 +27,10 @@
 
 <body>
 
-  <!-- 메인페이지 팝업창 -->
-  <style>
-    .popup__banner {
-      background-color: #fff;
-      z-index: 9999;
-      border: 1px solid #666;
-      position: absolute;
-      top: 100px;
-      left: 130px;
-      overflow: hidden;
-      max-width: 360px;
-      width: 100%;
-    }
-
-    .popup__banner .close__button {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding: 5px;
-    }
-
-    .popup__banner .close__button .button__img {
-      padding: 5px 10px;
-      cursor: pointer;
-      display: flex;
-    }
-
-    .popup__banner .close__button .button__img img {}
-
-    .popup__banner .popup__box {
-      padding: 0px 30px;
-    }
-
-    .popup__banner .popup__box .popup__img__box {}
-
-    .popup__banner .popup__box .popup__img__box img {
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .popup__banner .popup__box .popup__text__box {}
-
-    .popup__banner .popup__box .popup__text__box .text__item {}
-
-    .popup__banner .popup__box .popup__text__box .text__item img {
-      cursor: pointer;
-    }
-
-    .popup__banner .popup__box .popup__text__box .text__item.slick-current img,
-    .popup__banner .popup__box .popup__text__box .text__item img.hover,
-    .popup__banner .popup__box .popup__text__box .text__item:hover img,
-    .popup__banner .slick-arrow {
-      display: none;
-    }
-
-    .popup__banner .popup__box .popup__text__box .text__item.slick-current img.hover,
-    .popup__banner .popup__box .popup__text__box .text__item:hover img.hover {
-      display: block;
-    }
-
-    .popup__banner .check__button {
-      padding: 15px 30px;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .popup__banner .check__button label {
-      font-size: var(--font-size-14);
-      display: flex;
-    }
-
-    .popup__banner .check__button label input {
-      margin-left: 10px;
-    }
-
-    @media all and (max-width: 767px) {
-      .popup__background {
-        overflow: hidden;
-      }
-
-      .popup__background::after {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0 0 0 / 50%);
-        z-index: 999;
-      }
-
-      .popup__banner {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    @media all and (max-width: 480px) {
-      .popup__banner .check__button label {
-        font-size: var(--font-size-18);
-      }
-    }
-
-
-
-    /*  */
-  </style>
-  <div class="popup__background">
-    <div class="popup__banner">
-      <div class="close__button">
-        <div class="button__img">
-          <img src="/assets/icon/mobile_x_button.png" alt="">
-        </div>
-      </div>
-      <div class="popup__box">
-        <div class="popup__img__box popup__img__slick">
-          <a class="popup__link" href="">
-            <img src="/assets/image/popup/pop_up1.jpg" alt="">
-          </a>
-          <a class="popup__link" href="">
-            <img src="/assets/image/popup/pop_up2.jpg" alt="">
-          </a>
-          <a class="popup__link" href="">
-            <img src="/assets/image/popup/pop_up3.jpg" alt="">
-          </a>
-        </div>
-        <div class="popup__text__box popup__text__slick">
-          <div class="text__item">
-            <img src="/assets/image/popup/pop_up_text.png" alt="">
-            <img class="hover" src="/assets/image/popup/pop_up_text_hover.png" alt="">
-          </div>
-          <div class="text__item">
-            <img src="/assets/image/popup/pop_up_text.png" alt="">
-            <img class="hover" src="/assets/image/popup/pop_up_text_hover.png" alt="">
-          </div>
-          <div class="text__item">
-            <img src="/assets/image/popup/pop_up_text.png" alt="">
-            <img class="hover" src="/assets/image/popup/pop_up_text_hover.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="check__button">
-        <label for="banner-checkbox">오늘 하루 보이지 않음
-          <input type="checkbox" name="" id="banner-checkbox">
-        </label>
-      </div>
-    </div>
-  </div>
-
   <!-- 최상단 배너 | css-Number : /_baby-001.css -->
   <link rel="stylesheet" href="/assets/css/style/_baby-001.css">
   <article class="header_top">
     <a class="web-banner">신규가입 시, 배냇밀 이유식 2팩 <strong>무료체험 신청하기</strong></a>
-
     <a class="mobile-banner">배냇밀 타임특가 구매하러가기</a>
   </article>
 
@@ -199,7 +48,7 @@
             <!-- 로고 영역 -->
             <div class="header_left">
               <h1 class="logo">
-                <a href="#" onclick="location.href='main.html'">
+                <a href="#" onclick="location.href='index.html'">
                   <img src="../assets/image/logo.png" alt="아이배냇">
                 </a>
               </h1>
@@ -1246,7 +1095,6 @@
               </button>
             </div>
 
-            <!-- 목록 row -->
             <div class="hot_item_container">
               <!-- 목록 item -->
               <div class="hot_item_each">
