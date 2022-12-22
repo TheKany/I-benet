@@ -34,6 +34,7 @@
   width: 27px;
   height: 27px;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 /* 버튼 css */
@@ -41,11 +42,13 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 25px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .hic-btn {
   display: block;
+  padding: 0;
+  margin: 0 10px 10px 0;
 }
 
 .hic-btn:first-child {
@@ -73,6 +76,7 @@
 /* 목록 css */
 .hot_item_container {
   display: inline-flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -80,11 +84,13 @@
 .hot_item_each {
   display: block;
   position: relative;
-  width: 25%
+  width: 100%;
+  max-width: 275px;
+  margin-bottom: 45px;
 }
 
-.hot_item_each:nth-child(4n) {
-  padding-right: 0;
+.hot_item_each:nth-child(n+5) {
+  margin-bottom: 0;
 }
 
 .item_img {
@@ -182,10 +188,17 @@
 
 .price_number {
   display: flex;
+  align-items: center;
+}
+.price_number .original-price{
+  font-size: var(--font-size-16);
+}
+.price_number .sale-price{
+
 }
 
 .price_number > p {
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 .price_number > p:nth-child(1) {

@@ -61,6 +61,7 @@
   line-height: var(--line-height-26);
   letter-spacing: var(--letter-spacing-26);
   color: var(--color-tmp1);
+  font-weight: 500;
 }
 
 .cs_td01 > p {
@@ -75,23 +76,28 @@
 .cs_td03 {
   color: var(--color-footer-data);
 }
+.cs_td03{
+  margin-top: 15px;
+}
 
 .cs_td02 p {
-  font-size: var(--font-size-20);
-  font-weight: 500;
+  font-size: var(--font-size-18);
+  line-height: var(--line-height-18);
 }
 
 .cs_td02 span {
-  font-size: var(--font-size-16);
-  line-height: var(--line-height-16);
-  letter-spacing: var(--letter-spacing-16);
-  font-weight: 500;
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-14);
+  letter-spacing: var(--letter-spacing-14);
   margin-left: 10px;
 }
 
 .cs_td03 {
   display: flex;
   align-items: center;
+}
+.cs_tr:nth-of-type(3){
+  margin-top: 20px;
 }
 
 .cs_td03 img {
@@ -118,6 +124,9 @@
   letter-spacing: var(--letter-spacing-14);
   color: var(--color-footer-col);
   margin-right: 30px;
+}
+.footer_last >p{
+  margin-right: 80px;
 }
 
 .footer_last > p:last-child {
