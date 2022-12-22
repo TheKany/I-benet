@@ -569,6 +569,17 @@
         background-color: var(--color-main);
         color: var(--color-white);
         border: transparent 1px solid;
+
+      }
+
+      .selector__section {
+        display: none;
+      }
+
+      @media all and (max-width: 767px) {
+        .button__section {
+          display: none;
+        }
       }
     </style>
     <section class="button__section">
@@ -613,35 +624,121 @@
 
     <!-- 모바일 상단 월령별 셀렉터 -->
     <style>
-      .button__section {
-        display: none;
-      }
+      @media all and (max-width: 767px) {
+        .selector__section {
+          display: block;
+        }
 
-      .selector__section {
-        display: none;
-        /* display: flex; */
-        width: 100%;
-        height: 80px;
-        justify-content: center;
-        background-color: var(--color-main);
-      }
+        .selector__section .baby-monthly-guide {
+          position: relative;
+        }
 
-      .select-item {
-        color: var(--color-white);
+        .selector__section .baby-monthly-guide .select-box {
+          background-color: var(--color-main);
+        }
+
+        .selector__section .baby-monthly-guide .select-box .selected {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .selector__section .baby-monthly-guide .select-box .selected .text {
+          font-size: var(--font-size-25);
+          color: var(--color-white);
+          font-weight: 500;
+          padding: 20px 0;
+        }
+
+        .selector__section .baby-monthly-guide .select-box .selected img {
+          margin-left: 10px;
+          margin-top: 3px;
+        }
+
+        .selector__section .baby-monthly-guide.active .option-box {
+          display: block;
+        }
+
+        .selector__section .baby-monthly-guide .option-box {
+          display: none;
+          position: absolute;
+          width: 100%;
+          background-color: #fff;
+          border-bottom: 1px solid #aaa;
+        }
+
+        .selector__section .baby-monthly-guide .option-box .option-item {
+          display: flex;
+        }
+
+        .selector__section .baby-monthly-guide .option-box .option-item.option-selected {}
+
+        .selector__section .baby-monthly-guide .option-box .option-item .text {
+          font-size: var(--font-size-18);
+          color: var(--color-text);
+          padding: 15px 0;
+          width: 100%;
+          font-weight: 300;
+          border-bottom: 1px var(--color-footer-line) solid;
+          text-align: center;
+        }
+
+        .selector__section .baby-monthly-guide .option-box .option-item:last-of-type .text {
+          border-bottom: none;
+        }
+
+        @media all and (max-width: 480px) {
+          .selector__section .baby-monthly-guide .select-box .selected .text {
+            font-size: var(--font-size-22);
+            padding: 15px 0;
+          }
+
+          .selector__section .baby-monthly-guide .select-box .selected img {
+            width: 5%;
+          }
+
+          .selector__section .baby-monthly-guide .option-box .option-item .text {
+            padding: 10px 0;
+          }
+        }
       }
     </style>
     <section class="selector__section">
-      <div name="baby-monthly-guide">
+      <div class="baby-monthly-guide" name="baby-monthly-guide">
         <ul class="select-box">
-          <li class="select-item" value="준비기 4-5개월">준비기 4-5개월</li>
-          <li class="select-item" value="초기 6개월 전후">초기 6개월 전후</li>
-          <li class="select-item" value="중기 7-8개월">중기 7-8개월</li>
-          <li class="select-item" value="후기 2식 9-10개월">후기 2식 9-10개월</li>
-          <li class="select-item" value="후기 3식 9-10개월">후기 3식 9-10개월</li>
-          <li class="select-item" value="병행기 10-11개월">병행기 10-11개월</li>
-          <li class="select-item" value="완료기 12-14개월">완료기 12-14개월</li>
-          <li class="select-item" value="첫밥 13개월 이후">첫밥 13개월 이후</li>
-          <li class="select-item" value="반찬·국 13개월 이후">반찬·국 13개월 이후</li>
+          <li class="selected" value="준비기 4-5개월">
+            <span class="text">준비기 4-5개월</span>
+            <img src="/assets/icon/circle_down_arrow_white.png" alt="">
+          </li>
+        </ul>
+        <ul class="option-box">
+          <li class="option-item option-selected" value="준비기 4-5개월">
+            <span class="text">준비기 4-5개월</span>
+          </li>
+          <li class="option-item" value="초기 6개월 전후">
+            <span class="text">초기 6개월 전후</span>
+          </li>
+          <li class="option-item" value="중기 7-8개월">
+            <span class="text">중기 7-8개월</span>
+          </li>
+          <li class="option-item" value="후기 2식 9-10개월">
+            <span class="text">후기 2식 9-10개월</span>
+          </li>
+          <li class="option-item" value="후기 3식 9-10개월">
+            <span class="text">후기 3식 9-10개월</span>
+          </li>
+          <li class="option-item" value="병행기 10-11개월">
+            <span class="text">병행기 10-11개월</span>
+          </li>
+          <li class="option-item" value="완료기 12-14개월">
+            <span class="text">완료기 12-14개월</span>
+          </li>
+          <li class="option-item" value="첫밥 13개월 이후">
+            <span class="text">첫밥 13개월 이후</span>
+          </li>
+          <li class="option-item" value="반찬·국 13개월 이후">
+            <span class="text">반찬·국 13개월 이후</span>
+          </li>
         </ul>
       </div>
     </section>
@@ -686,7 +783,6 @@
       .product__section .item-box .info-box .detail__box .title__box .title {
         font-size: var(--font-size-45);
         color: var(--color-text);
-        font-weight: 500;
         line-height: 1;
       }
 
@@ -757,6 +853,10 @@
         text-align: center;
       }
 
+      .m-text {
+        display: none;
+      }
+
       /* 1025 반응형 */
       @media all and (max-width: 1024px) {
         .product__section .item-box .right {
@@ -780,6 +880,14 @@
           display: block;
         }
 
+        .selector__section {
+          margin-top: 10px;
+        }
+
+        .product__section {
+          margin-top: 5px
+        }
+
         .product__section .item-box .right {
           padding-left: 0;
         }
@@ -795,6 +903,14 @@
           font-size: var(--font-size-35);
         }
 
+        .product__section .item-box .info-box .detail__box .text__box {
+          margin-top: 35px;
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item {
+          margin-bottom: 10px;
+        }
+
         .product__section .item-box .info-box .detail__box .text__box .text__item .text {
           font-weight: 400;
         }
@@ -808,6 +924,58 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          font-size: var(--font-size-28);
+          font-weight: 500;
+        }
+
+      }
+
+      /* 480 반응형 */
+      @media all and (max-width: 480px) {
+
+        .product__section .item-box .info-box .detail__box .title__box .title,
+        .product__section .item-box .info-box .detail__box .text__box .text__item .title {
+          min-width: 90px;
+        }
+
+        .product__section .item-box .img-box,
+        .product__section .item-box .info-box {
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .product__section .item-box .info-box .detail__box .title__box .title {
+          font-size: var(--font-size-30);
+        }
+
+        .product__section .item-box .info-box .detail__box .title__box .text {
+          font-size: var(--font-size-22);
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box {
+          margin-top: 25px;
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item .title {
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .detail__box .text__box .text__item .text {
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .banner__box .banner__item {
+          margin-bottom: 5px;
+        }
+
+        .product__section .item-box .info-box .banner__box .banner__item .banner__text {
+          padding: 10px 10px;
+          font-size: var(--font-size-18);
+        }
+
+        .product__section .item-box .info-box .button__box .button__item .button__text {
+          height: 50px;
+          font-size: var(--font-size-22);
         }
       }
     </style>
@@ -860,7 +1028,7 @@
                 </div>
                 <div class="button__box">
                   <div class="button__item">
-                    <a href="" class="button__text">식단주문하기</a>
+                    <a href="" class="button__text">식단 주문하기</a>
                   </div>
                 </div>
                 <!-- <form class="button__box">
@@ -878,12 +1046,11 @@
         </div>
       </div>
     </section>
-
-
     <!-- 이용안내 -->
     <style>
       .detail__section {
         margin-top: 80px;
+        margin-bottom: 80px;
       }
 
       /* 메인 내용 버튼 */
@@ -924,47 +1091,68 @@
       }
 
       /* 맛있게 먹이는 방법 */
+      /* 보관하는 방법 타이틀 공통*/
       .detail__section .item.eating__item {
         margin-top: 70px;
       }
 
-      .detail__section .item.eating__item .title__box {
+      .detail__section .item.eating__item .title__box,
+      .detail__section .item.keeping__item .title__box,
+      .detail__section .item.delivery__item .title__box,
+      .detail__section .item.trade__item .title__box {
         border-bottom: 1px solid var(--color-subText);
       }
 
-      .detail__section .item.eating__item .title__box .title {
+      .detail__section .item.eating__item .title__box .title,
+      .detail__section .item.keeping__item .title__box .title,
+      .detail__section .item.delivery__item .title__box .title,
+      .detail__section .item.trade__item .title__box .title {
         padding: 15px 0;
         font-size: var(--font-size-35);
         line-height: var(--line-height-35);
         font-weight: 700;
       }
 
-      .detail__section .item.eating__item .content__boxes {
+      .detail__section .item.eating__item .content__boxes,
+      .detail__section .item.keeping__item .content__boxes {
         display: flex;
         margin-top: 50px;
       }
 
-      .detail__section .item.eating__item .content__boxes .content {
+      .detail__section .item.eating__item .content__boxes .content,
+      .detail__section .item.keeping__item .content__boxes .content {
         flex: 1 1 0%;
         margin-right: 5%;
 
       }
 
-      .detail__section .item.eating__item .content__boxes .content .content__title__box {
+      .detail__section .item.eating__item .content__boxes .content .content__title__box,
+      .detail__section .item.keeping__item .content__boxes .content .content__title__box {
         position: relative;
         margin-top: 60px;
       }
 
-      .detail__section .item.eating__item .content__boxes .content .content__title__box .icon {
+      .detail__section .item.eating__item .content__boxes .content .content__title__box .icon,
+      .detail__section .item.keeping__item .content__boxes .content .content__title__box .icon {
         position: absolute;
         top: -70px;
       }
 
-      .detail__section .item.eating__item .content__boxes .content .content__title__box .icon img {
+      .detail__section .item.eating__item .content__boxes .content.left .content__title__box .icon {
+        top: -55px;
+      }
+
+      .detail__section .item.keeping__item .content__boxes .content.right .content__title__box .icon {
+        top: -65px;
+      }
+
+      .detail__section .item.eating__item .content__boxes .content .content__title__box .icon img,
+      .detail__section .item.keeping__item .content__boxes .content .content__title__box .icon img {
         display: flex;
       }
 
-      .detail__section .item.eating__item .content__boxes .content .content__title__box .title {
+      .detail__section .item.eating__item .content__boxes .content .content__title__box .title,
+      .detail__section .item.keeping__item .content__boxes .content .content__title__box .title {
         font-size: var(--font-size-25);
         line-height: var(--line-height-25);
         font-weight: 500;
@@ -998,6 +1186,93 @@
         font-size: var(--font-size-16);
         line-height: var(--line-height-16);
       }
+
+      /* 보관하는 방법 */
+      .detail__section .item.keeping__item,
+      .detail__section .item.trade__item,
+      .detail__section .item.delivery__item {
+        margin-top: 130px;
+      }
+
+      .detail__section .item.keeping__item .title__box .text {
+        font-size: var(--font-size-20);
+        line-height: var(--line-height-20);
+        color: var(--color-text);
+        margin-bottom: 15px;
+      }
+
+      .detail__section .item.keeping__item .content__boxes .content .content__text__box {
+        margin-top: 25px;
+      }
+
+      .detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list {
+        margin-top: 50px;
+      }
+
+      .detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list .title {
+        font-size: var(--font-size-20);
+        line-height: var(--line-height-20);
+        font-weight: 700;
+        color: var(--color-text);
+      }
+
+      .detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list .text {
+        font-size: var(--font-size-18);
+        line-height: var(--line-height-18);
+        color: var(--color-text);
+        margin-top: 10px;
+      }
+
+      .detail__section .item.keeping__item .content__boxes .content .content__text__box .content__list .detail {
+        font-size: var(--font-size-16);
+        line-height: var(--line-height-16);
+        color: var(--color-tmp1);
+        margin-top: 5px;
+      }
+
+      /* 배송 안내 */
+      /* 교환 및 반품 안내 */
+      .detail__section .item.delivery__item .content__boxes,
+      .detail__section .item.trade__item .content__boxes {
+        margin-top: 35px;
+      }
+
+      .detail__section .item.delivery__item .content__boxes .content__list,
+      .detail__section .item.trade__item .content__boxes .content__list {
+        margin-top: 40px;
+      }
+
+      .detail__section .item.delivery__item .content__boxes .content__list .content__title {}
+
+      .detail__section .item.delivery__item .content__boxes .content__list .content__title .title,
+      .detail__section .item.trade__item .content__boxes .content__list .content__title .title {
+        font-size: var(--font-size-25);
+        line-height: var(--line-height-25);
+        color: var(--color-main);
+        font-weight: 500;
+      }
+
+      .detail__section .item.delivery__item .content__boxes .content__list .content__text,
+      .detail__section .item.trade__item .content__boxes .content__list .content__text {
+        margin-top: 20px;
+      }
+
+      .detail__section .item.delivery__item .content__boxes .content__list .content__text .text,
+      .detail__section .item.trade__item .content__boxes .content__list .content__text .text {
+        margin-bottom: 15px;
+        font-size: var(--font-size-20);
+        line-height: var(--line-height-20);
+        color: var(--color-text);
+        word-break: keep-all;
+      }
+
+      .detail__section .item.delivery__item .content__boxes .content__list .content__text .detail,
+      .detail__section .item.trade__item .content__boxes .content__list .content__text .detail {
+        font-size: var(--font-size-18);
+        line-height: var(--line-height-18);
+        color: var(--color-tmp1);
+        margin-top: 10px;
+      }
     </style>
     <section class="detail__section">
       <div class="container">
@@ -1027,7 +1302,7 @@
                   <p class="title">맛있게 먹이는 방법</p>
                 </div>
                 <div class="content__boxes">
-                  <div class="content">
+                  <div class="content left">
                     <div class="content__title__box">
                       <div class="icon">
                         <img src="/assets/image/SHOPWEB_UR0102/microoven.png" alt="">
@@ -1051,7 +1326,7 @@
                     </div>
 
                   </div>
-                  <div class="content">
+                  <div class="content right">
                     <div class="content__title__box">
                       <div class="icon">
                         <img src="/assets/image/SHOPWEB_UR0102/hitting-pot.png" alt="">
@@ -1077,11 +1352,118 @@
                 </div>
               </div>
 
-            </div>
+              <!-- 보관하는 방법 -->
+              <div class="item keeping__item">
+                <div class="title__box">
+                  <p class="title">보관하는 방법</p>
+                  <p class="text">소중한 우리 아기 이유식 아래 보관방법을 반드시 지켜주세요!</p>
+                </div>
+                <div class="content__boxes">
+                  <div class="content left">
+                    <div class="content__title__box">
+                      <div class="icon">
+                        <img src="/assets/image/SHOPWEB_UR0102/cold.png" alt="냉장보관 이미지">
+                      </div>
+                      <p class="title point">냉장보관</p>
+                    </div>
+                    <div class="content__text__box">
+                      <div class="content__list">
+                        <p class="title">이유식 / 유아식(첫밥)</p>
+                        <p class="text">- 수령일로부터 13일 이내 섭취 권장</p>
+                      </div>
+                      <div class="content__list">
+                        <p class="title">유아식(반찬 · 국)</p>
+                        <p class="text">- 제조일로부터 7일 이내 섭취</p>
+                        <p class="detail">* 피클류는 14일 이내</p>
+                        <p class="detail">* 아이가 먹다 남은 이유식은 변질의 우려가 있으니 폐기해주세요.</p>
+                        <p class="detail">* 먹기 전 먹을 양만 덜어 먹이시고 냉장보관 해주세요.</p>
+                        <p class="detail">* 계절이나 보관상태에 따라 변질우려가 있으므로 섭취 전, 반드시 제품 상태를 확인해주세요.</p>
+                      </div>
+                    </div>
 
+                  </div>
+                  <div class="content right">
+                    <div class="content__title__box">
+                      <div class="icon">
+                        <img src="/assets/image/SHOPWEB_UR0102/frozen.png" alt="냉동보관 이미지">
+                      </div>
+                      <p class="title point">냉동보관</p>
+                    </div>
+                    <div class="content__text__box">
+                      <div class="content__list">
+                        <p class="title">이유식 / 유아식(첫밥)</p>
+                        <p class="text">- 냉동보관 하시는 경우 +7일 연장 보관 가능하므로 최장 보관 21일내 섭취 권장</p>
+                      </div>
+                      <div class="content__list">
+                        <p class="title">유아식(반찬 · 국)</p>
+                        <p class="text">- 부득이하게 냉동보관 하시는 경우 +7일 정도 연장 보관이 가능하나, 제품의 성상에 영향을 미칠 수 있으므로 가급적 냉장보관 권장</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 배송 안내 -->
+              <div class="item delivery__item">
+                <div class="title__box">
+                  <p class="title">배송 안내</p>
+                </div>
+                <div class="content__boxes">
+                  <div class="content__list">
+                    <div class="content__title">
+                      <p class="title">배송안내 및 주의사항</p>
+                    </div>
+                    <div class="content__text">
+                      <p class="text">1. 이유식 제품은 냉장 유통 상품으로 휴일 및 월요일에는 배송되지 않으며, 일부 도서산간 지역은 배송이 되지 않습니다.</p>
+                      <p class="text">2. 고객 연락 두절, 장기 부재, 배송지 및 연락처 오기재 등 고객 과실로 인한 미배송 및 반송은 당사에서 책임지지 않으니 주문시 배송지와
+                        연락처를 꼭 확인하시기 바랍니다.</p>
+                    </div>
+                  </div>
+                  <div class="content__list">
+                    <div class="content__title">
+                      <p class="title">상품군별 분리 배송 및 배송비 안내</p>
+                    </div>
+                    <div class="content__text">
+                      <p class="text">1. 정기 식단 주문 시 배송비 무료입니다.</p>
+                      <p class="text">2. 이유식 낱개 제품은 3만원 이상 구매시 무료 배송됩니다.</p>
+                      <p class="text">3. 이유식과 일반 상품은 합포장이 되지 않고 별도로 배송되며, 일반 상품의 택배 배송비가 부과될 수 있습니다.</p>
+                      <p class="detail">* 기본 배송료: 3,000 / 도서,산간,오지 일부 지역은 3,000~10,000 배송비가 추가 될 수 있습니다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 교환 및 반품 안내 -->
+              <div class="item trade__item">
+                <div class="title__box">
+                  <p class="title">교환 및 반품 안내</p>
+                </div>
+                <div class="content__boxes">
+                  <div class="content__list">
+                    <div class="content__title">
+                      <p class="title">교환, 반품, 환불</p>
+                    </div>
+                    <div class="content__text">
+                      <p class="text">1. 이유식은 고객님의 주문에 맞춰 생산하는 신선식품으로 재판매가 불가능한 제품 특성상 단순 변심에 의한 교환 및 반품은 불가하오니, 유념하여주시기
+                        바랍니다.</p>
+                      <p class="text">2. 당사의 귀책 사유로 인하여 제품의  파손이나 불량 등이 발생하여 교환/환불을 원하실 경우 상품 특성상 제품 수령 후 3일 이내로 고객센터로
+                        연락주시면 처리 가능합니다.</p>
+                    </div>
+                    <div class="content__list">
+                      <div class="content__title">
+                        <p class="title">주문 취소 및 교환 반품 안내</p>
+                      </div>
+                      <div class="content__text">
+                        <p class="text">1. 주문 취소 및 주소 변경 등 모든 변경 사항은 주문 마감 시간(배송일 D-2일 오후 5시)까지만 가능합니다.</p>
+                        <p class="text">2. 주문 마감 이후에는 취소 및 변경이 불가능하며 기타 문의는 1:1 문의나 고객센터로 연락 부탁드립니다.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </section>
 
 

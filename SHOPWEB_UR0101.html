@@ -18,7 +18,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 
   <!-- css 기본 속성 -->
   <link rel="stylesheet" href="../assets/css/base/_variable.css">
@@ -26,7 +27,7 @@
   <link rel="stylesheet" href="../assets/css/base/_normalize.css">
   <link rel="stylesheet" href="../assets/css/base/_reset.css">
 
-  
+
 </head>
 
 <body>
@@ -34,10 +35,10 @@
   <link rel="stylesheet" href="../assets/css/style/_baby-001.css">
   <article class="header_top">
     <a class="web-banner">신규가입 시, 배냇밀 이유식 2팩 <strong>무료체험 신청하기</strong></a>
-  
+
     <a class="mobile-banner">배냇밀 타임특가 구매하러가기</a>
   </article>
-  
+
   <!-- 페이지 공통 헤더 -->
   <header>
     <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
@@ -54,7 +55,7 @@
             <!-- 로고 영역 -->
             <div class="header_left">
               <h1 class="logo">
-                <a href="#" onclick="location.href='main.html'">
+                <a href="#" onclick="location.href='index.html'">
                   <img src="../assets/image/logo.png" alt="아이배냇">
                 </a>
               </h1>
@@ -230,7 +231,7 @@
               <div class="menu01 big_menu big ">
 
                 <!-- 임의로 페이지 이동 함수 추가 -->
-                <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button> 
+                <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button>
                 <div class="gnb_itemList drop01">
                   <p>이유식</p>
                   <a href="#">준비기(4-5개월)</a>
@@ -572,15 +573,16 @@
         border: transparent 1px solid;
 
       }
+
       .selector__section {
         display: none;
       }
+
       @media all and (max-width: 767px) {
-        .button__section{
+        .button__section {
           display: none;
         }
       }
-
     </style>
     <section class="button__section">
       <div class="container">
@@ -625,47 +627,55 @@
     <!-- 모바일 상단 월령별 셀렉터 -->
     <style>
       @media all and (max-width: 767px) {
-        .selector__section{
+        .selector__section {
           display: block;
         }
-        .selector__section .baby-monthly-guide{
+
+        .selector__section .baby-monthly-guide {
           position: relative;
         }
-        .selector__section .baby-monthly-guide .select-box{
+
+        .selector__section .baby-monthly-guide .select-box {
           background-color: var(--color-main);
         }
-        .selector__section .baby-monthly-guide .select-box .selected{
+
+        .selector__section .baby-monthly-guide .select-box .selected {
           display: flex;
           justify-content: center;
           align-items: center;
         }
-        .selector__section .baby-monthly-guide .select-box .selected .text{
+
+        .selector__section .baby-monthly-guide .select-box .selected .text {
           font-size: var(--font-size-25);
           color: var(--color-white);
           font-weight: 500;
           padding: 20px 0;
         }
-        .selector__section .baby-monthly-guide .select-box .selected img{
+
+        .selector__section .baby-monthly-guide .select-box .selected img {
           margin-left: 10px;
           margin-top: 3px;
         }
-        .selector__section .baby-monthly-guide.active .option-box{
+
+        .selector__section .baby-monthly-guide.active .option-box {
           display: block;
         }
-        .selector__section .baby-monthly-guide .option-box{
+
+        .selector__section .baby-monthly-guide .option-box {
           display: none;
           position: absolute;
           width: 100%;
           background-color: #fff;
           border-bottom: 1px solid #aaa;
         }
-        .selector__section .baby-monthly-guide .option-box .option-item{
+
+        .selector__section .baby-monthly-guide .option-box .option-item {
           display: flex;
         }
-        .selector__section .baby-monthly-guide .option-box .option-item.option-selected{
 
-        }
-        .selector__section .baby-monthly-guide .option-box .option-item .text{
+        .selector__section .baby-monthly-guide .option-box .option-item.option-selected {}
+
+        .selector__section .baby-monthly-guide .option-box .option-item .text {
           font-size: var(--font-size-18);
           color: var(--color-text);
           padding: 15px 0;
@@ -674,7 +684,8 @@
           border-bottom: 1px var(--color-footer-line) solid;
           text-align: center;
         }
-        .selector__section .baby-monthly-guide .option-box .option-item:last-of-type .text{
+
+        .selector__section .baby-monthly-guide .option-box .option-item:last-of-type .text {
           border-bottom: none;
         }
 
@@ -712,10 +723,10 @@
           <li class="option-item" value="중기 7-8개월">
             <span class="text">중기 7-8개월</span>
           </li>
-          <li class="option-item" value="후기 2식 9-10개월"> 
+          <li class="option-item" value="후기 2식 9-10개월">
             <span class="text">후기 2식 9-10개월</span>
           </li>
-          <li class="option-item" value="후기 3식 9-10개월"> 
+          <li class="option-item" value="후기 3식 9-10개월">
             <span class="text">후기 3식 9-10개월</span>
           </li>
           <li class="option-item" value="병행기 10-11개월">
@@ -843,7 +854,7 @@
         color: var(--color-white);
         text-align: center;
       }
-      
+
       .m-text {
         display: none;
       }
@@ -883,7 +894,8 @@
           padding-left: 0;
         }
 
-        .product__section .item-box .img-box, .product__section .item-box .info-box {
+        .product__section .item-box .img-box,
+        .product__section .item-box .info-box {
           width: 100%;
           margin-top: 30px;
           margin-bottom: 50px;
@@ -917,17 +929,19 @@
           font-size: var(--font-size-28);
           font-weight: 500;
         }
-        
+
       }
 
       /* 480 반응형 */
       @media all and (max-width: 480px) {
 
-        .product__section .item-box .info-box .detail__box .title__box .title, .product__section .item-box .info-box .detail__box .text__box .text__item .title {
+        .product__section .item-box .info-box .detail__box .title__box .title,
+        .product__section .item-box .info-box .detail__box .text__box .text__item .title {
           min-width: 90px;
         }
 
-        .product__section .item-box .img-box, .product__section .item-box .info-box {
+        .product__section .item-box .img-box,
+        .product__section .item-box .info-box {
           margin-top: 20px;
           margin-bottom: 30px;
         }
@@ -935,7 +949,7 @@
         .product__section .item-box .info-box .detail__box .title__box .title {
           font-size: var(--font-size-30);
         }
-        
+
         .product__section .item-box .info-box .detail__box .title__box .text {
           font-size: var(--font-size-22);
         }
@@ -966,7 +980,6 @@
           font-size: var(--font-size-22);
         }
       }
-
     </style>
     <section class="product__section">
       <div class="container">
@@ -1078,6 +1091,7 @@
         padding: 0 35px;
         padding-top: 80px;
         background-position: right;
+        background-size: cover;
       }
 
       .detail__section .item.img__item .title__box {}
@@ -1322,7 +1336,7 @@
         color: var(--color-text);
         padding: 30px 0;
         text-align: center;
-        
+
       }
 
       .detail__section .item.link__item {
@@ -1367,7 +1381,8 @@
 
       @media all and (max-width: 1024px) {
         .detail__section .item.img__item .title__box .title {
-          font-size: var(--font-size-35);;
+          font-size: var(--font-size-35);
+          ;
         }
 
         .detail__section .item.img__item .content__box .text {
@@ -1383,16 +1398,19 @@
 
 
       @media all and (max-width: 767px) {
-        .detail__section .item.step__item .table__box .thead__box .tr .tr__title__box.for-line{
+        .detail__section .item.step__item .table__box .thead__box .tr .tr__title__box.for-line {
           border-right: 1px var(--color-trLine) solid;
         }
-        .detail__section{
-            margin-top: 20px;
-          }
+
+        .detail__section {
+          margin-top: 20px;
+        }
+
         .detail__section .item.img__item {
           min-height: 640px;
           padding-top: 60px;
         }
+
         .detail__section .item.img__item .title__box .text {
           font-size: var(--font-size-22);
         }
@@ -1404,9 +1422,9 @@
 
         .detail__section .item.process__item {
           margin-top: 80px;
-         }
+        }
 
-         .detail__section .item.process__item .title__box .text {
+        .detail__section .item.process__item .title__box .text {
           font-size: var(--font-size-20);
         }
 
@@ -1516,14 +1534,15 @@
           padding: 20px 15px;
         }
 
-        .detail__section .item.schedule__item .table__box .tr .tr__title__box.tr-title-big{
+        .detail__section .item.schedule__item .table__box .tr .tr__title__box.tr-title-big {
           width: 50%;
         }
 
         @media all and (max-width: 480px) {
-          .detail__section .item.step__item .table__box .thead__box .tr .tr__title__box .title{
+          .detail__section .item.step__item .table__box .thead__box .tr .tr__title__box .title {
             padding: 15px 0;
           }
+
           .detail__section .item.img__item {
             min-height: 440px;
             padding: 30px 20px;
@@ -1532,12 +1551,12 @@
           .detail__section .item.img__item .title__box .text {
             font-size: var(--font-size-20);
           }
-          
+
           .detail__section .item.img__item .title__box .title {
             margin-top: 10px;
             font-size: var(--font-size-22);
           }
-          
+
           .detail__section .item.img__item .content__box .text {
             font-size: var(--font-size-18);
           }
@@ -1551,7 +1570,7 @@
             padding-left: 30px;
           }
 
-          .detail__section .item.schedule__item .table__box .tr .column__box .col .tr__text__box .text{
+          .detail__section .item.schedule__item .table__box .tr .column__box .col .tr__text__box .text {
             padding-left: 30px;
           }
 
@@ -1564,12 +1583,11 @@
           }
 
           .detail__section .item.link__item .button__box .button {
-            height:105px;
+            height: 105px;
           }
         }
 
       }
-      
     </style>
     <section class="detail__section">
       <div class="container">
@@ -2042,7 +2060,7 @@
     let optionBox = document.querySelector('.selector__section .baby-monthly-guide');
 
 
-    selectMenu.addEventListener('click', ()=>optionBox.classList.toggle('active'))
+    selectMenu.addEventListener('click', () => optionBox.classList.toggle('active'))
 
   </script>
   <script src="../assets/js/dropdown.js"></script>

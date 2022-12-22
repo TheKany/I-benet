@@ -73,17 +73,18 @@
 /* 목록 css */
 .hot_item_container {
   display: inline-flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 
 .hot_item_each {
-  position: relative;
   display: block;
-  padding-right: 20px;
-  padding-bottom: 50px;
+  position: relative;
   width: 25%
+}
+
+.hot_item_each:nth-child(4n) {
+  padding-right: 0;
 }
 
 .item_img {
@@ -140,10 +141,12 @@
 .item_title {
   display: -webkit-box;
   color: var(--color-text);
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
 }
 
 .item_subTitle{
@@ -152,7 +155,7 @@
   letter-spacing: var(--letter-spacing-14);
   color: var(--color-tmp1);
   text-overflow: ellipsis;
-  height: 50px;
+  min-height: 50px;
 }
 
 .item_subTitle .is-text {
@@ -161,11 +164,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: var(--font-size-14);
+  line-height: normal;
 }
 
 .item_price {
   display: flex;
-  margin-top: 20px;
+  margin-top: 5px;
   justify-content: space-between;
 }
 
@@ -238,6 +242,8 @@
 .view-more{
   display: none;
 }
+
+
 
 @media all and (max-width: 1024px) {
 
