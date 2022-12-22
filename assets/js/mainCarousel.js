@@ -1,5 +1,4 @@
-
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   // 메인 캐러셀 슬릭
   {
     let carouselIndexItem = document.querySelectorAll('.carousel-box .item');
@@ -238,8 +237,10 @@ window.addEventListener('DOMContentLoaded', () => {
       focusOnSelect: true,
     });
 
-    popupCloseBtn.addEventListener('click', () => {
-      popUp.remove()
-    })
+    if (popupCloseBtn) {
+      popupCloseBtn.addEventListener('click', () => {
+        popUp.remove()
+      })
+    }
   }
 })
