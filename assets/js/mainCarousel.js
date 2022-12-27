@@ -243,4 +243,11 @@ window.addEventListener('load', () => {
       })
     }
   }
+
+  //사이드박스 캐러셀
+  {
+    $('.side__slick').slick({
+
+    });
+  }
 })
