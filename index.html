@@ -518,38 +518,62 @@
   </header>
 
   <!-- 페이지 공통 사이드 -->
+  <!-- script 하단에 기입 -->
   <link rel="stylesheet" href="/assets/css/style/_side.css">
-  <div class="side__bar">
+  <div id="sidebar" class="side__bar ">
     <div class="side__btn">
-
+      <div id="side_open_btn" class="right__btn__box btn__box">
+        <img src="/assets/icon/left_arrow.png" alt="">
+      </div>
+      <div class="top__btn__box btn__box">
+        <img src="/assets/icon/up_arrow.png" alt="">
+      </div>
+      <div class="down__btn__box btn__box">
+        <img src="/assets/icon/down_arrow.png" alt="">
+      </div>
     </div>
     <div class="side__box">
-      <div class="slick__box side__slick">
-        <div class="side__slick__item">
-          <div class="text__box">
-            <span class="text">TODAY VIEW</span>
-            <span class="number">3</span>
+      <div class="slick__box">
+        <div class="side__slick">
+          <div class="side__slick__item">
+            <div class="text__box">
+              <span class="text">TODAY VIEW</span>
+              <span class="number">3</span>
+            </div>
+            <div class="img__box">
+              <img src="/assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지">
+            </div>
           </div>
-          <div class="img__box">
-            <img src="/assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지">
+          <div class="side__slick__item">
+            <div class="text__box">
+              <span class="text">TODAY VIEW</span>
+              <span class="number">3</span>
+            </div>
+            <div class="img__box">
+              <img src="/assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지">
+            </div>
+          </div>
+          <div class="side__slick__item">
+            <div class="text__box">
+              <span class="text">TODAY VIEW</span>
+              <span class="number">3</span>
+            </div>
+            <div class="img__box">
+              <img src="/assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지">
+            </div>
           </div>
         </div>
-        <div class="side__slick__item">
-          <div class="text__box">
-            <span class="text">TODAY VIEW</span>
-            <span class="number">3</span>
+        <div class="arrow__box">
+          <div class="left__arrow side__arrow">
+            <img src="/assets/icon/left_arrow.png" alt="">
           </div>
-          <div class="img__box">
-            <img src="/assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지">
+          <div class="page__number">
+            <p class="text current__number">1</p>
+            <p class="text devide">/</p>
+            <p class="text total__number"></p>
           </div>
-        </div>
-        <div class="side__slick__item">
-          <div class="text__box">
-            <span class="text">TODAY VIEW</span>
-            <span class="number">3</span>
-          </div>
-          <div class="img__box">
-            <img src="/assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지">
+          <div class="right__arrow side__arrow">
+            <img src="/assets/icon/right_arrow.png" alt="">
           </div>
         </div>
       </div>
@@ -571,10 +595,10 @@
         </div>
         <div class="sns__box">
           <a href="" class="link">
-            <img src="/assets/icon/footer_insta.png" alt="">
+            <img src="/assets/icon/insta_black.png" alt="">
           </a>
           <a href="" class="link">
-            <img src="/assets/icon/footer_naver.png" alt="">
+            <img src="/assets/icon/naver_black.png" alt="">
           </a>
         </div>
       </div>
@@ -1766,6 +1790,7 @@
   <script src="../assets/js/dropdown.js"></script>
   <script src="../assets/js/mainCarousel.js"></script>
   <script src="../assets/js/tmp.js"></script>
+  <script src="../assets/js/sidebar.js"></script>
 
 
 </body>
