@@ -520,10 +520,89 @@
             </div>
         </section> -->
 
+        <style>
+            .customer-centre {
+                margin: 0;
+            }
+
+            .customer-centre .cc-gnb {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .customer-centre .cc-gnb .cc-title {
+                display: block;
+                text-align: center;
+                font-size: var(--font-size-34);
+                line-height: var(--line-height-34);
+                margin: 50px 0;
+                font-weight: 500;
+                color: var(--color-text);
+            }
+
+            .customer-centre .cc-gnb .cc-button-group {
+                display: flex;
+            }
+
+            .customer-centre .cc-gnb .cc-button-group .cc-button {
+                display: flex;
+                margin-right: 15px;
+            }
+
+            .customer-centre .cc-gnb .cc-button-group .cc-button:last-of-type {
+                margin-right: 0;
+            }
+
+            .customer-centre .cc-gnb .cc-button-group .cc-button .text {
+                min-width: 235px;
+                min-height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f3f3f3;
+                font-size: var(--font-size-15);
+                color: var(--color-text);
+                border-radius: 50px;
+                line-height: var(--line-height-16);
+
+            }
+
+            .customer-centre .cc-gnb .cc-button-group .cc-button .text.active {
+                background-color: #fa9bb1;
+                color: var(--color-white);
+            }
+        </style>
+        <section class="customer-centre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1200">
+                        <div class="cc-gnb">
+                            <h2 class="cc-title">고객센터</h2>
+                            <div class="cc-button-group">
+                                <a href="" class="cc-button">
+                                    <p class="text active">공지사항</p>
+                                </a>
+                                <a href="" class="cc-button">
+                                    <p class="text">1:1문의하기</p>
+                                </a>
+                                <a href="" class="cc-button">
+                                    <p class="text">FAQ</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- 공지사항 상세글 -->
         <style>
-            .table__section {}
+            .table__section {
+                margin-top: 50px;
+                margin-bottom: 100px;
+            }
 
             .table__section .type__title__box {}
 
@@ -599,6 +678,7 @@
             .table__section .board__list__box .board__sub__box {
                 border-top: 1px solid var(--color-footer-line);
                 padding: 15px 0;
+                padding-top: 30px;
                 display: flex;
                 justify-content: flex-end;
             }

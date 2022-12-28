@@ -531,62 +531,74 @@
   <main>
 
     <style>
-    
-    .customer-centre {
-      margin: 0;
-    }
+      .customer-centre {
+        margin: 0;
+      }
 
-    .customer-centre .cc-gnb {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 45px;
-    }
+      .customer-centre .cc-gnb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
 
-    .customer-centre .cc-gnb .cc-title {
-      display: block;
-      text-align: center;
-      font-size: var(--font-size-34);
-      margin: 50px 0;
-      font-weight: 400;
-      color: var(--color-text);
-    }
+      .customer-centre .cc-gnb .cc-title {
+        display: block;
+        text-align: center;
+        font-size: var(--font-size-34);
+        line-height: var(--line-height-34);
+        margin: 50px 0;
+        font-weight: 500;
+        color: var(--color-text);
+      }
 
-    .customer-centre .cc-gnb .cc-button-group {
-      display: flex;
-    }
+      .customer-centre .cc-gnb .cc-button-group {
+        display: flex;
+      }
 
-    .customer-centre .cc-gnb .cc-button-group .cc-button {
-      min-width: 235px;
-      min-height: 50px;
-    }
+      .customer-centre .cc-gnb .cc-button-group .cc-button {
+        display: flex;
+        margin-right: 15px;
+      }
 
-    .customer-centre .cc-gnb .cc-button-group .cc-button .text{
-      background-color: #f3f3f3;
-      font-size: var(--font-size-15);
-      color: var(--color-text);
-      border-radius: 50px;
-      padding: 10px 70px;
-    }
+      .customer-centre .cc-gnb .cc-button-group .cc-button:last-of-type {
+        margin-right: 0;
+      }
 
-    .customer-centre .cc-gnb .cc-button-group .cc-button .text.active {
-      background-color: #fa9bb1;
-      font-size: var(--font-size-15);
-      color: var(--color-white);
-    }
+      .customer-centre .cc-gnb .cc-button-group .cc-button .text {
+        min-width: 235px;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f3f3;
+        font-size: var(--font-size-15);
+        color: var(--color-text);
+        border-radius: 50px;
+        line-height: var(--line-height-16);
 
+      }
+
+      .customer-centre .cc-gnb .cc-button-group .cc-button .text.active {
+        background-color: #fa9bb1;
+        color: var(--color-white);
+      }
     </style>
     <section class="customer-centre">
       <div class="container">
         <div class="row">
           <div class="col-lg-1200">
-
             <div class="cc-gnb">
               <h2 class="cc-title">고객센터</h2>
               <div class="cc-button-group">
-                <button class="cc-button"><p class="text active">공지사항</p></button>
-                <button class="cc-button"><p class="text">1:1문의하기</p></button>
-                <button class="cc-button"><p class="text">FAQ</p></button>
+                <a href="" class="cc-button">
+                  <p class="text active">공지사항</p>
+                </a>
+                <a href="" class="cc-button">
+                  <p class="text">1:1문의하기</p>
+                </a>
+                <a href="" class="cc-button">
+                  <p class="text">FAQ</p>
+                </a>
               </div>
             </div>
 
@@ -720,4 +732,5 @@
   <script src="./assets/js/mainCarousel.js"></script>
 
 </body>
+
 </html>
