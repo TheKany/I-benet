@@ -571,13 +571,13 @@
                             <h2 class="cc-title">고객센터</h2>
                             <div class="cc-button-group">
                                 <a href="/SHOPWEB_US06MAIN.html" class="cc-button">
-                                    <p class="text active">공지사항</p>
+                                    <p class="text ">공지사항</p>
                                 </a>
                                 <a href="" class="cc-button">
                                     <p class="text">1:1문의하기</p>
                                 </a>
                                 <a href="/SHOPWEB_US0611.html" class="cc-button">
-                                    <p class="text">FAQ</p>
+                                    <p class="text active">FAQ</p>
                                 </a>
                             </div>
                         </div>
@@ -587,147 +587,139 @@
             </div>
         </section>
 
-        <!-- 공지사항 상세글 -->
+        <!-- FAQ 검색 -->
         <style>
-            .table__section {
+            .faq__search__box {
                 margin-top: 50px;
-                margin-bottom: 100px;
             }
 
-            .table__section .type__title__box {}
-
-            .table__section .type__title__box .title {}
-
-            .table__section .board__list__box {}
-
-            .table__section .board__list__box .board__list__name {
+            .faq__search__box .search__box__wrap {
+                background-color: #fafafa;
                 display: flex;
-                justify-content: center;
+                flex-wrap: wrap;
             }
 
-            .table__section .board__list__box .board__list__name .title {
-                font-size: var(--font-size-25);
-                line-height: var(--line-height-25);
+            .faq__search__box .search__box__wrap .search__input__box {
+                width: 50%;
+                padding: 50px;
             }
 
-            .table__section .board__list__box .board__content {}
-
-            .table__section .board__list__box .board__content .board__title {
-                border-top: 1px solid #333;
-                margin-top: 30px;
-                padding: 30px 0;
+            .faq__search__box .search__box__wrap .search__input__box .search__input__title {
                 display: flex;
-                justify-content: center;
+                align-items: center;
+
+
             }
 
-            .table__section .board__list__box .board__content .board__title .title {
-                font-size: var(--font-size-30);
-                line-height: var(--line-height-30);
-                font-weight: 500;
+            .faq__search__box .search__box__wrap .search__input__box .search__input__title img {
+                margin-top: 3px;
+                margin-right: 10px;
             }
 
-            .table__section .board__list__box .board__content .board__info {
-                display: flex;
-                padding: 15px 20px;
-                background-color: #f1f1f1;
-                border-radius: 5px;
-            }
-
-            .table__section .board__list__box .board__content .board__info .info__item {
-                margin-right: 15px;
-                padding-right: 15px;
-                border-right: 1px solid #ddd;
-            }
-
-            .table__section .board__list__box .board__content .board__info .text {
-                font-size: var(--font-size-16);
-                line-height: var(--line-height-16);
+            .faq__search__box .search__box__wrap .search__input__box .search__input__title .title {
+                font-size: var(--font-size-22);
+                line-height: var(--line-height-22);
                 color: var(--color-text);
             }
 
-            .table__section .board__list__box .board__content .board__info .author {}
-
-            .table__section .board__list__box .board__content .board__info .author .text {}
-
-            .table__section .board__list__box .board__content .board__info .date {}
-
-            .table__section .board__list__box .board__content .board__info .date .text {}
-
-            .table__section .board__list__box .board__content .board__info .view {
+            .faq__search__box .search__box__wrap .search__input__box .search__input {
                 display: flex;
+                margin-top: 30px;
+                background-color: #fff;
             }
 
-            .table__section .board__list__box .board__content .board__info .view .text {}
-
-            .table__section .board__list__box .board__content .board__info .view .text.number {}
-
-            .table__section .board__list__box .board__content .content {
-                padding: 40px 0;
-            }
-
-            .table__section .board__list__box .board__sub__box {
-                border-top: 1px solid var(--color-footer-line);
-                padding: 15px 0;
-                padding-top: 30px;
+            .faq__search__box .search__box__wrap .search__input__box .search__input form {
                 display: flex;
-                justify-content: flex-end;
+                width: 100%;
             }
 
-            .table__section .board__list__box .board__sub__box .list__button {}
-
-            .table__section .board__list__box .board__sub__box .list__button .text {
+            .faq__search__box .search__box__wrap .search__input__box .search__input input {
+                width: 100%;
+                border: 1px solid var(--color-footer-line);
+                padding: 10px 15px;
                 font-size: var(--font-size-16);
-                line-height: var(--line-height-16);
-                border: 1px solid #aaa;
-                padding: 10px 30px;
-                /* background-color: var(--color-info); */
-
+                font-weight: 300;
             }
+
+            .faq__search__box .search__box__wrap .search__input__box .search__input button {
+                background-color: var(--color-main);
+                min-width: 43px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .faq__search__box .search__box__wrap .search__input__box .search__input button img {}
+
+            .faq__search__box .search__box__wrap .inquiry__button__box {
+                width: 50%;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title {}
+
+            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title .title {
+                font-size: var(--font-size-22);
+                line-height: var(--line-height-22);
+                color: var(--color-text);
+            }
+
+            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button {
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button .link {
+                font-size: var(--font-size-14);
+                line-height: var(--line-height-14);
+                border: 1px solid #ccc;
+                background-color: #fff;
+                padding: 7px 30px;
+            }
+
+            /*  */
         </style>
-        <section class="table__section">
+        <section class="faq__search__box">
             <div class="container">
                 <div class="col-lg-1200">
-                    <div class="type__title__box">
-                        <p class="title"></p>
-                    </div>
-                    <div class="board__list__box">
-                        <div class="board__list__name">
-                            <p id="board__type__name" class="title">공지사항</p>
-                        </div>
-                        <div class="board__content">
-                            <div class="board__title">
-                                <p class="title">[당첨자발표] 크리스마스 과자파티 구매이벤트</p>
+                    <div class="search__box__wrap">
+                        <div class="search__input__box">
+                            <div class="search__input__title">
+                                <img src="../assets/icon/ico_question.png" alt="">
+                                <p class="title">자주묻는 질문 검색</p>
                             </div>
-                            <div class="board__info">
-                                <div class="info__item author">
-                                    <p class="text">관리자</p>
-                                </div>
-                                <div class="info__item date">
-                                    <p class="text">2022.12.22 16:41:25</p>
-                                </div>
-                                <div class="info__item view">
-                                    <p class="text">조회수</p>
-                                    <p class="text number">29</p>
-                                </div>
-                            </div>
-                            <div id="content" class="content">
-                                [내용 들어가는 곳]
+                            <div class="search__input">
+                                <form action="">
+                                    <input type="text" placeholder="검색어를 입력하세요">
+                                    <button type="submit">
+                                        <img src="../assets/icon/search_addr.png" alt="">
+                                    </button>
+                                </form>
                             </div>
                         </div>
-                        <div class="board__sub__box">
-                            <div class="right list__button">
-                                <button class="text">목록</button>
+                        <div class="inquiry__button__box">
+                            <div class="inquiry__button__title">
+                                <p class="title">찾으시는 질문이 없으시다면 1:1 문의를 남겨주세요</p>
+                            </div>
+                            <div class="inquiry__button">
+                                <a href="" class="link">1:1 문의</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- FAQ 리스트 -->
+
+
     </main>
 
     <footer>
         <!-- footer 정보 부분 -->
-        <link rel="stylesheet" href="./assets/css/style/baby-footer.css">
+        <link rel=" stylesheet" href="./assets/css/style/baby-footer.css">
         <div class="footer01">
             <div class="container">
                 <div class="row">
