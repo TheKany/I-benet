@@ -57,6 +57,10 @@
   --line-height-23: 28px;
   --letter-spacing-23: -0.01em;
 
+  --font-size-24: 24px;
+  --line-height-24: 29px;
+  --letter-spacing-24: -0.01em;
+
   --font-size-25: 25px;
   --line-height-25: 30px;
   --letter-spacing-25: -0.01em;
@@ -157,6 +161,10 @@
     --font-size-23: calc(23px - var(--rp-font));
     --line-height-23: 28px;
     --letter-spacing-23: -0.01em;
+
+    --font-size-24: calc(24px - var(--rp-font));
+    --line-height-24: 29px;
+    --letter-spacing-24: -0.01em;
   
     --font-size-25: calc(25px - var(--rp-font));
     --line-height-25: 30px;
@@ -224,6 +232,10 @@
     --font-size-23: calc(23px - var(--rp-font));
     --line-height-23: 28px;
     --letter-spacing-23: -0.01em;
+    
+    --font-size-24: calc(24px - var(--rp-font));
+    --line-height-24: 29px;
+    --letter-spacing-24: -0.01em;
   
     --font-size-25: calc(25px - var(--rp-font));
     --line-height-25: 30px;
@@ -291,6 +303,10 @@
   --font-size-23: 1.278rem;
   --line-height-23: 28px;
   --letter-spacing-23: -0.01em;
+
+  --font-size-24: 1.333rem;
+  --line-height-24: 29px;
+  --letter-spacing-24: -0.01em;
 
   --font-size-25: 1.389rem;
   --line-height-25: 30px;
@@ -361,6 +377,10 @@
   --font-size-22: calc(22px - var(--rp-font));
   --line-height-22: calc(27px - var(--rp-font));
   --letter-spacing-22: -0.01em;
+
+  --font-size-24: calc(24px - var(--rp-font));
+  --line-height-24: calc(28px - var(--rp-font));
+  --letter-spacing-24: -0.01em;
 
   --font-size-23: calc(23px - var(--rp-font));
   --line-height-23: calc(28px - var(--rp-font));

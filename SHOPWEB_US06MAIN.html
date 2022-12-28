@@ -32,6 +32,15 @@
 </head>
 
 <body>
+  <!-- 공통 컨텐츠 영역  -->
+  <style>
+    .col-lg-1200 {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+
   <!-- 최상단 배너 | css-Number : /_baby-001.css -->
   <link rel="stylesheet" href="./assets/css/style/_baby-001.css">
   <article class="header_top">
@@ -548,12 +557,12 @@
       text-align: center;
       font-size: var(--font-size-34);
       margin: 50px 0;
-      font-weight: 400;
       color: var(--color-text);
     }
 
     .customer-centre .cc-gnb .cc-button-group {
       display: flex;
+      justify-content: center;
     }
 
     .customer-centre .cc-gnb .cc-button-group .cc-button {
@@ -575,6 +584,153 @@
       color: var(--color-white);
     }
 
+    .customer-centre .cc-notice {
+      width: 100%;
+
+    }
+
+    .customer-centre .cc-notice .notice-title {
+      display: flex;
+      justify-content: center;
+      font-size: var(--font-size-24);
+      margin-bottom: 30px;
+      color: var(--color-text);
+    }
+    
+    .customer-centre .cc-notice .notice-board {
+      border-top: 1px solid var(--color-black);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .customer-centre .cc-notice .notice-board .notice-tr {
+      display: flex;
+      flex: auto;
+    }
+
+    .customer-centre .cc-notice .notice-board .thead {
+      border-bottom: 1px solid #e6e6e6;
+      width: 100%;
+    }
+
+    .customer-centre .cc-notice .notice-board .thead .thead-tr {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .customer-centre .cc-notice .notice-board .thead-tr .thead-th{
+      padding: 20px 10px;
+      font-size: var(--font-size-14);
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    .customer-centre .cc-notice .notice-board .tbody-tr {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .customer-centre .cc-notice .notice-board .tbody-tr .tbody-td {
+      padding: 20px 10px;
+      font-size: 14px;
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    .customer-centre .cc-notice .notice-board .tbody-tr .tbody-td a {
+      padding: 20px 10px;
+      font-size: 14px;
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    .customer-centre .cc-notice .notice-pagnation {
+      display: block;
+      margin-bottom: 70px;
+    }
+    
+    .customer-centre .cc-notice .notice-pagnation .pagnation-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    .customer-centre .cc-notice .notice-pagnation .pagnation-list .pagnation-item {
+      display: flex;
+      border: 1px solid #e6e6e6;
+      border-radius: 50px;
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-centre .cc-notice .notice-pagnation .pagnation-list .pagnation-item.active {
+      background-color: var(--color-main);
+      color: var(--color-white);
+    }
+
+    .customer-centre .cc-notice .notice-pagnation .pagnation-list .pagnation-item a {
+      font-size: var(--font-size-15);
+      padding: 0;
+      margin: 0;
+    }
+
+    .customer-centre .cc-notice .notice-search {
+      display: block;
+    }
+
+    .customer-centre .cc-notice .notice-search #notice-form {
+      display: flex;
+      justify-content: center;
+      height: 42px;
+    }
+
+    .customer-centre .cc-notice .notice-search #notice-form .search-selector {
+      display: flex;
+      height: 100%;
+      width: 150px;
+      border: 1px solid #ccc;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-centre .cc-notice .notice-search #notice-form .search-selector p {
+      font-size: var(--font-size-14);
+      color: var(--color-text);
+    }
+
+    .customer-centre .cc-notice .notice-search #notice-form .search-selector img {
+      position: absolute;
+      top: 17px;
+      right: 5px;
+      width: 8%;
+    }
+
+    .customer-centre .cc-notice .notice-search #notice-form .input-group {
+      position: relative;
+      margin-left: 5px;
+    }
+
+    .customer-centre .cc-notice .notice-search #notice-form .input-group .input-btn {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+
+    .customer-centre .cc-notice .notice-search #notice-form .input-group input[type= 'text'] {
+      width: 420px;
+      height: 100%;
+      border: 1px solid #ccc;
+      font-size: var(--font-size-12);
+    }
+
     </style>
     <section class="customer-centre">
       <div class="container">
@@ -588,6 +744,68 @@
                 <button class="cc-button"><p class="text">1:1문의하기</p></button>
                 <button class="cc-button"><p class="text">FAQ</p></button>
               </div>
+            </div>
+
+            <div class="cc-notice">
+              <h3 class="notice-title">공지사항</h3>
+              
+              <div class="notice-board">
+                <div class="thead">
+                  <div class="thead-tr">
+                    <div class="thead-th">번호</div>
+                    <div class="thead-th">제목</div>
+                    <div class="thead-th">날짜</div>
+                    <div class="thead-th">작성자</div>
+                    <div class="thead-th">조회</div>
+                  </div>
+                </div>
+                <div class="tbody">
+                  <!-- one row -->
+                  <div class="tbody-tr">
+                    <div class="tbody-td">공지</div>
+                    <div class="tbody-td"><a href="#">[당첨자발표] 크리스마스 과자파티 구매이벤트</a></div>
+                    <div class="tbody-td"> 2022.12.22 </div>
+                    <div class="tbody-td"> 관리자 </div>
+                    <div class="tbody-td"> 29 </div>
+                  </div>
+
+                  <!-- one row -->
+                  <div class="tbody-tr">
+                    <div class="tbody-td">공지</div>
+                    <div class="tbody-td"><a href="#">[당첨자 발표] 준비기,초기 이벤트 당첨자안내(12월)</a></div>
+                    <div class="tbody-td"> 2022.12.27 </div>
+                    <div class="tbody-td"> 관리자 </div>
+                    <div class="tbody-td"> 6 </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="notice-pagnation">
+                <ol class="pagnation-list">
+                  <li class="pagnation-item active"><a href="#">1</a></li>
+                  <li class="pagnation-item"><a href="#">2</a></li>
+                  <li class="pagnation-item"><a href="#">3</a></li>
+                  <li class="pagnation-item"><a href="#">4</a></li>
+                  <li class="pagnation-item"><a href="#">5</a></li>
+                </ol>
+              </div>
+
+              <div class="notice-search">
+                <form id="notice-form" action="">
+                  <div class="search-selector">
+                    <p>제목</p>
+                    <img src="./assets/icon/down_arrow.png" alt="">
+                  </div>
+                  <div class="input-group">
+                    <input type="text">
+                    <button class="input-btn">
+                      <img src="./assets/icon/search_icon_black.png" alt="검색하기">
+                    </button>
+                  </div>
+                </form>
+              </div>
+
             </div>
 
           </div>
