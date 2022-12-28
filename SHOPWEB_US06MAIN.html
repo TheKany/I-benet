@@ -41,6 +41,12 @@
   </article>
 
   <!-- 페이지 공통 헤더 -->
+  <style>
+    /* 작업용 구분선 */
+    .gnb_main {
+      border-bottom: 1px solid var(--color-tmp1);
+    }
+  </style>
   <header>
     <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
     <link rel="stylesheet" href="./assets/css/style/_header-001.css">
@@ -523,9 +529,69 @@
   </header>
 
   <main>
-    <section class="location-wrap">
-      <i class="fa-solid fa-house"></i>
+
+    <style>
+    
+    .customer-centre {
+      margin: 0;
+    }
+
+    .customer-centre .cc-gnb {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .customer-centre .cc-gnb .cc-title {
+      display: block;
+      text-align: center;
+      font-size: var(--font-size-34);
+      margin: 50px 0;
+    }
+
+    .customer-centre .cc-gnb .cc-button-group {
+      display: flex;
+    }
+
+    .customer-centre .cc-gnb .cc-button-group .cc-button {
+      min-width: 235px;
+      min-height: 50px;
+    }
+
+    .customer-centre .cc-gnb .cc-button-group .cc-button .text{
+      background-color: #f3f3f3;
+      font-size: var(--font-size-15);
+      color: var(--color-text);
+      border-radius: 50px;
+      padding: 10px 70px;
+    }
+
+    .customer-centre .cc-gnb .cc-button-group .cc-button .text.active {
+      background-color: #fa9bb1;
+      font-size: var(--font-size-15);
+      color: var(--color-white);
+    }
+
+    </style>
+    <section class="customer-centre">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1200">
+
+            <div class="cc-gnb">
+              <h2 class="cc-title">고객센터</h2>
+              <div class="cc-button-group">
+                <button class="cc-button"><p class="text active">공지사항</p></button>
+                <button class="cc-button"><p class="text">1:1문의하기</p></button>
+                <button class="cc-button"><p class="text">FAQ</p></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <!-- footer 영역 | css-Number : /baby-footer.css -->
