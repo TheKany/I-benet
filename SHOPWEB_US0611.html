@@ -713,7 +713,160 @@
                 </div>
             </div>
         </section>
+
         <!-- FAQ 리스트 -->
+        <style>
+            .faq__list__box {
+                margin-top: 50px;
+                margin-bottom: 150px;
+            }
+
+            .faq__list__box .faq__list__title {}
+
+            .faq__list__box .faq__list__title .title {
+                font-size: var(--font-size-25);
+                line-height: var(--line-height-25);
+            }
+
+            .faq__list__box .faq__category__list {
+                margin-top: 15px;
+                padding-bottom: 25px;
+            }
+
+            .faq__list__box .faq__category__list .category__item.selected {
+                font-weight: 500;
+            }
+
+            .faq__list__box .faq__category__list .category__item {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                margin-right: 30px;
+            }
+
+            .faq__list__box .faq__board__box {}
+
+            .faq__list__box .faq__board__box .faq__row__head {
+                border-top: 1px solid #333;
+                border-bottom: 1px solid var(--color-footer-line);
+                padding: 20px 0;
+            }
+
+            .faq__list__box .faq__board__box .faq__row__head .faq__row {
+                display: flex;
+            }
+
+            .faq__list__box .faq__board__box .faq__row__head .faq__row .title {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                font-weight: 500;
+            }
+
+            .faq__list__box .faq__board__box .faq__row .index {
+                max-width: 80px;
+                width: 100%;
+                padding: 0 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .faq__list__box .faq__board__box .faq__row .type {
+                max-width: 150px;
+                width: 100%;
+                padding: 0 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .faq__list__box .faq__board__box .faq__row .content {
+                flex: 1 1 0%;
+                padding: 0 10px;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .faq__list__box .faq__board__box .faq__row__body {}
+
+            .faq__list__box .faq__board__box .faq__row__body {}
+
+            .faq__list__box .faq__board__box .faq__row__body .row__item {}
+
+            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question {
+                display: flex;
+                padding: 20px 0;
+                border-bottom: 1px solid var(--color-footer-line);
+            }
+
+            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .index .title {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+            }
+
+            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .type .title {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                color: var(--color-main);
+            }
+
+            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .content .title {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                cursor: pointer;
+            }
+
+            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .content .title:hover {
+                text-decoration: underline;
+            }
+
+            /*  */
+        </style>
+        <section class="faq__list__box">
+            <div class="container">
+                <div class="col-lg-1200">
+                    <div class="faq__list__title">
+                        <p class="title">FAQ</p>
+                    </div>
+                    <div class="faq__category__list">
+                        <a href="" class="category__item text selected">전체</a>
+                        <a href="" class="category__item text">이물오인혼동사례</a>
+                        <a href="" class="category__item text">회원가입/정보</a>
+                        <a href="" class="category__item text">결제/배송</a>
+                        <a href="" class="category__item text">교환/반품/환불</a>
+                        <a href="" class="category__item text">마일리지 적립</a>
+                        <a href="" class="category__item text">기타</a>
+                    </div>
+                    <div class="faq__board__box">
+                        <div class="faq__row__head">
+                            <div class="faq__row">
+                                <div class="index">
+                                    <p class="title">번호</p>
+                                </div>
+                                <div class="type">
+                                    <p class="title">분류</p>
+                                </div>
+                                <div class="content">
+                                    <p class="title">내용</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__row__body">
+                            <div class="faq__row row__item">
+                                <div class="row__question">
+                                    <div class=" index">
+                                        <p class="title">1</p>
+                                    </div>
+                                    <div class="type">
+                                        <p class="title">회원가입/정보</p>
+                                    </div>
+                                    <div class="content">
+                                        <p class="title">ID/PW를 잊어버렸습니다. 어떻게 찾을 수 있나요?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
