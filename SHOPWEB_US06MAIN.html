@@ -32,30 +32,7 @@
 </head>
 
 <body>
-  <!-- 공통 컨텐츠 영역  -->
-  <style>
-    .col-lg-1200 {
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-    }
-  </style>
-
-  <!-- 최상단 배너 | css-Number : /_baby-001.css -->
-  <link rel="stylesheet" href="./assets/css/style/_baby-001.css">
-  <article class="header_top">
-    <a class="web-banner">신규가입 시, 배냇밀 이유식 2팩 <strong>무료체험 신청하기</strong></a>
-
-    <a class="mobile-banner">배냇밀 타임특가 구매하러가기</a>
-  </article>
-
   <!-- 페이지 공통 헤더 -->
-  <style>
-    /* 작업용 구분선 */
-    .gnb_main {
-      border-bottom: 1px solid var(--color-tmp1);
-    }
-  </style>
   <header>
     <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
     <link rel="stylesheet" href="./assets/css/style/_header-001.css">
@@ -538,221 +515,278 @@
   </header>
 
   <main>
+    <style>
+      .customer-center {
+        margin: 0;
+      }
+
+      .customer-center .cc-gnb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .customer-center .cc-gnb .cc-title {
+        display: block;
+        text-align: center;
+        font-size: var(--font-size-34);
+        line-height: var(--line-height-34);
+        margin: 50px 0;
+        font-weight: 500;
+        color: var(--color-text);
+      }
+
+      .customer-center .cc-gnb .cc-button-group {
+        display: flex;
+        justify-content: center;
+      }
+
+      .customer-center .cc-gnb .cc-button-group .cc-button {
+        display: flex;
+        margin-right: 15px;
+      }
+
+      .customer-center .cc-gnb .cc-button-group .cc-button:last-of-type {
+        margin-right: 0;
+      }
+
+      .customer-center .cc-gnb .cc-button-group .cc-button .text {
+        min-width: 235px;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f3f3;
+        font-size: var(--font-size-15);
+        color: var(--color-text);
+        border-radius: 50px;
+        line-height: var(--line-height-16);
+
+      }
+
+      .customer-center .cc-gnb .cc-button-group .cc-button .text.active {
+        background-color: var(--color-main);
+        color: var(--color-white);
+      }
+    </style>
+    <section class="customer-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1200">
+            <div class="cc-gnb">
+              <h2 class="cc-title">고객센터</h2>
+              <div class="cc-button-group">
+                <a href="/SHOPWEB_US06MAIN.html" class="cc-button">
+                  <p class="text active">공지사항</p>
+                </a>
+                <a href="/SHOPWEB_US0609.html" class="cc-button">
+                  <p class="text ">1:1문의하기</p>
+                </a>
+                <a href="/SHOPWEB_US0611.html" class="cc-button">
+                  <p class="text ">FAQ</p>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <style>
-    
-    .customer-centre {
-      margin: 0;
-    }
+      .customer__board {
+        margin-top: 50px;
+        margin-bottom: 150px;
+      }
 
-    .customer-centre .cc-gnb {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 45px;
-    }
+      .customer__board .cc-notice {
+        width: 100%;
+        margin-bottom: 30px;
+      }
 
-    .customer-centre .cc-gnb .cc-title {
-      display: block;
-      text-align: center;
-      font-size: var(--font-size-34);
-      margin: 50px 0;
-      color: var(--color-text);
-    }
+      .customer__board .cc-notice .notice-title {
+        display: flex;
+        justify-content: center;
+        font-size: var(--font-size-25);
+        line-height: var(--line-height-25);
+        font-weight: 500;
+        margin-bottom: 30px;
+        color: var(--color-text);
+      }
 
-    .customer-centre .cc-gnb .cc-button-group {
-      display: flex;
-      justify-content: center;
-    }
+      .customer__board .cc-notice .notice-board {
+        border-top: 1px solid var(--color-black);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+      }
 
-    .customer-centre .cc-gnb .cc-button-group .cc-button {
-      min-width: 235px;
-      min-height: 50px;
-    }
+      .customer__board .cc-notice .notice-board .board-row {
+        display: flex;
+        border-bottom: 1px solid var(--color-footer-line);
+      }
 
-    .customer-centre .cc-gnb .cc-button-group .cc-button .text{
-      background-color: #f3f3f3;
-      font-size: var(--font-size-15);
-      color: var(--color-text);
-      border-radius: 50px;
-      padding: 10px 70px;
-    }
+      .customer__board .cc-notice .notice-board .board-row.thead {
+        font-weight: 500;
+        border-bottom: 1px solid var(--color-footer-line);
+      }
 
-    .customer-centre .cc-gnb .cc-button-group .cc-button .text.active {
-      background-color: #fa9bb1;
-      font-size: var(--font-size-15);
-      color: var(--color-white);
-    }
+      .customer__board .cc-notice .notice-board .board-row .column {
+        font-size: var(--font-size-16);
+        line-height: var(--line-height-16);
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .customer-centre .cc-notice {
-      width: 100%;
-      margin-bottom: 200px;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column a {
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
 
-    .customer-centre .cc-notice .notice-title {
-      display: flex;
-      justify-content: center;
-      font-size: var(--font-size-24);
-      margin-bottom: 30px;
-      color: var(--color-text);
-    }
-    
-    .customer-centre .cc-notice .notice-board {
-      border-top: 1px solid var(--color-black);
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 30px;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column a span.title {
+        font-size: var(--font-size-16);
+        line-height: var(--line-height-16);
+        margin-right: 5px;
+      }
 
-    .customer-centre .cc-notice .notice-board .board-row {
-      display: flex;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column a img {
+        margin-right: 5px;
+      }
 
-    .customer-centre .cc-notice .notice-board .board-row.thead {
-      font-weight: 500;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column.th-num {
+        max-width: 100px;
+        width: 100%;
+      }
 
-    .customer-centre .cc-notice .notice-board .board-row .column {
-      font-size: var(--font-size-14);
-      padding: 20px 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column.th-title {
+        flex: 1 1 0%;
+      }
 
-    .customer-centre .cc-notice .notice-board .board-row .column a {
-      padding: 0;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column.th-title.flex-start {
+        display: flex;
+        justify-content: flex-start;
+      }
 
-    .customer-centre .cc-notice .notice-board .board-row .column.th-num{
-      width: 10%;
-    }
-    .customer-centre .cc-notice .notice-board .board-row .column.th-title{
-      width: 50%;
-    }
-    .customer-centre .cc-notice .notice-board .board-row .column.th-title.flex-start{
-      display: flex;
-      justify-content: flex-start;
-    }
-    .customer-centre .cc-notice .notice-board .board-row .column.th-date{
-      width: 20%;
-    }
-    .customer-centre .cc-notice .notice-board .board-row .column.th-writer{
-      width: 10%;
-    }
-    .customer-centre .cc-notice .notice-board .board-row .column.th-view{
-      width: 10%;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column.th-date {
+        max-width: 150px;
+        width: 100%;
+      }
 
-    /* 표 중앙정렬 */
-    .column-centre {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column.th-writer {
+        max-width: 100px;
+        width: 100%;
+      }
 
-    .customer-centre .notice-pagnation {
-      display: block;
-      margin-bottom: 70px;
-    }
-    
-    .customer-centre .notice-pagnation .pagnation-list {
-      display: flex;
-      justify-content: center;
-    }
+      .customer__board .cc-notice .notice-board .board-row .column.th-view {
+        max-width: 80px;
+        width: 100%;
+      }
 
-    .customer-centre .notice-pagnation .pagnation-list .pagnation-item {
-      border: 1px solid #e6e6e6;
-      border-radius: 50px;
-      width: 40px;
-      height: 40px;
-      margin-right: 5px;
-      color: #888;
-    }
+      /* 표 중앙정렬 */
+      .column-centre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .customer-centre .notice-pagnation .pagnation-list .pagnation-item.active {
-      background-color: var(--color-main);
-      color: var(--color-white);
-    }
+      .customer__board .notice-pagnation {
+        display: block;
+        margin-bottom: 70px;
+      }
 
-    .customer-centre .notice-pagnation .pagnation-list .pagnation-item a {
-      font-size: var(--font-size-15);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .customer__board .notice-pagnation .pagnation-list {
+        display: flex;
+        justify-content: center;
+      }
 
-    .customer-centre .notice-search {
-      display: block;
-    }
+      .customer__board .notice-pagnation .pagnation-list .pagnation-item {
+        border: 1px solid #e6e6e6;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        color: #888;
+      }
 
-    .customer-centre .notice-search #notice-form {
-      display: flex;
-      justify-content: center;
-      height: 42px;
-    }
+      .customer__board .notice-pagnation .pagnation-list .pagnation-item.active {
+        background-color: var(--color-main);
+        color: var(--color-white);
+        border: 1px solid var(--color-main);
+      }
 
-    .customer-centre .notice-search #notice-form .search-selector {
-      display: flex;
-      height: 100%;
-      width: 150px;
-      border: 1px solid #ccc;
-      position: relative;
-      justify-content: center;
-      align-items: center;
-    }
+      .customer__board .notice-pagnation .pagnation-list .pagnation-item a {
+        font-size: var(--font-size-15);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .customer-centre .notice-search #notice-form .search-selector p {
-      font-size: var(--font-size-14);
-      color: var(--color-text);
-    }
+      .customer__board .notice-search {
+        display: block;
+      }
 
-    .customer-centre .notice-search #notice-form .search-selector img {
-      position: absolute;
-      top: 17px;
-      right: 5px;
-      width: 8%;
-    }
+      .customer__board .notice-search #notice-form {
+        display: flex;
+        justify-content: center;
+        height: 42px;
+      }
 
-    .customer-centre .notice-search #notice-form .input-group {
-      position: relative;
-      margin-left: 5px;
-    }
+      .customer__board .notice-search #notice-form .search-selector {
+        display: flex;
+        padding: 5px 10px;
+        max-width: 100px;
+        width: 100%;
+        border: 1px solid #aaa;
+        font-size: var(--font-size-14);
+        color: var(--color-text);
+        background: url(../assets/icon/select_down_arrow.png) no-repeat;
+        background-position: 90% 52%;
+        background-size: 12px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
 
-    .customer-centre .notice-search #notice-form .input-group .input-btn {
-      position: absolute;
-      top: 10px;
-      right: 0;
-    }
+      .customer__board .notice-search #notice-form .search-selector option {
+        align-items: center;
+        font-size: var(--font-size-14);
+        color: var(--color-text);
+      }
 
-    .customer-centre .notice-search #notice-form .input-group input[type= 'text'] {
-      width: 420px;
-      height: 100%;
-      border: 1px solid #ccc;
-      font-size: var(--font-size-12);
-    }
+      .customer__board .notice-search #notice-form .input-group {
+        position: relative;
+        margin-left: 5px;
+        max-width: 420px;
+        width: 100%;
+      }
 
+      .customer__board .notice-search #notice-form .input-group .input-btn {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+      }
+
+      .customer__board .notice-search #notice-form .input-group input[type='text'] {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #aaa;
+        font-size: var(--font-size-12);
+      }
     </style>
-    <section class="customer-centre">
+    <section class="customer__board">
       <div class="container">
         <div class="row">
           <div class="col-lg-1200">
 
-            <div class="cc-gnb">
-              <h2 class="cc-title">고객센터</h2>
-              <div class="cc-button-group">
-                <button class="cc-button"><p class="text active">공지사항</p></button>
-                <button class="cc-button"><p class="text">1:1문의하기</p></button>
-                <button class="cc-button"><p class="text">FAQ</p></button>
-              </div>
-            </div>
-
             <div class="cc-notice">
               <h3 class="notice-title">공지사항</h3>
-              
+
               <div class="notice-board">
 
                 <div class="board-row thead">
@@ -766,7 +800,13 @@
                 <!-- one row -->
                 <div class="board-row">
                   <div class="column th-num">공지</div>
-                  <div class="column th-title flex-start"><a class="column" href="#">[당첨자발표] 크리스마스 과자파티 구매이벤트</a></div>
+                  <div class="column th-title flex-start">
+                    <a class="column" href="/SHOPWEB_US0602.html">
+                      <span class="title">[당첨자발표] 크리스마스 과자파티 구매이벤트</span>
+                      <img class="attach_img new" src="../assets/icon/icon_board_attach_img.png" alt="">
+                      <img class="attach_img hot" src="../assets/icon/icon_board_hot.png" alt="">
+                    </a>
+                  </div>
                   <div class="column th-date"> 2022.12.22 </div>
                   <div class="column th-writer"> 관리자 </div>
                   <div class="column th-view"> 29 </div>
@@ -774,45 +814,50 @@
 
                 <!-- one row -->
                 <div class="board-row">
-                  <div class="column th-num">00</div>
-                  <div class="column th-title flex-start"><a class="column" href="#">[당첨자 발표] 준비기,초기 이벤트 당첨자안내(12월)</a></div>
+                  <div class="column th-num">01</div>
+                  <div class="column th-title flex-start">
+                    <a class="column" href="/SHOPWEB_US0602.html">
+                      <span class="title">[당첨자 발표] 준비기,초기 이벤트 당첨자안내(12월)</span>
+                    </a>
+                  </div>
                   <div class="column th-date"> 2022.12.27 </div>
                   <div class="column th-writer"> 관리자 </div>
                   <div class="column th-view"> 6 </div>
                 </div>
 
+              </div>
+            </div>
+
+            <div class="notice-pagnation">
+              <ol class="pagnation-list">
+                <li class="pagnation-item active"><a href="#">1</a></li>
+                <li class="pagnation-item"><a href="#">2</a></li>
+                <li class="pagnation-item"><a href="#">3</a></li>
+                <li class="pagnation-item"><a href="#">4</a></li>
+                <li class="pagnation-item"><a href="#">5</a></li>
+              </ol>
+            </div>
+
+            <div class="notice-search">
+              <form id="notice-form" action="">
+                <select class="search-selector" name="" id="">
+                  <option value="">제목</option>
+                  <option value="">내용</option>
+                  <option value="">작성자</option>
+                </select>
+                <div class="input-group">
+                  <input type="text">
+                  <button class="input-btn">
+                    <img src="./assets/icon/search_icon_black.png" alt="검색하기">
+                  </button>
                 </div>
-              </div>
-
-              <div class="notice-pagnation">
-                <ol class="pagnation-list">
-                  <li class="pagnation-item active"><a href="#">1</a></li>
-                  <li class="pagnation-item"><a href="#">2</a></li>
-                  <li class="pagnation-item"><a href="#">3</a></li>
-                  <li class="pagnation-item"><a href="#">4</a></li>
-                  <li class="pagnation-item"><a href="#">5</a></li>
-                </ol>
-              </div>
-
-              <div class="notice-search">
-                <form id="notice-form" action="">
-                  <div class="search-selector">
-                    <p>제목</p>
-                    <img src="./assets/icon/down_arrow.png" alt="">
-                  </div>
-                  <div class="input-group">
-                    <input type="text">
-                    <button class="input-btn">
-                      <img src="./assets/icon/search_icon_black.png" alt="검색하기">
-                    </button>
-                  </div>
-                </form>
-              </div>
-
+              </form>
             </div>
 
           </div>
+
         </div>
+      </div>
       </div>
     </section>
 
@@ -941,4 +986,5 @@
   <script src="./assets/js/mainCarousel.js"></script>
 
 </body>
+
 </html>
