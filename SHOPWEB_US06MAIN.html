@@ -605,61 +605,60 @@
       margin-bottom: 30px;
     }
 
-    .customer-centre .cc-notice .notice-board .notice-tr {
+    .customer-centre .cc-notice .notice-board .board-row {
       display: flex;
-      flex: auto;
     }
 
-    .customer-centre .cc-notice .notice-board .thead {
-      border-bottom: 1px solid #e6e6e6;
-      width: 100%;
+    .customer-centre .cc-notice .notice-board .board-row.thead {
+      font-weight: 500;
     }
 
-    .customer-centre .cc-notice .notice-board .thead .thead-tr {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    .customer-centre .cc-notice .notice-board .thead-tr .thead-th{
-      padding: 20px 10px;
+    .customer-centre .cc-notice .notice-board .board-row .column {
       font-size: var(--font-size-14);
-      color: var(--color-text);
-      font-weight: 500;
-    }
-
-    .customer-centre .cc-notice .notice-board .tbody-tr {
+      padding: 20px 10px;
       display: flex;
-      width: 100%;
-      justify-content: space-between;
-      border-bottom: 1px solid #e6e6e6;
+      justify-content: center;
+      align-items: center;
     }
 
-    .customer-centre .cc-notice .notice-board .tbody-tr .tbody-td {
-      padding: 20px 10px;
-      font-size: 14px;
-      color: var(--color-text);
-      font-weight: 500;
+    .customer-centre .cc-notice .notice-board .board-row .column a {
+      padding: 0;
     }
 
-    .customer-centre .cc-notice .notice-board .tbody-tr .tbody-td a {
-      padding: 20px 10px;
-      font-size: 14px;
-      color: var(--color-text);
-      font-weight: 500;
+    .customer-centre .cc-notice .notice-board .board-row .column.th-num{
+      width: 10%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-title{
+      width: 50%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-date{
+      width: 20%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-writer{
+      width: 10%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-view{
+      width: 10%;
     }
 
-    .customer-centre .cc-notice .notice-pagnation {
+    /* 표 중앙정렬 */
+    .column-centre {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-centre .notice-pagnation {
       display: block;
       margin-bottom: 70px;
     }
     
-    .customer-centre .cc-notice .notice-pagnation .pagnation-list {
+    .customer-centre .notice-pagnation .pagnation-list {
       display: flex;
       justify-content: center;
     }
 
-    .customer-centre .cc-notice .notice-pagnation .pagnation-list .pagnation-item {
+    .customer-centre .notice-pagnation .pagnation-list .pagnation-item {
       display: flex;
       border: 1px solid #e6e6e6;
       border-radius: 50px;
@@ -670,28 +669,28 @@
       align-items: center;
     }
 
-    .customer-centre .cc-notice .notice-pagnation .pagnation-list .pagnation-item.active {
+    .customer-centre .notice-pagnation .pagnation-list .pagnation-item.active {
       background-color: var(--color-main);
       color: var(--color-white);
     }
 
-    .customer-centre .cc-notice .notice-pagnation .pagnation-list .pagnation-item a {
+    .customer-centre .notice-pagnation .pagnation-list .pagnation-item a {
       font-size: var(--font-size-15);
       padding: 0;
       margin: 0;
     }
 
-    .customer-centre .cc-notice .notice-search {
+    .customer-centre .notice-search {
       display: block;
     }
 
-    .customer-centre .cc-notice .notice-search #notice-form {
+    .customer-centre .notice-search #notice-form {
       display: flex;
       justify-content: center;
       height: 42px;
     }
 
-    .customer-centre .cc-notice .notice-search #notice-form .search-selector {
+    .customer-centre .notice-search #notice-form .search-selector {
       display: flex;
       height: 100%;
       width: 150px;
@@ -701,30 +700,30 @@
       align-items: center;
     }
 
-    .customer-centre .cc-notice .notice-search #notice-form .search-selector p {
+    .customer-centre .notice-search #notice-form .search-selector p {
       font-size: var(--font-size-14);
       color: var(--color-text);
     }
 
-    .customer-centre .cc-notice .notice-search #notice-form .search-selector img {
+    .customer-centre .notice-search #notice-form .search-selector img {
       position: absolute;
       top: 17px;
       right: 5px;
       width: 8%;
     }
 
-    .customer-centre .cc-notice .notice-search #notice-form .input-group {
+    .customer-centre .notice-search #notice-form .input-group {
       position: relative;
       margin-left: 5px;
     }
 
-    .customer-centre .cc-notice .notice-search #notice-form .input-group .input-btn {
+    .customer-centre .notice-search #notice-form .input-group .input-btn {
       position: absolute;
       top: 10px;
       right: 0;
     }
 
-    .customer-centre .cc-notice .notice-search #notice-form .input-group input[type= 'text'] {
+    .customer-centre .notice-search #notice-form .input-group input[type= 'text'] {
       width: 420px;
       height: 100%;
       border: 1px solid #ccc;
@@ -750,33 +749,32 @@
               <h3 class="notice-title">공지사항</h3>
               
               <div class="notice-board">
-                <div class="thead">
-                  <div class="thead-tr">
-                    <div class="thead-th">번호</div>
-                    <div class="thead-th">제목</div>
-                    <div class="thead-th">날짜</div>
-                    <div class="thead-th">작성자</div>
-                    <div class="thead-th">조회</div>
-                  </div>
-                </div>
-                <div class="tbody">
-                  <!-- one row -->
-                  <div class="tbody-tr">
-                    <div class="tbody-td">공지</div>
-                    <div class="tbody-td"><a href="#">[당첨자발표] 크리스마스 과자파티 구매이벤트</a></div>
-                    <div class="tbody-td"> 2022.12.22 </div>
-                    <div class="tbody-td"> 관리자 </div>
-                    <div class="tbody-td"> 29 </div>
-                  </div>
 
-                  <!-- one row -->
-                  <div class="tbody-tr">
-                    <div class="tbody-td">공지</div>
-                    <div class="tbody-td"><a href="#">[당첨자 발표] 준비기,초기 이벤트 당첨자안내(12월)</a></div>
-                    <div class="tbody-td"> 2022.12.27 </div>
-                    <div class="tbody-td"> 관리자 </div>
-                    <div class="tbody-td"> 6 </div>
-                  </div>
+                <div class="board-row thead">
+                  <div class="column th-num">번호</div>
+                  <div class="column th-title">제목</div>
+                  <div class="column th-date">날짜</div>
+                  <div class="column th-writer">작성자</div>
+                  <div class="column th-view">조회</div>
+                </div>
+
+                <!-- one row -->
+                <div class="board-row">
+                  <div class="column th-num">공지</div>
+                  <div class="column th-title"><a class="column" href="#">[당첨자발표] 크리스마스 과자파티 구매이벤트</a></div>
+                  <div class="column th-date"> 2022.12.22 </div>
+                  <div class="column th-writer"> 관리자 </div>
+                  <div class="column th-view"> 29 </div>
+                </div>
+
+                <!-- one row -->
+                <div class="board-row">
+                  <div class="column th-num">00</div>
+                  <div class="column th-title"><a class="column" href="#">[당첨자 발표] 준비기,초기 이벤트 당첨자안내(12월)</a></div>
+                  <div class="column th-date"> 2022.12.27 </div>
+                  <div class="column th-writer"> 관리자 </div>
+                  <div class="column th-view"> 6 </div>
+                </div>
 
                 </div>
               </div>
