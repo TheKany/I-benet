@@ -575,10 +575,10 @@
                                     <p class="text ">공지사항</p>
                                 </a>
                                 <a href="/SHOPWEB_US0609.html" class="cc-button">
-                                    <p class="text">1:1문의하기</p>
+                                    <p class="text active">1:1문의하기</p>
                                 </a>
                                 <a href="/SHOPWEB_US0611.html" class="cc-button">
-                                    <p class="text active">FAQ</p>
+                                    <p class="text ">FAQ</p>
                                 </a>
                             </div>
                         </div>
@@ -588,281 +588,334 @@
             </div>
         </section>
 
-        <!-- FAQ 검색 -->
+        <!-- 1:1 폼 -->
         <style>
-            .faq__search__box {
-                margin-top: 50px;
-            }
-
-            .faq__search__box .search__box__wrap {
-                background-color: #fafafa;
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box {
-                width: 50%;
-                padding: 50px;
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input__title {
-                display: flex;
-                align-items: center;
-
-
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input__title img {
-                margin-top: 3px;
-                margin-right: 10px;
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input__title .title {
-                font-size: var(--font-size-22);
-                line-height: var(--line-height-22);
-                color: var(--color-text);
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input {
-                display: flex;
-                margin-top: 30px;
-                background-color: #fff;
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input form {
-                display: flex;
-                width: 100%;
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input input {
-                width: 100%;
-                border: 1px solid var(--color-footer-line);
-                padding: 10px 15px;
-                font-size: var(--font-size-16);
-                font-weight: 300;
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input button {
-                background-color: var(--color-main);
-                min-width: 43px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .faq__search__box .search__box__wrap .search__input__box .search__input button img {}
-
-            .faq__search__box .search__box__wrap .inquiry__button__box {
-                width: 50%;
-                padding: 50px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title {}
-
-            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title .title {
-                font-size: var(--font-size-22);
-                line-height: var(--line-height-22);
-                color: var(--color-text);
-            }
-
-            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button {
-                display: flex;
-                align-items: flex-end;
-            }
-
-            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button .link {
-                font-size: var(--font-size-14);
-                line-height: var(--line-height-14);
-                border: 1px solid #ccc;
-                background-color: #fff;
-                padding: 7px 30px;
-            }
-
-            /*  */
-        </style>
-        <section class="faq__search__box">
-            <div class="container">
-                <div class="col-lg-1200">
-                    <div class="search__box__wrap">
-                        <div class="search__input__box">
-                            <div class="search__input__title">
-                                <img src="../assets/icon/ico_question.png" alt="">
-                                <p class="title">자주묻는 질문 검색</p>
-                            </div>
-                            <div class="search__input">
-                                <form action="">
-                                    <input type="text" placeholder="검색어를 입력하세요">
-                                    <button type="submit">
-                                        <img src="../assets/icon/search_addr.png" alt="">
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="inquiry__button__box">
-                            <div class="inquiry__button__title">
-                                <p class="title">찾으시는 질문이 없으시다면 1:1 문의를 남겨주세요</p>
-                            </div>
-                            <div class="inquiry__button">
-                                <a href="" class="link">1:1 문의</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ 리스트 -->
-        <style>
-            .faq__list__box {
+            .personal__inquiry__section {
                 margin-top: 50px;
                 margin-bottom: 150px;
             }
 
-            .faq__list__box .faq__list__title {}
+            .personal__inquiry__section .personal__inquiry__box {}
 
-            .faq__list__box .faq__list__title .title {
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__title {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #333;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__title .title {
                 font-size: var(--font-size-25);
                 line-height: var(--line-height-25);
             }
 
-            .faq__list__box .faq__category__list {
-                margin-top: 15px;
-                padding-bottom: 25px;
-            }
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form {}
 
-            .faq__list__box .faq__category__list .category__item.selected {
-                font-weight: 500;
-            }
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box {}
 
-            .faq__list__box .faq__category__list .category__item {
-                font-size: var(--font-size-16);
-                line-height: var(--line-height-16);
-                margin-right: 30px;
-            }
-
-            .faq__list__box .faq__board__box {}
-
-            .faq__list__box .faq__board__box .faq__row__head {
-                border-top: 1px solid #333;
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row {
                 border-bottom: 1px solid var(--color-footer-line);
-                padding: 20px 0;
-            }
-
-            .faq__list__box .faq__board__box .faq__row__head .faq__row {
                 display: flex;
             }
 
-            .faq__list__box .faq__board__box .faq__row__head .faq__row .title {
-                font-size: var(--font-size-16);
-                line-height: var(--line-height-16);
-                font-weight: 500;
-            }
-
-            .faq__list__box .faq__board__box .faq__row .index {
-                max-width: 80px;
-                width: 100%;
-                padding: 0 10px;
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
+                min-width: 250px;
+                background-color: #fafafa;
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
 
-            .faq__list__box .faq__board__box .faq__row .type {
-                max-width: 150px;
-                width: 100%;
-                padding: 0 10px;
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title .title {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                padding: 20px;
+                color: var(--color-text);
+
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
+                padding: 25px;
+                padding-left: 30px;
+                padding-right: 0;
+                min-width: 150px;
             }
 
-            .faq__list__box .faq__board__box .faq__row .content {
-                flex: 1 1 0%;
-                padding: 0 10px;
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input select {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                width: 100%;
+                border: 1px solid #aaa;
+                padding: 5px 10px;
+                background: url(../assets/icon/select_down_arrow.png) no-repeat;
+                background-position: 90% 52%;
+                background-size: 12px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input select option {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .text#user_name {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.subject,
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.textarea {
+                width: 100%;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .subject__input,
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input textarea {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+                padding: 5px 10px;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .sub__text {}
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .sub__text .text {
+                font-size: var(--font-size-14);
+                line-height: var(--line-height-14);
+                color: var(--color-text);
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.file {
+                margin-top: 10px;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item {
                 display: flex;
-                justify-content: flex-start;
+                align-items: center;
+                margin-top: 5px;
             }
 
-            .faq__list__box .faq__board__box .faq__row__body {}
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .filebox {
+                margin-right: 10px;
+            }
 
-            .faq__list__box .faq__board__box .faq__row__body {}
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item input.upload-name {
+                padding: 5px 10px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+            }
 
-            .faq__list__box .faq__board__box .faq__row__body .row__item {}
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item input[type=file] {
+                position: absolute;
+                width: 0;
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 0;
+            }
 
-            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question {
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn {
                 display: flex;
-                padding: 20px 0;
-                border-bottom: 1px solid var(--color-footer-line);
             }
 
-            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .index .title {
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn .find__btn {
+                padding: 5px 10px;
                 font-size: var(--font-size-16);
                 line-height: var(--line-height-16);
-            }
-
-            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .type .title {
-                font-size: var(--font-size-16);
-                line-height: var(--line-height-16);
-                color: var(--color-main);
-            }
-
-            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .content .title {
-                font-size: var(--font-size-16);
-                line-height: var(--line-height-16);
+                color: var(--color-white);
+                background-color: #aaa;
+                border: 1px solid #aaa;
                 cursor: pointer;
+                margin-right: 5px;
             }
 
-            .faq__list__box .faq__board__box .faq__row__body .row__item .row__question .content .title:hover {
-                text-decoration: underline;
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn .plus__btn {
+                padding: 5px 10px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha {
+                flex-direction: row;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha {
+                margin-left: 20px;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha .upload__btn {
+                margin-top: 10px;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .reload__btn {
+                padding: 5px 10px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                color: var(--color-white);
+                background-color: #aaa;
+                border: 1px solid #aaa;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img {
+                min-width: 150px;
+                display: flex;
+                border: 1px solid #aaa;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {
+                width: 100%;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .capcha__input {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+                padding: 5px 10px;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row {
+                border-bottom: none;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .prev__button {}
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .submit__button {}
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                min-width: 150px;
+                min-height: 60px;
+                border-radius: 50px;
+                margin-right: 20px;
+                border: 1px solid #aaa;
+                color: var(--color-text);
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .submit__button .button__text {
+                margin-right: 0;
+            }
+
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text.point {
+                background-color: var(--color-main);
+                color: var(--color-white);
+                border: 1px solid var(--color-main);
             }
 
             /*  */
         </style>
-        <section class="faq__list__box">
+        <section class="personal__inquiry__section">
             <div class="container">
                 <div class="col-lg-1200">
-                    <div class="faq__list__title">
-                        <p class="title">FAQ</p>
-                    </div>
-                    <div class="faq__category__list">
-                        <a href="" class="category__item text selected">전체</a>
-                        <a href="" class="category__item text">이물오인혼동사례</a>
-                        <a href="" class="category__item text">회원가입/정보</a>
-                        <a href="" class="category__item text">결제/배송</a>
-                        <a href="" class="category__item text">교환/반품/환불</a>
-                        <a href="" class="category__item text">마일리지 적립</a>
-                        <a href="" class="category__item text">기타</a>
-                    </div>
-                    <div class="faq__board__box">
-                        <div class="faq__row__head">
-                            <div class="faq__row">
-                                <div class="index">
-                                    <p class="title">번호</p>
+                    <div class="personal__inquiry__box">
+                        <div class="personal__inquiry__title">
+                            <p id="personal__inquiry__name" class="title">1:1문의</p>
+                        </div>
+                        <form action="" class="personal__inquiry__form">
+                            <div class="form__box">
+                                <div class="form__row">
+                                    <div class="row__title">
+                                        <p class="title">말머리</p>
+                                    </div>
+                                    <div class="row__input">
+                                        <select name="" id="">
+                                            <option value="">옵션값1</option>
+                                            <option value="">옵션값2</option>
+                                            <option value="">옵션값3</option>
+                                            <option value="">옵션값4</option>
+                                            <option value="">옵션값5</option>
+                                            <option value="">옵션값6</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="type">
-                                    <p class="title">분류</p>
+                                <div class="form__row">
+                                    <div class="row__title">
+                                        <p class="title">작성자</p>
+                                    </div>
+                                    <div class="row__input">
+                                        <p class="text" id="user_name">유저이름</p>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <p class="title">내용</p>
+                                <div class="form__row">
+                                    <div class="row__title">
+                                        <p class="title">제목</p>
+                                    </div>
+                                    <div class="row__input subject">
+                                        <input class="subject__input" type="text">
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="row__title">
+                                        <p class="title">내용</p>
+                                    </div>
+                                    <div class="row__input textarea">
+                                        <textarea name="" id="" cols="30" rows="10">텍스트 에디터 삽입</textarea>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="row__title">
+                                        <p class="title">첨부파일</p>
+                                    </div>
+                                    <div class="row__input">
+                                        <div class="sub__text">
+                                            <p class="text">파일 첨부 - 파일이 있을 경우 등록 할 수 있습니다. (가능한 파일 : zip, jpg, gif, png)
+                                            </p>
+                                        </div>
+                                        <div class="input__box file">
+                                            <div class="input__item">
+                                                <div class="filebox">
+                                                    <input type="file" id="file-1"
+                                                        onchange="changeFileInputName(event)">
+                                                    <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+                                                </div>
+                                                <div class="upload__btn">
+                                                    <label class="find__btn" for="file-1">파일찾기</label>
+                                                    <button class="plus__btn">추가</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div class="row__title">
+                                        <p class="title">자동등록방지</p>
+                                    </div>
+                                    <div class="row__input capcha">
+                                        <div class="capcha__img">
+                                            <img src="" alt="캡차이미지">
+                                        </div>
+                                        <div class="input__box capcha">
+                                            <div class="sub__text">
+                                                <p class="text">보이는 순서대로 숫자 및 문자를 모두 입력해 주세요.</p>
+                                            </div>
+                                            <div class="upload__btn">
+                                                <button class="reload__btn">이미지 새로고침</button>
+                                                <input class="capcha__input" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row button__row">
+                                    <div class="prev__button">
+                                        <button class="button__text">이전</button>
+                                    </div>
+                                    <div class="submit__button">
+                                        <button type="submit" class="button__text point">저장</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq__row__body">
-                            <div class="faq__row row__item">
-                                <div class="row__question">
-                                    <div class=" index">
-                                        <p class="title">1</p>
-                                    </div>
-                                    <div class="type">
-                                        <p class="title">회원가입/정보</p>
-                                    </div>
-                                    <div class="content">
-                                        <p class="title">ID/PW를 잊어버렸습니다. 어떻게 찾을 수 있나요?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -985,4 +1038,43 @@
 
     <script src="./assets/js/dropdown.js"></script>
     <script src="./assets/js/tmp.js"></script>
+    <script>
+
+        // 첨부파일 스크립트
+        let fileBox = document.querySelector('.personal__inquiry__section .input__box')
+        let fileInputItem = document.querySelector('.personal__inquiry__section .input__item');
+        let fileInputItemName = document.querySelectorAll('.personal__inquiry__section input.upload-name');
+        let fileInputs = document.querySelectorAll('.personal__inquiry__section input[type=file]');
+        let filePlusBtn = document.querySelector('.personal__inquiry__section .plus__btn');
+        let inputInitCount = 1;
+
+        // 첨부파일 삭제 버튼
+        function removeInput(e) {
+            e.preventDefault();
+            console.log(e.target.parentNode.parentNode.remove())
+        }
+
+        // 첨부파일 삽입 시 이름 변경
+        function changeFileInputName(event) {
+            let fileName = event.target.files[0].name
+            let textInput = event.target.nextElementSibling;
+            textInput.value = fileName;
+        }
+
+        // 추가 버튼 클릭시 요소 복사 이벤트
+        filePlusBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            inputInitCount++;
+            clone = fileInputItem.cloneNode(true);
+            clone.querySelector('input[type=file]').value = '';
+            clone.querySelector('input.upload-name').value = '';
+            clone.querySelector('input[type=file]').id = `file-${inputInitCount}`;
+            clone.querySelector('label').setAttribute('for', `file-${inputInitCount}`);
+            clone.querySelector('.plus__btn').addEventListener('click', removeInput)
+            clone.querySelector('.plus__btn').textContent = "삭제"
+            clone.childNodes
+            fileBox.appendChild(clone);
+        })
+    </script>
 </body>
