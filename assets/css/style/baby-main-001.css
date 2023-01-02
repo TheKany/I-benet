@@ -196,7 +196,6 @@
   }
 }
 
-
 @media all and (max-width: 480px) {
   .item.slick-slide.slick-active{
     height: 60px;
