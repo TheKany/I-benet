@@ -243,4 +243,32 @@ window.addEventListener('load', () => {
       })
     }
   }
+
+  //사이드박스 캐러셀
+  {
+    $('.side__slick').slick({
+      dots: true,
+    });
+
+    let currnetNumberText = document.querySelector('.side__bar .current__number');
+    let totalNumberText = document.querySelector('.side__bar .total__number');
+    let sideCarouselCount = document.querySelectorAll('.side__bar .slick-dots li').length;
+    let sideCustomLeftArrow = document.querySelector('.side__bar .left__arrow');
+    let sideCustomRightArrow = document.querySelector('.side__bar .right__arrow');
+    let sideLeftArrow = document.querySelector('.side__bar .slick-prev');
+    let sideRightArrow = document.querySelector('.side__bar .slick-next');
+
+    $('.side__slick').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      currnetNumberText.textContent = nextSlide + 1;
+    })
+
+    function sideCarouselInit() {
+      totalNumberText.textContent = sideCarouselCount;
+      sideCustomLeftArrow.addEventListener('click', () => sideLeftArrow.click())
+      sideCustomRightArrow.addEventListener('click', () => sideRightArrow.click())
+    }
+    sideCarouselInit()
+
+
+  }
 })

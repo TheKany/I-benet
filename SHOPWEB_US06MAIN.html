@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이배냇 홈</title>
+  <script src="https://kit.fontawesome.com/8e24f8194e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- slick -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <script src="./assets/js/preLoad.js"></script>
+
+  <!-- css 기본 속성 -->
+  <link rel="stylesheet" href="./assets/css/base/_variable.css">
+  <link rel="stylesheet" href="./assets/css/base/_grid.css">
+  <link rel="stylesheet" href="./assets/css/base/_normalize.css">
+  <link rel="stylesheet" href="./assets/css/base/_reset.css">
+
+
+</head>
+
+<body>
+  <!-- 공통 컨텐츠 영역  -->
+  <style>
+    .col-lg-1200 {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+
+  <!-- 최상단 배너 | css-Number : /_baby-001.css -->
+  <link rel="stylesheet" href="./assets/css/style/_baby-001.css">
+  <article class="header_top">
+    <a class="web-banner">신규가입 시, 배냇밀 이유식 2팩 <strong>무료체험 신청하기</strong></a>
+
+    <a class="mobile-banner">배냇밀 타임특가 구매하러가기</a>
+  </article>
+
+  <!-- 페이지 공통 헤더 -->
+  <style>
+    /* 작업용 구분선 */
+    .gnb_main {
+      border-bottom: 1px solid var(--color-tmp1);
+    }
+  </style>
+  <header>
+    <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
+    <link rel="stylesheet" href="./assets/css/style/_header-001.css">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-4">
+          <!-- 웹 상단 헤더  -->
+          <div class="web_header">
+
+            <!-- 편의상 임의로 페이지 이동 함수 추가 -->
+            <!-- 로고 영역 -->
+            <div class="header_left">
+              <h1 class="logo">
+                <a href="#" onclick="location.href='main.html'">
+                  <img src="./assets/image/logo.png" alt="아이배냇">
+                </a>
+              </h1>
+            </div>
+
+            <!-- 검색창부터 배송조회 아이콘 까지 -->
+            <div class="header_right">
+              <div class="input_group">
+                <label for="searching">
+                  <input type="text" size="15" id="searching">
+                  <img src="./assets/icon/search_icon.png" alt="">
+                </label>
+              </div>
+              <ol class="header_navList">
+                <li class="header_navList_item header-login">
+                  <a href="#">로그인</a>
+                </li>
+                <li class="header_navList_item header-mypage">
+                  <a href="#">마이페이지</a>
+                </li>
+                <li class="header_navList_item header-bag">
+                  <a href="#" class="tracking">
+                    <img src="./assets/icon/shoppingBag.png" alt="장바구니">
+                  </a>
+                  <strong>1</strong>
+                </li>
+                <li class="header_navList_item header-join">
+                  <a href="#"><img src="./assets/icon/join_icon.png" alt="회원가입"></a>
+                  <img src="./assets/icon/join_badge.png" alt="">
+                </li>
+                <li class="header_navList_item header-tracking">
+                  <a href="#"><img src="./assets/icon/tracking_icon.png" alt="배송조회"></a>
+                  <div class="tracking">
+                    <img src="./assets/icon/tracking_talk.png" alt="">
+                    <p>배송지를 등록하고<span>구매가능한 상품을 확인하세요!</span></p>
+                    <button type="button" id="tracking_login">로그인</button>
+                    <button type="button" id="tracking_searchAdrr">
+                      <img src="./assets/icon/search_addr.png" alt="">
+                      주소검색
+                    </button>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+          </div>
+
+          <!-- 모바일 상단 헤더 -->
+          <div class="mobile-header">
+            <div class="mobile total-menu">
+              <img src="./assets/icon/mobile_total.png" alt="">
+            </div>
+            <div class="m-logo">
+              <img src="./assets/image/logo.png" alt="아이배냇 메인로고">
+            </div>
+            <div class="m-right">
+              <div class="m-icon-tracking">
+                <img src="./assets/icon/tracking_icon.png" alt="배송조회">
+              </div>
+              <div class="m-icon-join">
+                <img src="./assets/icon/join_icon.png" alt="회원가입">
+                <img src="./assets/icon/mobile_join.png" alt="1초 회원가입">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 웹 gnb | css-Number : /_header-002.css -->
+    <link rel="stylesheet" href="./assets/css/style/_header-002.css">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-4">
+
+
+          <nav class="gnb_main">
+            <h2 hidden>메뉴</h2>
+            <div class="gnb_menu">
+              <!-- 전체메뉴보기(헴버거) -->
+              <div class="menu00 big_menu total">
+                <button class="gnb_item toggle_btn">
+                  <img class="open_btn" src="./assets/icon/view_total_icon.png" alt="전체보기">
+                  <img class="close_btn" src="./assets/icon/view_total_icon.png" alt="전체보기">
+                </button>
+
+                <div class="total_menu">
+                  <div class="container">
+                    <div class="empty_box col-lg-12">
+                      <div class="gnb_itemList total empty"></div>
+                      <div class="gnb_itemList total">
+                        <p>이유식</p>
+                        <a href="#">준비기(4-5개월)</a>
+                        <a href="#">초기(6개월 전후)</a>
+                        <a href="#">중기(7-8개월)</a>
+                        <a href="#">후기 2식(9-10개월)</a>
+                        <a href="#">후기 3식(9-10개월)</a>
+                        <a href="#">병행기(10-11개월)</a>
+                        <a href="#">완료기(12개월 이후)</a>
+                        <p>유아식</p>
+                        <a href="#">첫밥(13개월 이후)</a>
+                        <a href="#">첫밥+국·반찬</a>
+                        <a href="#">반찬·국</a>
+                      </div>
+                      <div class="gnb_itemList total">
+                        <a href="#">이유식</a>
+                        <a href="#">유아식</a>
+                        <a href="#">디저트</a>
+                      </div>
+                      <div class="gnb_itemList total">
+                        <a href="#">분유 / 유아식</a>
+                        <a href="#">퓨레</a>
+                        <a href="#">간식 / 음료</a>
+                        <a href="#">요리 / 재료 / 반찬</a>
+                        <a href="#">건강기능식품</a>
+                      </div>
+                      <div class="gnb_itemList total empty"></div>
+                      <div class="gnb_itemList total">
+                        <a href="#">무료체험신청</a>
+                        <a href="#">이벤트</a>
+                      </div>
+                      <div class="gnb_itemList total">
+                        <a href="#">배냇밀 소개</a>
+                        <a href="#">충주팩토리</a>
+                        <a href="#">재료 이야기</a>
+                        <a href="#">안심온도계</a>
+                      </div>
+                      <div class="gnb_itemList total">
+                        <a href="#">공지사항</a>
+                        <a href="#">이용가이드</a>
+                        <a href="#">1:1 상담신청</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">영양상 FAQ</a>
+                      </div>
+                      <div class="gnb_itemList total">
+                        <a href="#">주문/배송조회</a>
+                        <a href="#">장바구니</a>
+                        <a href="#">배송지 관리</a>
+                        <a href="#">고객센터</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="container_box col-lg-12">
+                      <div class="display_box">
+                        <div class="text_box">
+                          <p class="text">배냇밀의 추천상품</p>
+                        </div>
+                        <div class="item_box">
+                          <div class="item">
+                            <a href="#">
+                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="">
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="">
+                            </a>
+                          </div>
+                          <div class="item">
+                            <a href="#">
+                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 식단 주문하기 -->
+              <div class="menu01 big_menu big ">
+
+                <!-- 임의로 페이지 이동 함수 추가 -->
+                <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button>
+                <div class="gnb_itemList drop01">
+                  <p>이유식</p>
+                  <a href="#">준비기(4-5개월)</a>
+                  <a href="#">초기(6개월 전후)</a>
+                  <a href="#">중기(7-8개월)</a>
+                  <a href="#">후기 2식(9-10개월)</a>
+                  <a href="#">후기 3식(9-10개월)</a>
+                  <a href="#">병행기(10-11개월)</a>
+                  <a href="#">완료기(12개월 이후)</a>
+                  <p>유아식</p>
+                  <a href="#">첫밥(13개월 이후)</a>
+                  <a href="#">첫밥+국·반찬</a>
+                  <a href="#">반찬·국</a>
+                </div>
+              </div>
+
+              <!-- 낱개 주문하기 -->
+              <div class="menu02 big_menu big">
+                <button class="gnb_item">낱개 주문하기</button>
+                <div class="gnb_itemList drop02">
+                  <a href="#">이유식</a>
+                  <a href="#">유아식</a>
+                  <a href="#">디저트</a>
+                </div>
+              </div>
+              <!-- 유아식품 -->
+              <div class="menu03 big_menu big">
+                <button class="gnb_item">유아식품</button>
+                <div class="gnb_itemList drop03">
+                  <a href="#">분유 / 유아식</a>
+                  <a href="#">퓨레</a>
+                  <a href="#">간식 / 음료</a>
+                  <a href="#">요리 / 재료 / 반찬</a>
+                  <a href="#">건강기능식품</a>
+                </div>
+              </div>
+              <!-- 기획전 -->
+              <div class="menu04 big_menu big">
+                <button class="gnb_item">기획전</button>
+                <!-- <div class="gnb_itemList drop04">
+                          <a href="#">이유식</a>
+                          <a href="#">유아식</a>
+                          <a href="#">디저트</a>
+                        </div> -->
+              </div>
+              <!-- 이벤트 -->
+              <div class="menu05 big_menu big">
+                <button class="gnb_item">이벤트</button>
+                <div class="gnb_itemList drop05">
+                  <a href="#">무료체험신청</a>
+                  <a href="#">이벤트</a>
+                </div>
+              </div>
+              <!-- 배냇밀 스토리 -->
+              <div class="menu06 big_menu big">
+                <button class="gnb_item">배냇밀 스토리</button>
+                <div class="gnb_itemList drop06">
+                  <a href="#">배냇밀 소개</a>
+                  <a href="#">충주팩토리</a>
+                  <a href="#">재료 이야기</a>
+                  <a href="#">안심온도계</a>
+                </div>
+              </div>
+              <!-- 고객센터 -->
+              <div class="menu07 big_menu big">
+                <button class="gnb_item">고객센터</button>
+                <div class="gnb_itemList drop07">
+                  <a href="#">공지사항</a>
+                  <a href="#">이용가이드</a>
+                  <a href="#">1:1 상담신청</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">영양상 FAQ</a>
+                </div>
+              </div>
+              <!-- 마이페이지 -->
+              <div class="menu08 big_menu big">
+                <button class="gnb_item">마이페이지</button>
+                <div class="gnb_itemList drop08">
+                  <a href="#">주문/배송조회</a>
+                  <a href="#">장바구니</a>
+                  <a href="#">배송지 관리</a>
+                  <a href="#">고객센터</a>
+                </div>
+              </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+    <!-- 모바일 gnb -->
+    <nav class="m-gnb">
+      <h2 class="visually hidden" hidden>메뉴</h2>
+      <div class="gnb-menu">
+        <button type="button" class="g-menu01">정기주문</button>
+        <button type="button" class="g-menu02">낱개주문</button>
+        <button type="button" class="g-menu03">유아식품</button>
+        <button type="button" class="g-menu04">기획전</button>
+        <button type="button" class="g-menu05">브랜드스토리</button>
+      </div>
+    </nav>
+
+    <!-- 모바일 : css-Number : /_header-002-m-2.css  -->
+    <link rel="stylesheet" href="./assets/css/style/_header-002-m.css">
+    <nav class="m-side">
+      <div class="nav__box">
+        <!-- 서브메뉴 닫는 박스 -->
+        <div class="close__button__box">
+          <div class="button">
+            <img src="./assets/icon/mobile_x_button.png" alt="">
+          </div>
+        </div>
+
+        <!-- 로그인 전 -->
+        <div class="join__box width-align">
+          <div class="join__text__box">
+            <p class="text">로그인 하여
+              더 많은 정보를 확인해 보세요.
+            </p>
+          </div>
+          <div class="join__button__box">
+            <button class="button__text point">회원가입</button>
+            <button class="button__text">로그인</button>
+          </div>
+        </div>
+
+        <!-- 로그인 후 -->
+        <div class="login__box width-align">
+          <div class="info__box">
+            <div class="img__box">
+              <div class="user__img">
+                <a href="">
+                  <img src="./assets/icon/user_default_icon.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="name__box">
+              <div class="user__name">
+                <a class="link__text" href="">
+                  <span>홍길동님</span>
+                  <img src="./assets/icon/arrow-black.png" alt="">
+                </a>
+              </div>
+              <div class="baby__info">
+                <!-- 아기정보가 없는 경우 -->
+                <a class="link__text point" href="">
+                  <span>아기정보를 입력해주세요</span>
+                  <img src="./assets/icon/arrow-pink.png" alt="">
+                </a>
+                <!-- 아기정보가 있는 경우 -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 유저 메뉴박스 -->
+          <div class="menu__box">
+            <div class="menu__item">
+              <a href="" class="link__text">마이페이지</a>
+            </div>
+            <div class="menu__item">
+              <a href="" class="link__text">주문조회</a>
+            </div>
+            <div class="menu__item">
+              <a href="" class="link__text">장바구니</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 배너 -->
+        <div class="banner__box">
+          <div class="slick__box m__side__slick width-align">
+            <div class="banner__img__box">
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+            </div>
+            <div class="banner__img__box">
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+            </div>
+            <div class="banner__img__box">
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+            </div>
+            <div class="banner__img__box">
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+            </div>
+            <div class="banner__img__box">
+              <img loading="lazy"
+                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="">
+            </div>
+          </div>
+        </div>
+        <!-- 식단주문하기 -->
+        <div class="order__box">
+          <div class="order__title__box ">
+            <p class="title width-align">식단주문하기</p>
+          </div>
+          <div class="sub__menu__box width-align">
+            <a class="link__text" href="">준비기(4-5개월)</a>
+            <a class="link__text" href="">초기(6개월 전후)</a>
+            <a class="link__text" href="">중기(7-8개월)</a>
+            <a class="link__text" href="">후기 2식(9-10개월)</a>
+            <a class="link__text" href="">후기 3식(10-11개월)</a>
+            <a class="link__text" href="">병행기(10-11개월)</a>
+            <a class="link__text" href="">완료기(12개월 이후)</a>
+            <a class="link__text" href="">첫밥(13개월 이후)</a>
+            <a class="link__text" href="">첫밥+국·반찬()</a>
+            <a class="link__text" href="">반찬·국</a>
+          </div>
+        </div>
+        <!-- 모바일 사이드 메뉴 -->
+        <div class="meun__box">
+          <div class="m_side_menu m_side_menu01">
+            <div class="menu__title__box width-align">
+              <p class="title ">유아식품</p>
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+            </div>
+            <div class="sub__menu__box">
+              <a class="link__text width-align" href="">분유 / 유아식</a>
+              <a class="link__text width-align" href="">퓨레</a>
+              <a class="link__text width-align" href="">간식 / 음료</a>
+              <a class="link__text width-align" href="">요리 / 재료 / 반찬</a>
+              <a class="link__text width-align" href="">건강기능식품</a>
+            </div>
+          </div>
+          <div class="m_side_menu m_side_menu02">
+            <div class="menu__title__box width-align">
+              <p class="title point">낱개 주문하기</p>
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+            </div>
+            <div class="sub__menu__box">
+              <a class="link__text width-align" href="">이유식</a>
+              <a class="link__text width-align" href="">유아식</a>
+              <a class="link__text width-align" href="">디저트</a>
+            </div>
+          </div>
+          <div class="m_side_menu m_side_menu03">
+            <div class="menu__title__box width-align">
+              <p class="title ">배냇밀 스토리</p>
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+            </div>
+            <div class="sub__menu__box">
+              <a class="link__text width-align" href="">배냇밀 소개</a>
+              <a class="link__text width-align" href="">충주팩토리</a>
+              <a class="link__text width-align" href="">재료 이야기</a>
+              <a class="link__text width-align" href="">안심온도계</a>
+            </div>
+          </div>
+          <div class="m_side_menu m_side_menu04">
+            <div class="menu__title__box width-align">
+              <p class="title ">이벤트</p>
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+            </div>
+            <div class="sub__menu__box">
+              <a class="link__text width-align" href="">무료체험신청</a>
+              <a class="link__text width-align" href="">이벤트</a>
+            </div>
+          </div>
+        </div>
+        <!-- 기타 메뉴 -->
+        <div class="etc__menu__box">
+          <div class="grid__box">
+            <div class="link">
+              <a href="">이용가이드</a>
+            </div>
+            <div class="link">
+              <a href="">1:1 상담하기</a>
+            </div>
+            <div class="link">
+              <a href="">공지사항</a>
+            </div>
+            <div class="link">
+              <a href="">이물오인혼동내용</a>
+            </div>
+            <div class="link">
+              <a href="">배송안내</a>
+            </div>
+            <div class="link">
+              <a href="">제휴문의</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <style>
+    
+    .customer-centre {
+      margin: 0;
+    }
+
+    .customer-centre .cc-gnb {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+
+    .customer-centre .cc-gnb .cc-title {
+      display: block;
+      text-align: center;
+      font-size: var(--font-size-34);
+      margin: 50px 0;
+      color: var(--color-text);
+    }
+
+    .customer-centre .cc-gnb .cc-button-group {
+      display: flex;
+      justify-content: center;
+    }
+
+    .customer-centre .cc-gnb .cc-button-group .cc-button {
+      min-width: 235px;
+      min-height: 50px;
+    }
+
+    .customer-centre .cc-gnb .cc-button-group .cc-button .text{
+      background-color: #f3f3f3;
+      font-size: var(--font-size-15);
+      color: var(--color-text);
+      border-radius: 50px;
+      padding: 10px 70px;
+    }
+
+    .customer-centre .cc-gnb .cc-button-group .cc-button .text.active {
+      background-color: #fa9bb1;
+      font-size: var(--font-size-15);
+      color: var(--color-white);
+    }
+
+    .customer-centre .cc-notice {
+      width: 100%;
+      margin-bottom: 200px;
+    }
+
+    .customer-centre .cc-notice .notice-title {
+      display: flex;
+      justify-content: center;
+      font-size: var(--font-size-24);
+      margin-bottom: 30px;
+      color: var(--color-text);
+    }
+    
+    .customer-centre .cc-notice .notice-board {
+      border-top: 1px solid var(--color-black);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .customer-centre .cc-notice .notice-board .board-row {
+      display: flex;
+    }
+
+    .customer-centre .cc-notice .notice-board .board-row.thead {
+      font-weight: 500;
+    }
+
+    .customer-centre .cc-notice .notice-board .board-row .column {
+      font-size: var(--font-size-14);
+      padding: 20px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-centre .cc-notice .notice-board .board-row .column a {
+      padding: 0;
+    }
+
+    .customer-centre .cc-notice .notice-board .board-row .column.th-num{
+      width: 10%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-title{
+      width: 50%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-title.flex-start{
+      display: flex;
+      justify-content: flex-start;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-date{
+      width: 20%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-writer{
+      width: 10%;
+    }
+    .customer-centre .cc-notice .notice-board .board-row .column.th-view{
+      width: 10%;
+    }
+
+    /* 표 중앙정렬 */
+    .column-centre {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-centre .notice-pagnation {
+      display: block;
+      margin-bottom: 70px;
+    }
+    
+    .customer-centre .notice-pagnation .pagnation-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    .customer-centre .notice-pagnation .pagnation-list .pagnation-item {
+      border: 1px solid #e6e6e6;
+      border-radius: 50px;
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      color: #888;
+    }
+
+    .customer-centre .notice-pagnation .pagnation-list .pagnation-item.active {
+      background-color: var(--color-main);
+      color: var(--color-white);
+    }
+
+    .customer-centre .notice-pagnation .pagnation-list .pagnation-item a {
+      font-size: var(--font-size-15);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-centre .notice-search {
+      display: block;
+    }
+
+    .customer-centre .notice-search #notice-form {
+      display: flex;
+      justify-content: center;
+      height: 42px;
+    }
+
+    .customer-centre .notice-search #notice-form .search-selector {
+      display: flex;
+      height: 100%;
+      width: 150px;
+      border: 1px solid #ccc;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customer-centre .notice-search #notice-form .search-selector p {
+      font-size: var(--font-size-14);
+      color: var(--color-text);
+    }
+
+    .customer-centre .notice-search #notice-form .search-selector img {
+      position: absolute;
+      top: 17px;
+      right: 5px;
+      width: 8%;
+    }
+
+    .customer-centre .notice-search #notice-form .input-group {
+      position: relative;
+      margin-left: 5px;
+    }
+
+    .customer-centre .notice-search #notice-form .input-group .input-btn {
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+
+    .customer-centre .notice-search #notice-form .input-group input[type= 'text'] {
+      width: 420px;
+      height: 100%;
+      border: 1px solid #ccc;
+      font-size: var(--font-size-12);
+    }
+
+    </style>
+    <section class="customer-centre">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1200">
+
+            <div class="cc-gnb">
+              <h2 class="cc-title">고객센터</h2>
+              <div class="cc-button-group">
+                <button class="cc-button"><p class="text active">공지사항</p></button>
+                <button class="cc-button"><p class="text">1:1문의하기</p></button>
+                <button class="cc-button"><p class="text">FAQ</p></button>
+              </div>
+            </div>
+
+            <div class="cc-notice">
+              <h3 class="notice-title">공지사항</h3>
+              
+              <div class="notice-board">
+
+                <div class="board-row thead">
+                  <div class="column th-num">번호</div>
+                  <div class="column th-title">제목</div>
+                  <div class="column th-date">날짜</div>
+                  <div class="column th-writer">작성자</div>
+                  <div class="column th-view">조회</div>
+                </div>
+
+                <!-- one row -->
+                <div class="board-row">
+                  <div class="column th-num">공지</div>
+                  <div class="column th-title flex-start"><a class="column" href="#">[당첨자발표] 크리스마스 과자파티 구매이벤트</a></div>
+                  <div class="column th-date"> 2022.12.22 </div>
+                  <div class="column th-writer"> 관리자 </div>
+                  <div class="column th-view"> 29 </div>
+                </div>
+
+                <!-- one row -->
+                <div class="board-row">
+                  <div class="column th-num">00</div>
+                  <div class="column th-title flex-start"><a class="column" href="#">[당첨자 발표] 준비기,초기 이벤트 당첨자안내(12월)</a></div>
+                  <div class="column th-date"> 2022.12.27 </div>
+                  <div class="column th-writer"> 관리자 </div>
+                  <div class="column th-view"> 6 </div>
+                </div>
+
+                </div>
+              </div>
+
+              <div class="notice-pagnation">
+                <ol class="pagnation-list">
+                  <li class="pagnation-item active"><a href="#">1</a></li>
+                  <li class="pagnation-item"><a href="#">2</a></li>
+                  <li class="pagnation-item"><a href="#">3</a></li>
+                  <li class="pagnation-item"><a href="#">4</a></li>
+                  <li class="pagnation-item"><a href="#">5</a></li>
+                </ol>
+              </div>
+
+              <div class="notice-search">
+                <form id="notice-form" action="">
+                  <div class="search-selector">
+                    <p>제목</p>
+                    <img src="./assets/icon/down_arrow.png" alt="">
+                  </div>
+                  <div class="input-group">
+                    <input type="text">
+                    <button class="input-btn">
+                      <img src="./assets/icon/search_icon_black.png" alt="검색하기">
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer 영역 | css-Number : /baby-footer.css -->
+  <link rel="stylesheet" href="./assets/css/style/baby-footer.css">
+  <footer>
+
+    <!-- footer 정보 부분 -->
+    <div class="footer01">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 col-sm-4">
+
+            <div class="footer_main">
+              <div class="ci-tr">
+                배냇밀 사업자정보
+                <img src="./assets/icon/circle_down_arrow.png" alt="">
+              </div>
+              <div class="company_info ">
+                <table class="ci_table">
+                  <th hidden>배냇밀 사업자 정보</th>
+
+                  <tr>
+                    <td class="ci_col_name">회사명</td>
+                    <td class="ci_data_name">아이배냇(주)</td>
+                  </tr>
+                  <tr>
+                    <td class="ci_col_name">사업자 등록번호</td>
+                    <td class="ci_data_name">131-86-06834</td>
+                  </tr>
+                  <tr>
+                    <td class="ci_col_name">주소</td>
+                    <td class="ci_data_name">서울특별시 송파구 백제고분로 488(호련빌딩)</td>
+                  </tr>
+                  <tr>
+                    <td class="ci_col_name"></td>
+                    <td class="ci_data_name">충청북도 충주시 대소원면 영평리 849번지 아이배냇 충주 공장</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="ci_col_name">통신판매업 신고번호</td>
+                    <td class="ci_data_name">제2020-충북충주-0062호</td>
+                  </tr>
+                  <tr>
+                    <td class="ci_col_name">대표전화</td>
+                    <td class="ci_data_name">1833-4312 | FAX 02-3431-4315</td>
+                  </tr>
+                  <tr>
+                    <td class="ci_col_name">개인정보관리 책임자</td>
+                    <td class="ci_data_name">조성재 | 대표자 : 민병관</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="customer_service">
+                <table class="cs_table">
+                  <tbody class="cs_tbody">
+                    <tr class="cs_tr">
+                      <td class="cs_th">
+                        <p>고객센터</p>
+                      </td>
+                    </tr>
+                    <tr class="cs_tr">
+                      <td class="cs_td01">
+                        <p>1833-4312</p>
+                      </td>
+                    </tr>
+                    <tr class="cs_tr">
+                      <td class="cs_td02">
+                        <p>월~금 09:00 &minus; 18:00<span>점심 PM 12:00 &minus; 13:00</span></p>
+                        <p>토, 일 / 공휴일 휴무</p>
+                      </td>
+                    </tr>
+                    <tr class="cs_tr">
+                      <td class="cs_td03">
+                        <div class="link-naver"><img src="./assets/icon/footer_naver.png" alt="네이버 바로가기"></div>
+                        <div class="link-insta"><img src="./assets/icon/footer_insta.png" alt="인스타그램 바로가기"></div>
+                        <div class="link-youtube"><img src="./assets/icon/footer_youtube.png" alt="유튜브 바로가기"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 사이트 가장 하단 부분 -->
+    <div class="footer02">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 col-md-11 col-sm-4">
+            <div class="footer_last">
+              <p>COPYRIGHTSⓒ venetmeal.com ALL RIGHTS RESERVED.</p>
+              <a href="#">
+                <p>이용약관</p>
+              </a>
+              <a href="#">
+                <p>개인정보처리방침</p>
+              </a>
+              <a href="#">
+                <p>이용안내</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script>
+    let selectMenu = document.querySelector('.selector__section .baby-monthly-guide .select-box');
+    let optionBox = document.querySelector('.selector__section .baby-monthly-guide');
+
+
+    selectMenu.addEventListener('click', () => optionBox.classList.toggle('active'))
+
+  </script>
+  <script src="./assets/js/dropdown.js"></script>
+  <script src="./assets/js/mainCarousel.js"></script>
+
+</body>
+</html>
