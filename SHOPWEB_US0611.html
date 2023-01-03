@@ -683,7 +683,10 @@
                 justify-content: space-between;
             }
 
-            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title {}
+            .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title {
+                display: flex;
+                flex-wrap: wrap;
+            }
 
             .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title .title {
                 font-size: var(--font-size-22);
@@ -703,6 +706,10 @@
                 border: 1px solid #ccc;
                 background-color: #fff;
                 padding: 7px 30px;
+            }
+
+            @media all and (max-width: 1024px){
+
             }
 
             @media all and (max-width: 767px){
@@ -730,9 +737,6 @@
             }
 
             @media all and (max-width: 480px){
-                .faq__list__box .faq__board__box .faq__row__body .row__item .row__question {
-
-                }
             }
         </style>
         <section class="faq__search__box">
@@ -755,7 +759,8 @@
                         </div>
                         <div class="inquiry__button__box">
                             <div class="inquiry__button__title">
-                                <p class="title">찾으시는 질문이 없으시다면 1:1 문의를 남겨주세요</p>
+                                <p class="title">찾으시는 질문이 없으시다면 &nbsp;</p>
+                                <p class="title">1:1 문의를 남겨주세요</p>
                             </div>
                             <div class="inquiry__button">
                                 <a href="" class="link">1:1 문의</a>
@@ -783,10 +788,13 @@
             .faq__list__box .faq__category__list {
                 margin-top: 15px;
                 padding-bottom: 25px;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             .faq__list__box .faq__category__list .category__item.selected {
                 font-weight: 500;
+                display: block;
             }
 
             .faq__list__box .faq__category__list .category__item {
@@ -879,9 +887,7 @@
                 .faq__list__box {
                     margin-bottom: 30px;
                 }
-            }
 
-            @media all and (max-width: 480px){
                 .faq__search__box .search__box__wrap {
                     display: block;
                 }
@@ -893,7 +899,13 @@
                 .faq__search__box .search__box__wrap .inquiry__button__box {
                     width: 100%;
                 }
+                
+                .faq__search__box .search__box__wrap .inquiry__button__box .inquiry__button__title {
+                    display: flex;
+                }
+            }
 
+            @media all and (max-width: 480px){
                 .faq__list__box .faq__board__box .faq__row .index {
                     max-width: 50px;
                 }
