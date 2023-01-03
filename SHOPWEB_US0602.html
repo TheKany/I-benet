@@ -570,10 +570,14 @@
             @media all and (max-width: 1024px){}
       
             @media all and (max-width: 767px){
-              .customer-center .cc-gnb .cc-button-group .cc-button .text {
-                min-width: 130px;
-                min-height: 50px;
-              }
+                .customer-center .cc-gnb .cc-button-group .cc-button .text {
+                    min-width: 130px;
+                    min-height: 50px;
+                }
+
+                .customer-center .cc-gnb {
+                    display: none;
+                }
             }
       
             @media all and (max-width: 480px){
@@ -705,14 +709,36 @@
                 /* background-color: var(--color-info); */
             }
 
+            .board-title-m {
+                display: none;
+            }   
+
             @media all and (max-width: 1440px){}
 
             @media all and (max-width: 1024px){}
 
             @media all and (max-width: 767px){
+                .table__section {
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }
+                
                 .table__section .board__list__box .board__content .board__title .title {
                     font-size: var(--font-size-25);
                     line-height: var(--line-height-25);
+                }
+
+                .table__section .board__list__box .board__list__name {
+                    display: none;
+                }
+
+                .board-title-m {
+                    display: block;
+                    font-size: var(--font-size-15);
+                    text-align: center;
+                    border-top: 1px solid var(--color-tmp2);
+                    border-bottom: 1px solid var(--color-tmp2);
+                    padding: 10px 0;
                 }
             }
 
@@ -739,6 +765,9 @@
                         <div class="board__list__name">
                             <p id="board__type__name" class="title">공지사항</p>
                         </div>
+
+                        <h3 class="board-title-m">공지사항</h3>
+
                         <div class="board__content">
                             <div class="board__title">
                                 <p class="title">[당첨자발표] 크리스마스 과자파티 구매이벤트</p>
