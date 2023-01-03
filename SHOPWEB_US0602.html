@@ -713,47 +713,21 @@
                 display: none;
             }   
 
+            .table__section-m {
+                display: none;
+            }
+
             @media all and (max-width: 1440px){}
 
             @media all and (max-width: 1024px){}
 
             @media all and (max-width: 767px){
                 .table__section {
-                    margin-top: 20px;
-                    margin-bottom: 50px;
-                }
-                
-                .table__section .board__list__box .board__content .board__title .title {
-                    font-size: var(--font-size-25);
-                    line-height: var(--line-height-25);
-                }
-
-                .table__section .board__list__box .board__list__name {
                     display: none;
                 }
 
-                .board-title-m {
+                .table__section-m {
                     display: block;
-                    font-size: var(--font-size-15);
-                    text-align: center;
-                    border-top: 1px solid var(--color-tmp2);
-                    border-bottom: 1px solid var(--color-tmp2);
-                    padding: 10px 0;
-                }
-            }
-
-            @media all and (max-width: 480px){
-                .table__section {
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                }                                                         
-                .table__section .board__list__box .board__content .board__info {
-                    padding: 5px 10px;
-                }
-
-                .table__section .board__list__box .board__content .board__info .info__item {
-                    margin-right: 10px;
-                    padding-right: 10px;
                 }
             }
 
@@ -765,9 +739,6 @@
                         <div class="board__list__name">
                             <p id="board__type__name" class="title">공지사항</p>
                         </div>
-
-                        <h3 class="board-title-m">공지사항</h3>
-
                         <div class="board__content">
                             <div class="board__title">
                                 <p class="title">[당첨자발표] 크리스마스 과자파티 구매이벤트</p>
@@ -793,6 +764,132 @@
                                 <button class="text">목록</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .table__section-m {
+                margin-top: 0;
+                margin-bottom: 50px;
+            }
+
+            .table__section-m .board__list__box {}
+
+            .table__section-m .board__list__box .board__list__name {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                border-top: 1px solid var(--color-tmp2);
+                border-bottom: 1px solid var(--color-tmp2);
+            }
+
+            .table__section-m .board__list__box .board__list__name .title {
+                font-size: var(--font-size-20);
+                line-height: var(--line-height-20);
+            }
+
+            .table__section-m .board__list__box .board__content {}
+
+            .table__section-m .board__list__box .board__content .board__title {
+                padding: 30px 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .table__section-m .board__list__box .board__content .board__title .title {
+                font-size: var(--font-size-26);
+                line-height: var(--line-height-26);
+                font-weight: 500;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info {
+                display: flex;
+                padding: 15px 20px;
+                background-color: #fafafa;
+                border-radius: 5px;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .info__item {
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid #ddd;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                color: var(--color-text);
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .author {}
+
+            .table__section-m .board__list__box .board__content .board__info .author .text {}
+
+            .table__section-m .board__list__box .board__content .board__info .date {}
+
+            .table__section-m .board__list__box .board__content .board__info .date .text {}
+
+            .table__section-m .board__list__box .board__content .board__info .view {
+                display: flex;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .view .text {}
+
+            .table__section-m .board__list__box .board__content .board__info .view .text.number {}
+
+            .table__section-m .board__list__box .board__content .content {
+                padding: 40px;
+            }
+
+            .table__section-m .board__list__box .board__sub__box {
+                border-top: 1px solid var(--color-footer-line);
+                padding: 15px 0;
+                padding-top: 30px;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .table__section-m .board__list__box .board__sub__box .list__button {}
+
+            .table__section-m .board__list__box .board__sub__box .list__button .text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+                padding: 10px 30px;
+                /* background-color: var(--color-info); */
+            }
+
+        </style>
+        <section class="table__section-m">
+            <div class="board__list__box">
+                <div class="board__list__name">
+                    <p id="board__type__name" class="title">공지사항</p>
+                </div>
+                <div class="board__content">
+                    <div class="board__title">
+                        <p class="title">[당첨자발표] 크리스마스 과자파티 구매이벤트</p>
+                    </div>
+                    <div class="board__info">
+                        <div class="info__item author">
+                            <p class="text">관리자</p>
+                        </div>
+                        <div class="info__item date">
+                            <p class="text">2022.12.22 16:41:25</p>
+                        </div>
+                        <div class="info__item view">
+                            <p class="text">조회수</p>
+                            <p class="text number">29</p>
+                        </div>
+                    </div>
+                    <div id="content" class="content">
+                        [내용 들어가는 곳]
+                    </div>
+                </div>
+                <div class="board__sub__box">
+                    <div class="right list__button">
+                        <button class="text">목록</button>
                     </div>
                 </div>
             </div>
