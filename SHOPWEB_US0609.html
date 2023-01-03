@@ -767,7 +767,6 @@
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha {
                 flex-direction: row;
-                flex-wrap: wrap;
             }
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha {
@@ -776,6 +775,7 @@
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha .upload__btn {
                 margin-top: 10px;
+                position: relative;
             }
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .reload__btn {
@@ -795,9 +795,7 @@
                 border: 1px solid #aaa;
             }
 
-            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {
-                width: 100%;
-            }
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {}
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .capcha__input {
                 font-size: var(--font-size-16);
@@ -837,6 +835,14 @@
                 color: var(--color-white);
                 border: 1px solid var(--color-main);
             }
+
+            /* 캡챠 새로고침 */
+            .web-view {
+                display: block;
+                }
+            .mobile-view {
+                display: none;
+            }
             
             @media all and (max-width: 1025px){
                 .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
@@ -847,6 +853,36 @@
             @media all and (max-width: 767px){
                 .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
                     min-width: 130px;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha .upload__btn {
+                    width: 130px;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .capcha__input {
+                    width: 100px;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha {
+                    padding-left: 10px;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha {
+                    margin-left: 10px;
+                }
+
+                
+
+                /* 캡챠 새로고침 */
+                .web-view {
+                    display: none;
+                }
+
+                .mobile-view {
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    right: 0;
                 }
             }
 
@@ -869,6 +905,14 @@
                     padding: 5px;
                 }
 
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .sub__text .text {
+                    margin-top: 10px;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha .upload__btn {
+                    width: 150px;
+                }
+
                 .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn .find__btn {
                     padding: 1px 5px;
                 }
@@ -881,9 +925,29 @@
                     padding: 1px 5px;
                 }
 
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .capcha__input {
+                    width: 120px;
+                }
+
                 .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text {
                     min-width: 100px;
                     min-height: 40px;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha {
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img {
+                    width: 100px;
+                    height: 80px;
+                    margin-left: 10px;
+                }
+
+                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {
+                    width: 100%;
                 }
             }
         </style>
@@ -972,8 +1036,11 @@
                                                 <p class="text">보이는 순서대로 숫자 및 문자를 모두 입력해 주세요.</p>
                                             </div>
                                             <div class="upload__btn">
-                                                <button class="reload__btn">이미지 새로고침</button>
+                                                <button class="reload__btn web-view">이미지 새로고침</button>
                                                 <input class="capcha__input" type="text">
+                                                <button class="mobile-view">
+                                                    <i class="fa-solid fa-rotate"></i>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
