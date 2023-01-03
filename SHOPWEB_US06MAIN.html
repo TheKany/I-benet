@@ -33,6 +33,13 @@
 
 <body>
   <!-- 페이지 공통 헤더 -->
+  <style>
+    /* 작업용 구분선 */
+    .gnb_main {
+      border-bottom: 1px solid var(--color-tmp1);
+    }
+  </style>
+  
   <header>
     <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
     <link rel="stylesheet" href="./assets/css/style/_header-001.css">
@@ -568,6 +575,29 @@
         background-color: var(--color-main);
         color: var(--color-white);
       }
+
+      @media all and (max-width: 1440px){}
+
+      @media all and (max-width: 1024px){}
+
+      @media all and (max-width: 767px){
+        .customer-center .cc-gnb .cc-button-group .cc-button .text {
+          min-width: 130px;
+          min-height: 50px;
+        }
+      }
+
+      @media all and (max-width: 480px){
+        .customer-center .cc-gnb .cc-title {
+          margin: 30px 0;
+        }
+
+        .customer-center .cc-gnb .cc-button-group .cc-button .text {
+          min-width: 80px;
+          min-height: 40px;
+          font-size: var(--font-size-12);
+        }
+      }
     </style>
     <section class="customer-center">
       <div class="container">
@@ -778,6 +808,99 @@
         border: 1px solid #aaa;
         font-size: var(--font-size-12);
       }
+
+
+      @media all and (max-width: 1440px){}
+
+      @media all and (max-width: 1024px){
+        .customer__board .cc-notice .notice-board .board-row .column.th-num {
+          max-width: 80px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-date {
+          max-width: 100px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-writer {
+          max-width: 80px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-view {
+          max-width: 80px;
+        }
+      }
+
+      @media all and (max-width: 767px){
+        
+        .customer__board .cc-notice .notice-board .board-row .column {
+          padding: 15px 0px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-num {
+          max-width: 60px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-date {
+          max-width: 80px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-writer {
+          max-width: 60px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-view {
+          max-width: 40px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column a span.title {
+          display: -webkit-box;
+          color: var(--color-text);
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column a {
+          flex-wrap: wrap;
+        }
+      }
+      
+      @media all and (max-width: 480px){
+        .customer__board {
+          margin-top: 30px;
+          margin-bottom: 50px;
+        }
+
+        .customer__board .notice-pagnation {
+          margin-bottom: 40px;
+        }
+
+        .customer__board .notice-pagnation .pagnation-list .pagnation-item {
+          width: 35px;
+          height: 35px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column {
+          padding: 10px 0px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-num {
+          max-width: 40px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-date {
+          max-width: 60px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-writer {
+          max-width: 40px;
+        }
+
+        .customer__board .cc-notice .notice-board .board-row .column.th-view {
+          max-width: 40px;
+        }
+      }
+
     </style>
     <section class="customer__board">
       <div class="container">
@@ -802,9 +925,11 @@
                   <div class="column th-num">공지</div>
                   <div class="column th-title flex-start">
                     <a class="column" href="/SHOPWEB_US0602.html">
-                      <span class="title">[당첨자발표] 크리스마스 과자파티 구매이벤트</span>
-                      <img class="attach_img new" src="../assets/icon/icon_board_attach_img.png" alt="">
-                      <img class="attach_img hot" src="../assets/icon/icon_board_hot.png" alt="">
+                      <span class="title">
+                        [당첨자발표] 크리스마스 과자파티 구매이벤트
+                        <img class="attach_img new" src="../assets/icon/icon_board_attach_img.png" alt="">
+                        <img class="attach_img hot" src="../assets/icon/icon_board_hot.png" alt="">
+                      </span>
                     </a>
                   </div>
                   <div class="column th-date"> 2022.12.22 </div>
