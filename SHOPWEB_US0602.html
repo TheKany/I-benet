@@ -513,104 +513,108 @@
     <main>
         <style>
             .customer-center {
-              margin: 0;
+                margin: 0;
             }
-      
+
             .customer-center .cc-gnb {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
-      
+
             .customer-center .cc-gnb .cc-title {
-              display: block;
-              text-align: center;
-              font-size: var(--font-size-34);
-              line-height: var(--line-height-34);
-              margin: 50px 0;
-              font-weight: 500;
-              color: var(--color-text);
+                display: block;
+                text-align: center;
+                font-size: var(--font-size-34);
+                line-height: var(--line-height-34);
+                margin: 50px 0;
+                font-weight: 500;
+                color: var(--color-text);
             }
-      
+
             .customer-center .cc-gnb .cc-button-group {
-              display: flex;
-              justify-content: center;
+                display: flex;
+                justify-content: center;
             }
-      
+
             .customer-center .cc-gnb .cc-button-group .cc-button {
-              display: flex;
-              margin-right: 15px;
+                display: flex;
+                margin-right: 15px;
             }
-      
+
             .customer-center .cc-gnb .cc-button-group .cc-button:last-of-type {
-              margin-right: 0;
+                margin-right: 0;
             }
-      
+
             .customer-center .cc-gnb .cc-button-group .cc-button .text {
-              min-width: 235px;
-              min-height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background-color: #f3f3f3;
-              font-size: var(--font-size-15);
-              color: var(--color-text);
-              border-radius: 50px;
-              line-height: var(--line-height-16);
-      
-            }
-      
-            .customer-center .cc-gnb .cc-button-group .cc-button .text.active {
-              background-color: var(--color-main);
-              color: var(--color-white);
-            }
-      
-            @media all and (max-width: 1440px){}
-      
-            @media all and (max-width: 1024px){}
-      
-            @media all and (max-width: 767px){
-              .customer-center .cc-gnb .cc-button-group .cc-button .text {
-                min-width: 130px;
+                min-width: 235px;
                 min-height: 50px;
-              }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f3f3f3;
+                font-size: var(--font-size-15);
+                color: var(--color-text);
+                border-radius: 50px;
+                line-height: var(--line-height-16);
+
             }
-      
-            @media all and (max-width: 480px){
-              .customer-center .cc-gnb .cc-title {
-                margin: 30px 0;
-              }
-      
-              .customer-center .cc-gnb .cc-button-group .cc-button .text {
-                min-width: 80px;
-                min-height: 40px;
-                font-size: var(--font-size-12);
-              }
+
+            .customer-center .cc-gnb .cc-button-group .cc-button .text.active {
+                background-color: var(--color-main);
+                color: var(--color-white);
             }
-          </style>
-          <section class="customer-center">
+
+            @media all and (max-width: 1440px) {}
+
+            @media all and (max-width: 1024px) {}
+
+            @media all and (max-width: 767px) {
+                .customer-center .cc-gnb .cc-button-group .cc-button .text {
+                    min-width: 130px;
+                    min-height: 50px;
+                }
+
+                .customer-center .cc-gnb {
+                    display: none;
+                }
+            }
+
+            @media all and (max-width: 480px) {
+                .customer-center .cc-gnb .cc-title {
+                    margin: 30px 0;
+                }
+
+                .customer-center .cc-gnb .cc-button-group .cc-button .text {
+                    min-width: 80px;
+                    min-height: 40px;
+                    font-size: var(--font-size-12);
+                }
+            }
+        </style>
+        <section class="customer-center">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-1200">
-                  <div class="cc-gnb">
-                    <h2 class="cc-title">고객센터</h2>
-                    <div class="cc-button-group">
-                      <a href="/SHOPWEB_US06MAIN.html" class="cc-button">
-                        <p class="text active">공지사항</p>
-                      </a>
-                      <a href="/SHOPWEB_US0609.html" class="cc-button">
-                        <p class="text ">1:1문의하기</p>
-                      </a>
-                      <a href="/SHOPWEB_US0611.html" class="cc-button">
-                        <p class="text ">FAQ</p>
-                      </a>
+                <div class="row">
+                    <div class="col-lg-1200">
+                        <div class="cc-gnb">
+                            <h2 class="cc-title">고객센터</h2>
+                            <div class="cc-button-group">
+                                <a href="/SHOPWEB_US06MAIN.html" class="cc-button">
+                                    <p class="text active">공지사항</p>
+                                </a>
+                                <a href="/SHOPWEB_US0609.html" class="cc-button">
+                                    <p class="text ">1:1문의하기</p>
+                                </a>
+                                <a href="/SHOPWEB_US0611.html" class="cc-button">
+                                    <p class="text ">FAQ</p>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
-      
                 </div>
-              </div>
             </div>
-          </section>
+        </section>
 
         <!-- 공지사항 상세글 -->
         <style>
@@ -705,32 +709,29 @@
                 /* background-color: var(--color-info); */
             }
 
-            @media all and (max-width: 1440px){}
-
-            @media all and (max-width: 1024px){}
-
-            @media all and (max-width: 767px){
-                .table__section .board__list__box .board__content .board__title .title {
-                    font-size: var(--font-size-25);
-                    line-height: var(--line-height-25);
-                }
+            .board-title-m {
+                display: none;
             }
 
-            @media all and (max-width: 480px){
+            .table__section-m {
+                display: none;
+            }
+
+            @media all and (max-width: 1440px) {}
+
+            @media all and (max-width: 1024px) {}
+
+            @media all and (max-width: 767px) {
                 .table__section {
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                }                                                         
-                .table__section .board__list__box .board__content .board__info {
-                    padding: 5px 10px;
+                    display: none;
                 }
 
-                .table__section .board__list__box .board__content .board__info .info__item {
-                    margin-right: 10px;
-                    padding-right: 10px;
+                .table__section-m {
+                    display: block;
                 }
             }
 
+            @media all and (max-width: 480px) {}
         </style>
         <section class="table__section">
             <div class="container">
@@ -764,6 +765,152 @@
                                 <button class="text">목록</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 공지사항 상세글 모바일-->
+        <style>
+            .table__section-m {
+                margin-top: 0;
+                margin-bottom: 50px;
+            }
+
+            .table__section-m .board__list__box {}
+
+            .table__section-m .board__list__box .board__list__name {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                border-top: 1px solid var(--color-tmp2);
+                border-bottom: 1px solid var(--color-tmp2);
+            }
+
+            .table__section-m .board__list__box .board__list__name .title {
+                font-size: var(--font-size-20);
+                line-height: var(--line-height-20);
+            }
+
+            .table__section-m .board__list__box .board__content {}
+
+            .table__section-m .board__list__box .board__content .board__title {
+                padding: 30px 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .table__section-m .board__list__box .board__content .board__title .title {
+                font-size: var(--font-size-22);
+                line-height: var(--line-height-22);
+                font-weight: 500;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info {
+                display: flex;
+                padding: 5px 10px;
+                background-color: #fafafa;
+                border-radius: 5px;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .info__item {
+                margin-right: 15px;
+                padding-right: 15px;
+                border-right: 1px solid #ddd;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                color: var(--color-text);
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .author {}
+
+            .table__section-m .board__list__box .board__content .board__info .author .text {}
+
+            .table__section-m .board__list__box .board__content .board__info .date {}
+
+            .table__section-m .board__list__box .board__content .board__info .date .text {}
+
+            .table__section-m .board__list__box .board__content .board__info .view {
+                display: flex;
+            }
+
+            .table__section-m .board__list__box .board__content .board__info .view .text {}
+
+            .table__section-m .board__list__box .board__content .board__info .view .text.number {}
+
+            .table__section-m .board__list__box .board__content .content {
+                padding: 40px;
+            }
+
+            .table__section-m .board__list__box .board__sub__box {
+                border-top: 1px solid var(--color-footer-line);
+                padding: 15px 0;
+                padding-top: 30px;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .table__section-m .board__list__box .board__sub__box .list__button {}
+
+            .table__section-m .board__list__box .board__sub__box .list__button .text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+                padding: 10px 30px;
+                /* background-color: var(--color-info); */
+            }
+
+            @media all and (max-width: 1440px) {}
+
+            @media all and (max-width: 1024px) {}
+
+            @media all and (max-width: 767px) {
+                .table__section-m .board__list__box .board__content .board__info {
+                    padding: 15px 20px;
+                }
+
+                .table__section-m .board__list__box .board__content .content {
+                    padding: 40px 20px;
+                }
+
+                .table__section-m .board__list__box .board__sub__box {
+                    justify-content: center;
+                }
+            }
+
+            @media all and (max-width: 480px) {}
+        </style>
+        <section class="table__section-m">
+            <div class="board__list__box">
+                <div class="board__list__name">
+                    <p id="board__type__name" class="title">공지사항</p>
+                </div>
+                <div class="board__content">
+                    <div class="board__title">
+                        <p class="title">[당첨자발표] 크리스마스 과자파티 구매이벤트</p>
+                    </div>
+                    <div class="board__info">
+                        <div class="info__item author">
+                            <p class="text">관리자</p>
+                        </div>
+                        <div class="info__item date">
+                            <p class="text">2022.12.22 16:41:25</p>
+                        </div>
+                        <div class="info__item view">
+                            <p class="text">조회수</p>
+                            <p class="text number">29</p>
+                        </div>
+                    </div>
+                    <div id="content" class="content">
+                        [내용 들어가는 곳]
+                    </div>
+                </div>
+                <div class="board__sub__box">
+                    <div class="right list__button">
+                        <a href="/SHOPWEB_US06MAIN.html" class="text">목록</a>
                     </div>
                 </div>
             </div>

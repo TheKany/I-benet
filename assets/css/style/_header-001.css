@@ -158,6 +158,9 @@ header{
 
 /* 모바일 반응형 */
 @media all and (max-width: 767px) {
+  header{
+    margin-top: 20px;
+  }
   .web_header {
     display: none;
   }
@@ -176,10 +179,6 @@ header{
 
   .total-menu > img {
     max-width: 25px;
-  }
-
-  .m-logo {
-    margin-top: 15px;
   }
 
   .m-logo > img {

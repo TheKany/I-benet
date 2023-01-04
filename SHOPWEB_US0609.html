@@ -512,102 +512,106 @@
     <main>
         <style>
             .customer-center {
-              margin: 0;
+                margin: 0;
             }
-      
+
             .customer-center .cc-gnb {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
-      
+
             .customer-center .cc-gnb .cc-title {
-              display: block;
-              text-align: center;
-              font-size: var(--font-size-34);
-              line-height: var(--line-height-34);
-              margin: 50px 0;
-              font-weight: 500;
-              color: var(--color-text);
+                display: block;
+                text-align: center;
+                font-size: var(--font-size-34);
+                line-height: var(--line-height-34);
+                margin: 50px 0;
+                font-weight: 500;
+                color: var(--color-text);
             }
-      
+
             .customer-center .cc-gnb .cc-button-group {
-              display: flex;
-              justify-content: center;
+                display: flex;
+                justify-content: center;
             }
-      
+
             .customer-center .cc-gnb .cc-button-group .cc-button {
-              display: flex;
-              margin-right: 15px;
+                display: flex;
+                margin-right: 15px;
             }
-      
+
             .customer-center .cc-gnb .cc-button-group .cc-button:last-of-type {
-              margin-right: 0;
+                margin-right: 0;
             }
-      
+
             .customer-center .cc-gnb .cc-button-group .cc-button .text {
-              min-width: 235px;
-              min-height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background-color: #f3f3f3;
-              font-size: var(--font-size-15);
-              color: var(--color-text);
-              border-radius: 50px;
-              line-height: var(--line-height-16);
-      
-            }
-      
-            .customer-center .cc-gnb .cc-button-group .cc-button .text.active {
-              background-color: var(--color-main);
-              color: var(--color-white);
-            }
-      
-            @media all and (max-width: 1440px){}
-      
-            @media all and (max-width: 1024px){}
-      
-            @media all and (max-width: 767px){
-              .customer-center .cc-gnb .cc-button-group .cc-button .text {
-                min-width: 130px;
+                min-width: 235px;
                 min-height: 50px;
-              }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f3f3f3;
+                font-size: var(--font-size-15);
+                color: var(--color-text);
+                border-radius: 50px;
+                line-height: var(--line-height-16);
+
             }
-      
-            @media all and (max-width: 480px){
-              .customer-center .cc-gnb .cc-title {
-                margin: 30px 0;
-              }
-      
-              .customer-center .cc-gnb .cc-button-group .cc-button .text {
-                min-width: 80px;
-                min-height: 40px;
-                font-size: var(--font-size-12);
-              }
+
+            .customer-center .cc-gnb .cc-button-group .cc-button .text.active {
+                background-color: var(--color-main);
+                color: var(--color-white);
+            }
+
+            @media all and (max-width: 1440px) {}
+
+            @media all and (max-width: 1024px) {}
+
+            @media all and (max-width: 767px) {
+                .customer-center .cc-gnb {
+                    display: none;
+                }
+
+                .customer-center .cc-gnb .cc-button-group .cc-button .text {
+                    min-width: 130px;
+                    min-height: 50px;
+                }
+            }
+
+            @media all and (max-width: 480px) {
+                .customer-center .cc-gnb .cc-title {
+                    margin: 30px 0;
+                }
+
+                .customer-center .cc-gnb .cc-button-group .cc-button .text {
+                    min-width: 80px;
+                    min-height: 40px;
+                    font-size: var(--font-size-12);
+                }
             }
         </style>
         <section class="customer-center">
             <div class="container">
-              <div class="row">
-                <div class="col-lg-1200">
-                  <div class="cc-gnb">
-                    <h2 class="cc-title">고객센터</h2>
-                    <div class="cc-button-group">
-                      <a href="/SHOPWEB_US06MAIN.html" class="cc-button">
-                        <p class="text">공지사항</p>
-                      </a>
-                      <a href="/SHOPWEB_US0609.html" class="cc-button">
-                        <p class="text active">1:1문의하기</p>
-                      </a>
-                      <a href="/SHOPWEB_US0611.html" class="cc-button">
-                        <p class="text ">FAQ</p>
-                      </a>
+                <div class="row">
+                    <div class="col-lg-1200">
+                        <div class="cc-gnb">
+                            <h2 class="cc-title">고객센터</h2>
+                            <div class="cc-button-group">
+                                <a href="/SHOPWEB_US06MAIN.html" class="cc-button">
+                                    <p class="text">공지사항</p>
+                                </a>
+                                <a href="/SHOPWEB_US0609.html" class="cc-button">
+                                    <p class="text active">1:1문의하기</p>
+                                </a>
+                                <a href="/SHOPWEB_US0611.html" class="cc-button">
+                                    <p class="text ">FAQ</p>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
-      
                 </div>
-              </div>
             </div>
         </section>
 
@@ -674,7 +678,7 @@
                 border: 1px solid #aaa;
                 padding: 5px 10px;
                 background: url(../assets/icon/select_down_arrow.png) no-repeat;
-                background-position: 90% 52%;
+                background-position: 92% 52%;
                 background-size: 12px;
                 -webkit-appearance: none;
                 -moz-appearance: none;
@@ -767,7 +771,6 @@
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha {
                 flex-direction: row;
-                flex-wrap: wrap;
             }
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha {
@@ -776,6 +779,7 @@
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha .upload__btn {
                 margin-top: 10px;
+                position: relative;
             }
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .reload__btn {
@@ -795,9 +799,7 @@
                 border: 1px solid #aaa;
             }
 
-            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {
-                width: 100%;
-            }
+            .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {}
 
             .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .capcha__input {
                 font-size: var(--font-size-16);
@@ -837,55 +839,28 @@
                 color: var(--color-white);
                 border: 1px solid var(--color-main);
             }
-            
-            @media all and (max-width: 1025px){
+
+            .personal__inquiry__section-m {
+                display: none;
+            }
+
+            @media all and (max-width: 1025px) {
                 .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
                     min-width: 140px;
                 }
             }
 
-            @media all and (max-width: 767px){
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
-                    min-width: 130px;
+            @media all and (max-width: 767px) {
+                .personal__inquiry__section-m {
+                    display: block;
                 }
-            }
 
-            @media all and (max-width: 480px){
                 .personal__inquiry__section {
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                }
-
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input {
-                    padding: 15px;
-                    padding-left: 10px;
-                }
-                
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
-                    min-width: 80px;
-                }
-
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title .title {
-                    padding: 5px;
-                }
-
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn .find__btn {
-                    padding: 1px 5px;
-                }
-
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn .plus__btn {
-                    padding: 1px 5px;
-                }
-
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .reload__btn {
-                    padding: 1px 5px;
-                }
-
-                .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text {
-                    min-width: 100px;
-                    min-height: 40px;
+                    display: none;
                 }
             }
+
+            @media all and (max-width: 480px) {}
         </style>
         <section class="personal__inquiry__section">
             <div class="container">
@@ -972,7 +947,7 @@
                                                 <p class="text">보이는 순서대로 숫자 및 문자를 모두 입력해 주세요.</p>
                                             </div>
                                             <div class="upload__btn">
-                                                <button class="reload__btn">이미지 새로고침</button>
+                                                <button class="reload__btn web-view">이미지 새로고침</button>
                                                 <input class="capcha__input" type="text">
                                             </div>
                                         </div>
@@ -990,6 +965,372 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 1:1 폼 모바일용-->
+        <style>
+            .personal__inquiry__section-m {
+                margin-top: 0;
+                margin-bottom: 50px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box {}
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__title {
+                text-align: center;
+                border-top: 1px solid var(--color-tmp2);
+                border-bottom: 1px solid var(--color-tmp2);
+                padding: 10px 0;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__title .title {
+                font-size: var(--font-size-20);
+                line-height: var(--line-height-20);
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form {}
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box {}
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row {
+                border-bottom: 1px solid var(--color-footer-line);
+                display: flex;
+                padding-right: 8px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
+                min-width: 100px;
+                background-color: #fafafa;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title .title {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                padding: 5px;
+                color: var(--color-text);
+
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 25px;
+                padding-left: 10px;
+                padding-right: 0;
+                min-width: 150px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input select {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                width: 100%;
+                border: 1px solid #aaa;
+                padding: 5px 10px;
+                background: url('../assets/icon/select_down_arrow.png') no-repeat;
+                background-position: 92% 52%;
+                background-size: 12px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input select option {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .text#user_name {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.subject,
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.textarea {
+                width: 100%;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .subject__input,
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input textarea {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+                padding: 5px 10px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .sub__text {}
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .sub__text .text {
+                font-size: var(--font-size-14);
+                line-height: var(--line-height-14);
+                color: var(--color-text);
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.file {
+                margin-top: 10px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item {
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                flex-wrap: wrap;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .filebox {
+                margin-right: 10px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item input.upload-name {
+                padding: 5px 10px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item input[type=file] {
+                position: absolute;
+                width: 0;
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 0;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn {
+                display: flex;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn .find__btn {
+                padding: 5px 10px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                color: var(--color-white);
+                background-color: #aaa;
+                border: 1px solid #aaa;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .input__item .upload__btn .plus__btn {
+                padding: 5px 10px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha {
+                flex-direction: row;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha {
+                margin-left: 20px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha .upload__btn {
+                margin-top: 10px;
+                position: relative;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .reload__btn {
+                padding: 5px 10px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                color: var(--color-white);
+                background-color: #aaa;
+                border: 1px solid #aaa;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img {
+                min-width: 150px;
+                display: flex;
+                border: 1px solid #aaa;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {
+                width: 100%;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .capcha__input {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                border: 1px solid #aaa;
+                padding: 5px 10px;
+                width: 100px;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row {
+                border-bottom: none;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .prev__button {}
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .submit__button {}
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                min-width: 150px;
+                min-height: 60px;
+                border-radius: 50px;
+                margin-right: 20px;
+                border: 1px solid #aaa;
+                color: var(--color-text);
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .submit__button .button__text {
+                margin-right: 0;
+            }
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text.point {
+                background-color: var(--color-main);
+                color: var(--color-white);
+                border: 1px solid var(--color-main);
+            }
+
+            @media all and (max-width: 480px) {
+                .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input {
+                    padding: 15px;
+                }
+
+                .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha {
+                    flex-direction: column;
+                }
+
+                .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img {
+                    width: 100px;
+                    height: 80px;
+                    border: 1px solid #aaa;
+                }
+
+                .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box.capcha {
+                    margin-left: 0;
+                }
+
+                .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row {
+                    margin-top: 30px;
+                }
+
+                .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text {
+                    min-width: 90px;
+                    min-height: 40px;
+                }
+            }
+        </style>
+        <section class="personal__inquiry__section-m">
+            <div class="personal__inquiry__box">
+                <div class="personal__inquiry__title">
+                    <p id="personal__inquiry__name" class="title">1:1문의</p>
+                </div>
+                <form action="" class="personal__inquiry__form">
+                    <div class="form__box">
+                        <div class="form__row">
+                            <div class="row__title">
+                                <p class="title">말머리</p>
+                            </div>
+                            <div class="row__input">
+                                <select name="" id="">
+                                    <option value="">옵션값1</option>
+                                    <option value="">옵션값2</option>
+                                    <option value="">옵션값3</option>
+                                    <option value="">옵션값4</option>
+                                    <option value="">옵션값5</option>
+                                    <option value="">옵션값6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="row__title">
+                                <p class="title">작성자</p>
+                            </div>
+                            <div class="row__input">
+                                <p class="text" id="user_name">유저이름</p>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="row__title">
+                                <p class="title">제목</p>
+                            </div>
+                            <div class="row__input subject">
+                                <input class="subject__input" type="text">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="row__title">
+                                <p class="title">내용</p>
+                            </div>
+                            <div class="row__input textarea">
+                                <textarea name="" id="" cols="30" rows="10">텍스트 에디터 삽입</textarea>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="row__title">
+                                <p class="title">첨부파일</p>
+                            </div>
+                            <div class="row__input">
+                                <div class="sub__text">
+                                    <p class="text">파일 첨부 - 파일이 있을 경우 등록 할 수 있습니다. (가능한 파일 : zip, jpg, gif, png)
+                                    </p>
+                                </div>
+                                <div class="input__box file">
+                                    <div class="input__item">
+                                        <div class="filebox">
+                                            <input type="file" id="file-1" onchange="changeFileInputName(event)">
+                                            <input class="upload-name" value="첨부파일" placeholder="첨부파일">
+                                        </div>
+                                        <div class="upload__btn">
+                                            <label class="find__btn" for="file-1">파일찾기</label>
+                                            <button class="plus__btn">추가</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="row__title">
+                                <p class="title">자동등록방지</p>
+                            </div>
+                            <div class="row__input capcha">
+                                <div class="capcha__img">
+                                    <img src="" alt="캡차이미지">
+                                </div>
+                                <div class="input__box capcha">
+                                    <div class="sub__text">
+                                        <p class="text">보이는 순서대로 숫자 및 문자를 모두 입력해 주세요.</p>
+                                    </div>
+                                    <div class="upload__btn">
+                                        <input class="capcha__input" type="text">
+                                        <button class="mobile-view">
+                                            <i class="fa-solid fa-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row button__row">
+                            <div class="prev__button">
+                                <button class="button__text">이전</button>
+                            </div>
+                            <div class="submit__button">
+                                <button type="submit" class="button__text point">저장</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
 
