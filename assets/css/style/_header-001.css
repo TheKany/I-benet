@@ -1,4 +1,4 @@
-header{
+header {
   margin-top: 30px;
   position: relative;
 }
@@ -36,7 +36,7 @@ header{
   align-items: center;
 }
 
-.header_navList_item{
+.header_navList_item {
   display: flex;
   margin: 0 20px;
   color: var(--color-subText);
@@ -98,7 +98,6 @@ header{
   left: 50%;
 }
 
-
 .tracking > p {
   position: absolute;
   top: 20px;
@@ -155,10 +154,9 @@ header{
   display: none;
 }
 
-
 /* 모바일 반응형 */
 @media all and (max-width: 767px) {
-  header{
+  header {
     margin-top: 20px;
   }
   .web_header {
@@ -181,7 +179,7 @@ header{
     max-width: 25px;
   }
 
-  .m-logo > img {
+  .m-logo img {
     width: 100%;
 
     max-width: 120px;
@@ -206,7 +204,6 @@ header{
     max-width: 30px;
   }
 
-
   .m-icon-join > img:last-child {
     position: absolute;
     width: 150%;
@@ -216,16 +213,16 @@ header{
 }
 
 @media all and (max-width: 480px) {
-  .m-logo > img{
+  .m-logo img {
     max-width: 100px;
   }
-  .m-icon-join > img:last-child{
+  .m-icon-join > img:last-child {
     width: 125%;
     left: -28%;
     top: -76%;
   }
-  
-  .m-icon-tracking{
+
+  .m-icon-tracking {
     padding-right: 15px;
   }
 }
