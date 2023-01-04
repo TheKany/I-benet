@@ -242,20 +242,25 @@
     justify-content: space-between;
     color: var(--color-text);
     font-size: var(--font-size-22);
+    padding: 0 24px;
   }
 
   .gnb-menu button {
     color: var(--color-text);
-    font-size: var(--font-size-22);
-    line-height: var(--line-height-22);
-    letter-spacing: var(--letter-spacing-22);
+    font-size: var(--font-size-20);
+    line-height: var(--line-height-20);
+    letter-spacing: var(--letter-spacing-20);
+    
   }
 }
 
 @media all and (max-width: 480px) {
+  .gnb-menu{
+    padding: 0 12px;
+  }
   .gnb-menu button {
     color: var(--color-text);
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-18);
   }
 
   .m-gnb{

@@ -843,8 +843,8 @@
             .personal__inquiry__section-m {
                 display: none;
             }
-            
-            @media all and (max-width: 1025px){
+
+            @media all and (max-width: 1025px) {
                 .personal__inquiry__section .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__title {
                     min-width: 140px;
                 }
@@ -860,6 +860,7 @@
                 }
             }
 
+            @media all and (max-width: 480px) {}
         </style>
         <section class="personal__inquiry__section">
             <div class="container">
@@ -948,9 +949,6 @@
                                             <div class="upload__btn">
                                                 <button class="reload__btn web-view">이미지 새로고침</button>
                                                 <input class="capcha__input" type="text">
-                                                <button class="mobile-view">
-                                                    <i class="fa-solid fa-rotate"></i>
-                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -990,8 +988,8 @@
                 font-size: var(--font-size-20);
                 line-height: var(--line-height-20);
             }
-            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha
-            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form {}
+
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input.capcha .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form {}
 
             .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box {}
 
@@ -1155,7 +1153,9 @@
                 border: 1px solid #aaa;
             }
 
-            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {}
+            .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .capcha__img img {
+                width: 100%;
+            }
 
             .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input .input__box .upload__btn .capcha__input {
                 font-size: var(--font-size-16);
@@ -1197,7 +1197,7 @@
                 border: 1px solid var(--color-main);
             }
 
-            @media all and (max-width: 480px){
+            @media all and (max-width: 480px) {
                 .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row .row__input {
                     padding: 15px;
                 }
@@ -1224,12 +1224,12 @@
                 .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row {
                     margin-top: 30px;
                 }
+
                 .personal__inquiry__section-m .personal__inquiry__box .personal__inquiry__form .form__box .form__row.button__row .button__text {
                     min-width: 90px;
                     min-height: 40px;
                 }
             }
-
         </style>
         <section class="personal__inquiry__section-m">
             <div class="personal__inquiry__box">
@@ -1289,8 +1289,7 @@
                                 <div class="input__box file">
                                     <div class="input__item">
                                         <div class="filebox">
-                                            <input type="file" id="file-1"
-                                                onchange="changeFileInputName(event)">
+                                            <input type="file" id="file-1" onchange="changeFileInputName(event)">
                                             <input class="upload-name" value="첨부파일" placeholder="첨부파일">
                                         </div>
                                         <div class="upload__btn">
