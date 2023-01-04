@@ -2,33 +2,31 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>아이배냇 홈</title>
   <script src="https://kit.fontawesome.com/8e24f8194e.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet" />
   <!-- slick -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <script src="./assets/js/preLoad.js"></script>
 
   <!-- css 기본 속성 -->
-  <link rel="stylesheet" href="./assets/css/base/_variable.css">
-  <link rel="stylesheet" href="./assets/css/base/_grid.css">
-  <link rel="stylesheet" href="./assets/css/base/_normalize.css">
-  <link rel="stylesheet" href="./assets/css/base/_reset.css">
-
-
+  <link rel="stylesheet" href="./assets/css/base/_variable.css" />
+  <link rel="stylesheet" href="./assets/css/base/_grid.css" />
+  <link rel="stylesheet" href="./assets/css/base/_normalize.css" />
+  <link rel="stylesheet" href="./assets/css/base/_reset.css" />
 </head>
 
 <body>
@@ -39,21 +37,21 @@
     }
   </style>
 
+  <!-- 페이지 공통 헤더 -->
   <header>
     <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
-    <link rel="stylesheet" href="./assets/css/style/_header-001.css">
+    <link rel="stylesheet" href="./assets/css/style/_header-001.css" />
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-4">
           <!-- 웹 상단 헤더  -->
           <div class="web_header">
-
             <!-- 편의상 임의로 페이지 이동 함수 추가 -->
             <!-- 로고 영역 -->
             <div class="header_left">
               <h1 class="logo">
-                <a href="#" onclick="location.href='main.html'">
-                  <img src="./assets/image/logo.png" alt="아이배냇">
+                <a href="/index.html">
+                  <img src="./assets/image/logo.png" alt="아이배냇" />
                 </a>
               </h1>
             </div>
@@ -62,8 +60,8 @@
             <div class="header_right">
               <div class="input_group">
                 <label for="searching">
-                  <input type="text" size="15" id="searching">
-                  <img src="./assets/icon/search_icon.png" alt="">
+                  <input type="text" size="15" id="searching" />
+                  <img src="./assets/icon/search_icon.png" alt="" />
                 </label>
               </div>
               <ol class="header_navList">
@@ -75,69 +73,67 @@
                 </li>
                 <li class="header_navList_item header-bag">
                   <a href="#" class="tracking">
-                    <img src="./assets/icon/shoppingBag.png" alt="장바구니">
+                    <img src="./assets/icon/shoppingBag.png" alt="장바구니" />
                   </a>
                   <strong>1</strong>
                 </li>
                 <li class="header_navList_item header-join">
-                  <a href="#"><img src="./assets/icon/join_icon.png" alt="회원가입"></a>
-                  <img src="./assets/icon/join_badge.png" alt="">
+                  <a href="#"><img src="./assets/icon/join_icon.png" alt="회원가입" /></a>
+                  <img src="./assets/icon/join_badge.png" alt="" />
                 </li>
                 <li class="header_navList_item header-tracking">
-                  <a href="#"><img src="./assets/icon/tracking_icon.png" alt="배송조회"></a>
+                  <a href="#"><img src="./assets/icon/tracking_icon.png" alt="배송조회" /></a>
                   <div class="tracking">
-                    <img src="./assets/icon/tracking_talk.png" alt="">
+                    <img src="./assets/icon/tracking_talk.png" alt="" />
                     <p>배송지를 등록하고<span>구매가능한 상품을 확인하세요!</span></p>
                     <button type="button" id="tracking_login">로그인</button>
                     <button type="button" id="tracking_searchAdrr">
-                      <img src="./assets/icon/search_addr.png" alt="">
+                      <img src="./assets/icon/search_addr.png" alt="" />
                       주소검색
                     </button>
                   </div>
                 </li>
               </ol>
             </div>
-
           </div>
 
           <!-- 모바일 상단 헤더 -->
           <div class="mobile-header">
             <div class="mobile total-menu">
-              <img src="./assets/icon/mobile_total.png" alt="">
+              <img src="./assets/icon/mobile_total.png" alt="" />
             </div>
             <div class="m-logo">
-              <img src="./assets/image/logo.png" alt="아이배냇 메인로고">
+              <a href="/index.html">
+                <img src="./assets/image/logo.png" alt="아이배냇 메인로고" />
+              </a>
             </div>
             <div class="m-right">
               <div class="m-icon-tracking">
-                <img src="./assets/icon/tracking_icon.png" alt="배송조회">
+                <img src="./assets/icon/tracking_icon.png" alt="배송조회" />
               </div>
               <div class="m-icon-join">
-                <img src="./assets/icon/join_icon.png" alt="회원가입">
-                <img src="./assets/icon/mobile_join.png" alt="1초 회원가입">
+                <img src="./assets/icon/join_icon.png" alt="회원가입" />
+                <img src="./assets/icon/mobile_join.png" alt="1초 회원가입" />
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
     <!-- 웹 gnb | css-Number : /_header-002.css -->
-    <link rel="stylesheet" href="./assets/css/style/_header-002.css">
+    <link rel="stylesheet" href="./assets/css/style/_header-002.css" />
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-sm-4">
-
-
           <nav class="gnb_main">
             <h2 hidden>메뉴</h2>
             <div class="gnb_menu">
               <!-- 전체메뉴보기(헴버거) -->
               <div class="menu00 big_menu total">
                 <button class="gnb_item toggle_btn">
-                  <img class="open_btn" src="./assets/icon/view_total_icon.png" alt="전체보기">
-                  <img class="close_btn" src="./assets/icon/view_total_icon.png" alt="전체보기">
+                  <img class="open_btn" src="./assets/icon/view_total_icon.png" alt="전체보기" />
+                  <img class="close_btn" src="./assets/icon/view_total_icon.png" alt="전체보기" />
                 </button>
 
                 <div class="total_menu">
@@ -182,10 +178,10 @@
                         <a href="#">안심온도계</a>
                       </div>
                       <div class="gnb_itemList total">
-                        <a href="#">공지사항</a>
+                        <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
                         <a href="#">이용가이드</a>
-                        <a href="#">1:1 상담신청</a>
-                        <a href="#">FAQ</a>
+                        <a href="/SHOPWEB_US0609.html">1:1 상담신청</a>
+                        <a href="/SHOPWEB_US0611.html">FAQ</a>
                         <a href="#">영양상 FAQ</a>
                       </div>
                       <div class="gnb_itemList total">
@@ -205,17 +201,17 @@
                         <div class="item_box">
                           <div class="item">
                             <a href="#">
-                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="">
+                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
                             </a>
                           </div>
                           <div class="item">
                             <a href="#">
-                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="">
+                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
                             </a>
                           </div>
                           <div class="item">
                             <a href="#">
-                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="">
+                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
                             </a>
                           </div>
                         </div>
@@ -225,8 +221,7 @@
                 </div>
               </div>
               <!-- 식단 주문하기 -->
-              <div class="menu01 big_menu big ">
-
+              <div class="menu01 big_menu big">
                 <!-- 임의로 페이지 이동 함수 추가 -->
                 <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button>
                 <div class="gnb_itemList drop01">
@@ -244,7 +239,6 @@
                   <a href="#">반찬·국</a>
                 </div>
               </div>
-
               <!-- 낱개 주문하기 -->
               <div class="menu02 big_menu big">
                 <button class="gnb_item">낱개 주문하기</button>
@@ -269,10 +263,10 @@
               <div class="menu04 big_menu big">
                 <button class="gnb_item">기획전</button>
                 <!-- <div class="gnb_itemList drop04">
-                          <a href="#">이유식</a>
-                          <a href="#">유아식</a>
-                          <a href="#">디저트</a>
-                        </div> -->
+                                <a href="#">이유식</a>
+                                <a href="#">유아식</a>
+                                <a href="#">디저트</a>
+                              </div> -->
               </div>
               <!-- 이벤트 -->
               <div class="menu05 big_menu big">
@@ -296,10 +290,10 @@
               <div class="menu07 big_menu big">
                 <button class="gnb_item">고객센터</button>
                 <div class="gnb_itemList drop07">
-                  <a href="#">공지사항</a>
+                  <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
                   <a href="#">이용가이드</a>
-                  <a href="#">1:1 상담신청</a>
-                  <a href="#">FAQ</a>
+                  <a href="/SHOPWEB_US0609.html">1:1 상담신청</a>
+                  <a href="/SHOPWEB_US0611.htm">FAQ</a>
                   <a href="#">영양상 FAQ</a>
                 </div>
               </div>
@@ -313,8 +307,8 @@
                   <a href="#">고객센터</a>
                 </div>
               </div>
+            </div>
           </nav>
-
         </div>
       </div>
     </div>
@@ -331,22 +325,20 @@
     </nav>
 
     <!-- 모바일 : css-Number : /_header-002-m-2.css  -->
-    <link rel="stylesheet" href="./assets/css/style/_header-002-m.css">
+    <link rel="stylesheet" href="./assets/css/style/_header-002-m.css" />
     <nav class="m-side">
       <div class="nav__box">
         <!-- 서브메뉴 닫는 박스 -->
         <div class="close__button__box">
           <div class="button">
-            <img src="./assets/icon/mobile_x_button.png" alt="">
+            <img src="./assets/icon/mobile_x_button.png" alt="" />
           </div>
         </div>
 
         <!-- 로그인 전 -->
         <div class="join__box width-align">
           <div class="join__text__box">
-            <p class="text">로그인 하여
-              더 많은 정보를 확인해 보세요.
-            </p>
+            <p class="text">로그인 하여 더 많은 정보를 확인해 보세요.</p>
           </div>
           <div class="join__button__box">
             <button class="button__text point">회원가입</button>
@@ -360,7 +352,7 @@
             <div class="img__box">
               <div class="user__img">
                 <a href="">
-                  <img src="./assets/icon/user_default_icon.png" alt="">
+                  <img src="./assets/icon/user_default_icon.png" alt="" />
                 </a>
               </div>
             </div>
@@ -368,14 +360,14 @@
               <div class="user__name">
                 <a class="link__text" href="">
                   <span>홍길동님</span>
-                  <img src="./assets/icon/arrow-black.png" alt="">
+                  <img src="./assets/icon/arrow-black.png" alt="" />
                 </a>
               </div>
               <div class="baby__info">
                 <!-- 아기정보가 없는 경우 -->
                 <a class="link__text point" href="">
                   <span>아기정보를 입력해주세요</span>
-                  <img src="./assets/icon/arrow-pink.png" alt="">
+                  <img src="./assets/icon/arrow-pink.png" alt="" />
                 </a>
                 <!-- 아기정보가 있는 경우 -->
               </div>
@@ -402,33 +394,33 @@
             <div class="banner__img__box">
               <img loading="lazy"
                 src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="">
+                alt="" />
             </div>
             <div class="banner__img__box">
               <img loading="lazy"
                 src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="">
+                alt="" />
             </div>
             <div class="banner__img__box">
               <img loading="lazy"
                 src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="">
+                alt="" />
             </div>
             <div class="banner__img__box">
               <img loading="lazy"
                 src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="">
+                alt="" />
             </div>
             <div class="banner__img__box">
               <img loading="lazy"
                 src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="">
+                alt="" />
             </div>
           </div>
         </div>
         <!-- 식단주문하기 -->
         <div class="order__box">
-          <div class="order__title__box ">
+          <div class="order__title__box">
             <p class="title width-align">식단주문하기</p>
           </div>
           <div class="sub__menu__box width-align">
@@ -448,8 +440,8 @@
         <div class="meun__box">
           <div class="m_side_menu m_side_menu01">
             <div class="menu__title__box width-align">
-              <p class="title ">유아식품</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+              <p class="title">유아식품</p>
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
             </div>
             <div class="sub__menu__box">
               <a class="link__text width-align" href="">분유 / 유아식</a>
@@ -462,7 +454,7 @@
           <div class="m_side_menu m_side_menu02">
             <div class="menu__title__box width-align">
               <p class="title point">낱개 주문하기</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
             </div>
             <div class="sub__menu__box">
               <a class="link__text width-align" href="">이유식</a>
@@ -472,8 +464,8 @@
           </div>
           <div class="m_side_menu m_side_menu03">
             <div class="menu__title__box width-align">
-              <p class="title ">배냇밀 스토리</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+              <p class="title">배냇밀 스토리</p>
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
             </div>
             <div class="sub__menu__box">
               <a class="link__text width-align" href="">배냇밀 소개</a>
@@ -484,8 +476,8 @@
           </div>
           <div class="m_side_menu m_side_menu04">
             <div class="menu__title__box width-align">
-              <p class="title ">이벤트</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow">
+              <p class="title">이벤트</p>
+              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
             </div>
             <div class="sub__menu__box">
               <a class="link__text width-align" href="">무료체험신청</a>
@@ -500,10 +492,10 @@
               <a href="">이용가이드</a>
             </div>
             <div class="link">
-              <a href="">1:1 상담하기</a>
+              <a href="/SHOPWEB_US0609.html">1:1 상담하기</a>
             </div>
             <div class="link">
-              <a href="">공지사항</a>
+              <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
             </div>
             <div class="link">
               <a href="">이물오인혼동내용</a>
@@ -567,7 +559,6 @@
         color: var(--color-text);
         border-radius: 50px;
         line-height: var(--line-height-16);
-
       }
 
       .customer-center .cc-gnb .cc-button-group .cc-button .text.active {
@@ -613,14 +604,13 @@
                   <p class="text active">공지사항</p>
                 </a>
                 <a href="/SHOPWEB_US0609.html" class="cc-button">
-                  <p class="text ">1:1문의하기</p>
+                  <p class="text">1:1문의하기</p>
                 </a>
                 <a href="/SHOPWEB_US0611.html" class="cc-button">
-                  <p class="text ">FAQ</p>
+                  <p class="text">FAQ</p>
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -805,7 +795,7 @@
         right: 5px;
       }
 
-      .customer__board .notice-search #notice-form .input-group input[type='text'] {
+      .customer__board .notice-search #notice-form .input-group input[type="text"] {
         width: 100%;
         height: 100%;
         border: 1px solid #aaa;
@@ -850,12 +840,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-1200">
-
             <div class="cc-notice">
               <h3 class="notice-title">공지사항</h3>
 
               <div class="notice-board">
-
                 <div class="board-row thead">
                   <div class="column th-num">번호</div>
                   <div class="column th-title">제목</div>
@@ -871,14 +859,14 @@
                     <a class="column" href="/SHOPWEB_US0602.html">
                       <span class="title">
                         [당첨자발표] 크리스마스 과자파티 구매이벤트
-                        <img class="attach_img new" src="../assets/icon/icon_board_attach_img.png" alt="">
-                        <img class="attach_img hot" src="../assets/icon/icon_board_hot.png" alt="">
+                        <img class="attach_img new" src="../assets/icon/icon_board_attach_img.png" alt="" />
+                        <img class="attach_img hot" src="../assets/icon/icon_board_hot.png" alt="" />
                       </span>
                     </a>
                   </div>
-                  <div class="column th-date"> 2022.12.22 </div>
-                  <div class="column th-writer"> 관리자 </div>
-                  <div class="column th-view"> 29 </div>
+                  <div class="column th-date">2022.12.22</div>
+                  <div class="column th-writer">관리자</div>
+                  <div class="column th-view">29</div>
                 </div>
 
                 <!-- one row -->
@@ -889,11 +877,10 @@
                       <span class="title">[당첨자 발표] 준비기,초기 이벤트 당첨자안내(12월)</span>
                     </a>
                   </div>
-                  <div class="column th-date"> 2022.12.27 </div>
-                  <div class="column th-writer"> 관리자 </div>
-                  <div class="column th-view"> 6 </div>
+                  <div class="column th-date">2022.12.27</div>
+                  <div class="column th-writer">관리자</div>
+                  <div class="column th-view">6</div>
                 </div>
-
               </div>
             </div>
 
@@ -915,18 +902,15 @@
                   <option value="">작성자</option>
                 </select>
                 <div class="input-group">
-                  <input type="text">
+                  <input type="text" />
                   <button class="input-btn">
-                    <img src="./assets/icon/search_icon_black.png" alt="검색하기">
+                    <img src="./assets/icon/search_icon_black.png" alt="검색하기" />
                   </button>
                 </div>
               </form>
             </div>
-
           </div>
-
         </div>
-      </div>
       </div>
     </section>
 
@@ -1056,7 +1040,6 @@
 
         .customer__board-m .input-group-m input {
           padding: 5px 15px;
-
         }
 
         .customer__board-m .input-group-m .input-btn {
@@ -1068,18 +1051,17 @@
       <h3 class="notice-title-m">공지사항</h3>
 
       <div class="input-group-m">
-        <input type="text" class="input-bar" placeholder="검색 단어를 입력해 주세요.">
+        <input type="text" class="input-bar" placeholder="검색 단어를 입력해 주세요." />
         <button class="input-btn">
-          <img src="./assets/icon/search_icon.png" alt="검색 버튼">
+          <img src="./assets/icon/search_icon.png" alt="검색 버튼" />
         </button>
       </div>
 
       <div class="cb-board">
-
         <div class="board-item-m">
           <a href="/SHOPWEB_US0602.html" class="item-m">
             <div class="im-title">
-              <span class="im-title-text notice"><img src="./assets/icon/icon_board_notice.png" alt="공지사항"></span>
+              <span class="im-title-text notice"><img src="./assets/icon/icon_board_notice.png" alt="공지사항" /></span>
               <span class="im-title-text title">[당첨자발표] 크리스마스 과자파티 구매이벤트</span>
               <span class="im-title-text img"></span>
               <span class="im-title-text hot"></span>
@@ -1094,11 +1076,11 @@
         <div class="board-item-m">
           <a href="#" class="item-m">
             <div class="im-title">
-              <span class="im-title-text notice"><img src="./assets/icon/icon_board_notice.png" alt="공지사항"></span>
+              <span class="im-title-text notice"><img src="./assets/icon/icon_board_notice.png" alt="공지사항" /></span>
               <span class="im-title-text title">12월 유아식품 유통기한 안내</span>
               <span class="im-title-text img"><img src="./assets/icon/icon_board_attach_img.png"
-                  alt="게시물 이미지 있음"></span>
-              <span class="im-title-text hot"><img src="./assets/icon/icon_board_hot.png" alt="조회수 많은 게시물"></span>
+                  alt="게시물 이미지 있음" /></span>
+              <span class="im-title-text hot"><img src="./assets/icon/icon_board_hot.png" alt="조회수 많은 게시물" /></span>
             </div>
             <div class="im-info">
               <span class="im-info-text writer">관리자</span>
@@ -1123,33 +1105,28 @@
         </div>
 
         <div class="pagnation-m">
-          <button class="prevBtn-m"><img src="./assets/icon/left_arrow.png" alt=""></button>
+          <button class="prevBtn-m"><img src="./assets/icon/left_arrow.png" alt="" /></button>
           <span class="pagnation-number"> <strong>1</strong> / 6 </span>
-          <button class="nextBtn-m"><img src="./assets/icon/right_arrow.png" alt=""></button>
+          <button class="nextBtn-m"><img src="./assets/icon/right_arrow.png" alt="" /></button>
         </div>
-
       </div>
-
     </section>
-
   </main>
 
   <!-- footer 영역 | css-Number : /baby-footer.css -->
-  <link rel="stylesheet" href="./assets/css/style/baby-footer.css">
+  <link rel="stylesheet" href="./assets/css/style/baby-footer.css" />
   <footer>
-
     <!-- footer 정보 부분 -->
     <div class="footer01">
       <div class="container">
         <div class="row">
           <div class="col-lg-11 col-md-11 col-sm-4">
-
             <div class="footer_main">
               <div class="ci-tr">
                 배냇밀 사업자정보
-                <img src="./assets/icon/circle_down_arrow.png" alt="">
+                <img src="./assets/icon/circle_down_arrow.png" alt="" />
               </div>
-              <div class="company_info ">
+              <div class="company_info">
                 <table class="ci_table">
                   <th hidden>배냇밀 사업자 정보</th>
 
@@ -1167,8 +1144,7 @@
                   </tr>
                   <tr>
                     <td class="ci_col_name"></td>
-                    <td class="ci_data_name">충청북도 충주시 대소원면 영평리 849번지 아이배냇 충주 공장</p>
-                    </td>
+                    <td class="ci_data_name">충청북도 충주시 대소원면 영평리 849번지 아이배냇 충주 공장</td>
                   </tr>
                   <tr>
                     <td class="ci_col_name">통신판매업 신고번호</td>
@@ -1206,15 +1182,14 @@
                     </tr>
                     <tr class="cs_tr">
                       <td class="cs_td03">
-                        <div class="link-naver"><img src="./assets/icon/footer_naver.png" alt="네이버 바로가기"></div>
-                        <div class="link-insta"><img src="./assets/icon/footer_insta.png" alt="인스타그램 바로가기"></div>
-                        <div class="link-youtube"><img src="./assets/icon/footer_youtube.png" alt="유튜브 바로가기"></div>
+                        <div class="link-naver"><img src="./assets/icon/footer_naver.png" alt="네이버 바로가기" /></div>
+                        <div class="link-insta"><img src="./assets/icon/footer_insta.png" alt="인스타그램 바로가기" /></div>
+                        <div class="link-youtube"><img src="./assets/icon/footer_youtube.png" alt="유튜브 바로가기" /></div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-
             </div>
           </div>
         </div>
@@ -1242,7 +1217,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
   <script src="./assets/js/dropdown.js"></script>
