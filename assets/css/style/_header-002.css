@@ -108,7 +108,7 @@
   letter-spacing: var(--letter-spacing-14);
   color: var(--color-text);
   margin: 3px 0;
-  padding: 3px;
+  padding: 7px 3px;
 }
 .gnb_itemList a:hover{
   background-color: var(--color-main);
