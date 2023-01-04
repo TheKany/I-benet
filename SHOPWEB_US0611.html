@@ -622,7 +622,7 @@
             }
 
             .faq__search__box .search__box__wrap {
-                background-color: #fafafa;
+                background-color: var(--color-best-product-bg);
                 display: flex;
                 flex-wrap: wrap;
             }
@@ -746,6 +746,9 @@
                 .faq__search__box {
                     margin-top: 0;
                 }
+                .faq__search__box .container{
+                    margin-top: 30px;
+                }
 
                 .faq__search__box .faq-title {
                     display: block;
@@ -791,9 +794,7 @@
             @media all and (max-width: 480px) {}
         </style>
         <section class="faq__search__box">
-
             <h3 class="faq-title">FAQ</h3>
-
             <div class="container">
                 <div class="col-lg-1200">
                     <div class="search__box__wrap">
@@ -826,7 +827,7 @@
                                 <p class="title">1:1 문의를 남겨주세요</p>
                             </div>
                             <div class="inquiry__button">
-                                <a href="" class="link">1:1 문의</a>
+                                <a href="/SHOPWEB_US0609.html" class="link">1:1 문의</a>
                             </div>
                         </div>
                     </div>
@@ -1009,7 +1010,7 @@
                 }
             }
         </style>
-        <section class="faq__list__box">
+        <section class="faq__list__box faq__click__event">
             <div class="container">
                 <div class="col-lg-1200">
                     <div class="faq__list__title">
@@ -1067,19 +1068,28 @@
         <!-- FAQ 리스트 모바일-->
         <style>
             .fag-list-m {
+                display: none;
                 margin-top: 20px;
                 margin-bottom: 50px;
             }
 
-            .fag-list-m .faq-board .faq-item-m {
+            .fag-list-m .faq-board .row__item {
                 display: block;
                 border-bottom: 1px solid var(--color-tmp2);
-                padding: 10px;
             }
+            .fag-list-m .faq-board .row__item:first-of-type{
+                border-top: 1px solid var(--color-tmp2);
+            }
+            .fag-list-m .faq-board .row__item .row__question{
+                padding: 10px 30px;
+            }
+            .fag-list-m .faq-board .row__item .row__question .content{
 
-            .fag-list-m .faq-board .faq-item-m .faq-title-text {
+            }
+            .fag-list-m .faq-board .row__item .row__question .content .title {
                 display: flex;
-                font-size: 12px;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
                 color: #222;
                 display: -webkit-box;
                 -webkit-line-clamp: 1;
@@ -1087,10 +1097,26 @@
                 overflow: hidden;
             }
 
-            .fag-list-m .faq-board .faq-item-m .item-m .im-info .im-info-text {
-                font-size: var(--font-size-14);
-                color: #999;
+            .fag-list-m .faq-board .row__item .row__answer{
+                padding: 10px 30px;
+                border-top: 1px solid var(--color-tmp2);
+                background-color: var(--color-best-product-bg);
+                word-break: keep-all;
+                display: none;
             }
+            .fag-list-m .faq-board .row__item.selected .row__answer{
+                display: block;
+            }
+            .fag-list-m .faq-board .row__item .row__answer .dd{
+
+            }
+            .fag-list-m .faq-board .row__item .row__answer .dd .text{
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                font-weight: 300;
+                color: var(--color-text);
+            }
+
 
             .fag-list-m .faq-board .faq-moreView-btn {
                 display: flex;
@@ -1108,40 +1134,40 @@
                 color: var(--color-white);
                 font-weight: 700;
             }
+            @media all and (max-width: 767px) {
+                .fag-list-m{
+                    display: block;
+                }
+            }
+            @media all and (max-width: 480px){
+                .fag-list-m .faq-board .row__item .row__question .content .title,
+                .fag-list-m .faq-board .row__item .row__answer .dd .text{
+                    font-size: var(--font-size-18);
+                    line-height: var(--line-height-18);
+                }
+            }
         </style>
-        <section class="fag-list-m">
-
+        <section class="fag-list-m faq__click__event">
             <div class="faq-board">
-
-                <div class="faq-item-m">
-                    <a href="#" class="item-m">
-                        <span class="faq-title-text">[회원가입/정보] ID/PW를 잊어버렸습니다. 어떻게 찾을 수 있나요?</span>
-                    </a>
+                <div class="faq-board-items">
+                    <div class="faq__row row__item">
+                        <div class="row__question">
+                            <div class="content">
+                                <p class="title">ID/PW를 잊어버렸습니다. 어떻게 찾을 수 있나요?</p>
+                            </div>
+                        </div>
+                        <div class="row__answer">
+                            <div class="dd">
+                                <p class="text">메인 페이지 상단 로그인을 클릭 후 로그인 페이지 하단 아이디/비밀번호 찾기를 클릭하셔서 휴대전화 인증을 통해
+                                    확인가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="faq-item-m">
-                    <a href="#" class="item-m">
-                        <span class="faq-title-text">[회원가입/정보] 회원가입 시 휴대전화 인증을 꼭 해야하나요?</span>
-                    </a>
-                </div>
-
-                <div class="faq-item-m">
-                    <a href="#" class="item-m">
-                        <span class="faq-title-text">[회원가입/정보] 회원 가입 후 재가입 할 수 있나요?</span>
-                    </a>
-                </div>
-
-                <div class="faq-item-m">
-                    <a href="#" class="item-m">
-                        <span class="faq-title-text">[회원가입/정보] 두개의 아이디를 사용할 수 있나요?</span>
-                    </a>
-                </div>
-
                 <div class="faq-moreView-btn">
                     <p class="moreView-text">더보기</p>
                 </div>
             </div>
-
         </section>
     </main>
 
@@ -1257,10 +1283,11 @@
 
     </footer>
 
+    <script src="./assets/js/mainCarousel.js"></script>
     <script src="./assets/js/dropdown.js"></script>
     <script src="./assets/js/tmp.js"></script>
     <script>
-        let faqItems = document.querySelectorAll('.faq__list__box .faq__row__body .row__item');
+        let faqItems = document.querySelectorAll('.faq__click__event .row__item');
 
         function selectFaqItem() {
             for (let i = 0; i < faqItems.length; i++) {

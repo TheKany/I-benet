@@ -300,3 +300,9 @@
   text-align: center;
   padding: 15px;
 }
+
+@media all and (max-width: 480px){
+  .m-side .meun__box .m_side_menu .menu__title__box img{
+    width: 20px;
+  }
+}
