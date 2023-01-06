@@ -31,9 +31,9 @@
 </head>
 
 <body>
+    <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
+    <link rel="stylesheet" href="./assets/css/style/_header-001.css" />
     <header>
-        <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
-        <link rel="stylesheet" href="./assets/css/style/_header-001.css" />
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-4">
@@ -507,18 +507,769 @@
     </header>
 
     <main>
-        <section>
+        <!-- 웹 상단 제품 안내 배너 -->
+        <style>
+            .banner__section {
+                margin-top: 0;
+            }
+
+            .col-lg-full {
+                display: flex;
+                width: 100%;
+                background-image: url(../assets/image/SHOPWEB_UP0101/top-banner.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+                height: 280px;
+                position: relative;
+            }
+        </style>
+        <section class="banner__section">
+            <div class="col-lg-full"></div>
+        </section>
+
+        <!-- 웹 상단 제품 카테고리 버튼 -->
+        <style>
+            .button__section {
+                margin-top: 45px;
+            }
+
+            .button__section .item-box {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .button__section .item-box .item {
+                display: flex;
+                max-width: 195px;
+                width: 100%;
+            }
+
+            .button__section .item-box .item .button__text {
+                border: 1px solid var(--color-footer-line);
+                margin-bottom: 10px;
+                margin-right: 10px;
+                padding: 10px;
+                width: 100%;
+                font-size: var(--font-size-18);
+                color: var(--color-subText);
+                cursor: pointer;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .button__section .item-box .item.active .button__text,
+            .button__section .item-box .item:hover .button__text {
+                background-color: var(--color-main);
+                color: var(--color-white);
+                border: transparent 1px solid;
+            }
+
+            .selector__section {
+                display: none;
+            }
+
+            @media all and (max-width: 767px) {
+                .button__section {
+                    display: none;
+                }
+            }
+        </style>
+        <section class="button__section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-11"></div>
+                    <div class="col-lg-1200">
+                        <div class="item-box">
+                            <div class="item button active">
+                                <p class="text button__text">준비기 4-5개월</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">초기 6개월 전후</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">중기 7-8개월</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">후기 2식 9-10개월</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">후기 3식 9-10개월</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">병행기 10-11개월</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">완료기 12-14개월</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">첫밥 13개월 이후</p>
+                            </div>
+                            <div class="item button">
+                                <p class="text button__text">반찬·국 13개월 이후</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- 제품 리스트 -->
+        <style>
+            .product__table__section {
+                margin-top: 50px;
+            }
+
+            .product__table__section .product__cnt__box {}
+
+            .product__table__section .product__cnt__box .cnt__text {}
+
+            .product__table__section .product__cnt__box .cnt__text .text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                font-weight: 300;
+            }
+
+            .product__table__section .product__cnt__box .cnt__text .text #product__cnt {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                font-weight: 500;
+                margin: 0 5px;
+            }
+
+            .product__table__section .product__sort__box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid var(--color-black);
+                padding: 15px 5px;
+                margin-top: 15px;
+            }
+
+            .product__table__section .product__sort__box .sort__category {}
+
+            .product__table__section .product__sort__box .sort__category .sort__text {}
+
+            .product__table__section .product__sort__box .sort__category .sort__text .text {
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                font-weight: 300;
+                margin-right: 15px;
+            }
+
+            .product__table__section .product__sort__box .sort__category .sort__text .text:last-of-type {
+                margin-right: 0;
+            }
+
+            .product__table__section .product__sort__box .view__cnt {
+                font-size: var(--font-size-14);
+                line-height: var(--line-height-14);
+                min-width: 130px;
+                border: 1px solid #aaa;
+                padding: 5px 10px;
+                background: url(../assets/icon/select_down_arrow.png) no-repeat;
+                background-position: 92% 52%;
+                background-size: 12px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
+            .product__table__section .product__sort__box .view__cnt .text {
+                font-size: var(--font-size-14);
+                line-height: var(--line-height-14);
+            }
+
+            .product__table__section .product__table__box {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 30px;
+            }
+
+            .product__table__section .product__table__box .product__item {
+                display: block;
+                position: relative;
+                width: 100%;
+                max-width: 275px;
+                margin-bottom: 45px;
+            }
+
+            .product__table__section .product__table__box .product__item .img__box {
+                position: relative;
+            }
+
+            .product__table__section .product__table__box .product__item .img__box .product__img {
+                display: block;
+                position: relative;
+            }
+
+            .product__table__section .product__table__box .product__item .img__box .product__img img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .product__table__section .product__table__box .product__item .img__box .discount {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--color-tmp3);
+            }
+
+            .product__table__section .product__table__box .product__item .img__box .discount .text {
+                color: var(--color-white);
+                font-size: var(--font-size-18);
+                line-height: var(--line-height-18);
+                padding: 15px 10px;
+            }
+
+            .product__table__section .product__table__box .product__item .img__box .cart__img {
+                position: absolute;
+                bottom: 3%;
+                right: 3%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--color-tmp1);
+                border-radius: 50%;
+            }
+
+            .product__table__section .product__table__box .product__item .img__box .cart__img img {
+                display: block;
+                width: 90%;
+                padding: 13px 10px;
+            }
+
+            .product__table__section .product__table__box .product__item .title__box {
+                margin-top: 15px;
+            }
+
+            .product__table__section .product__table__box .product__item .title__box .title {
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                color: var(--color-text);
+                font-size: var(--font-size-18);
+                line-height: var(--line-height-18);
+            }
+
+            .product__table__section .product__table__box .product__item .text__box {
+                margin-top: 5px;
+            }
+
+            .product__table__section .product__table__box .product__item .text__box .text {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                font-size: var(--font-size-14);
+                line-height: var(--line-height-14);
+                color: var(--color-tmp1);
+            }
+
+            .product__table__section .product__table__box .product__item .price__box {
+                display: flex;
+                margin-top: 5px;
+                justify-content: space-between;
+            }
+
+            .product__table__section .product__table__box .product__item .price__box .discount {}
+
+            .product__table__section .product__table__box .product__item .price__box .discount .text {
+                font-size: var(--font-size-22);
+                line-height: var(--line-height-22);
+                letter-spacing: var(--letter-spacing-22);
+                color: var(--color-item-discount);
+            }
+
+            .product__table__section .product__table__box .product__item .price__box .price {
+                display: flex;
+                align-items: center;
+            }
+
+            .product__table__section .product__table__box .product__item .price__box .price .text {}
+
+            .product__table__section .product__table__box .product__item .price__box .price .original-price {
+                color: var(--color-footer-data);
+                text-decoration: line-through;
+                font-size: var(--font-size-16);
+                line-height: var(--line-height-16);
+                margin-right: 10px;
+            }
+
+            .product__table__section .product__table__box .product__item .price__box .price .sale-price {
+                font-size: var(--font-size-21);
+                line-height: var(--line-height-21);
+                letter-spacing: var(--letter-spacing-21);
+                color: var(--color-text);
+                margin-left: 0;
+            }
+
+            .product__table__section .product__table__box .product__item .badge__box {
+                display: flex;
+                margin-top: 10px;
+                gap: 10px;
+            }
+
+            .product__table__section .product__table__box .product__item .badge__box .badge {
+                display: flex;
+                border-radius: 0 100px 100px 100px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .product__table__section .product__table__box .product__item .badge__box .badge.reco {
+                background-color: var(--color-item-reco);
+            }
+
+            .product__table__section .product__table__box .product__item .badge__box .badge.best {
+                background-color: var(--color-item-best);
+            }
+
+            .product__table__section .product__table__box .product__item .badge__box .badge .text {
+                padding: 5px 20px;
+                font-size: var(--font-size-12);
+                line-height: var(--line-height-12);
+                letter-spacing: var(--letter-spacing-12);
+                color: var(--color-white);
+            }
+
+
+            .product__table__section .product__pagination__box {
+                border-top: 1px solid var(--color-footer-line);
+                padding-top: 40px;
+                margin: 40px 0 150px;
+            }
+
+            .product__table__section .product__pagination__box .pagnation-list {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+            }
+
+            .product__table__section .product__pagination__box .pagnation-list .pagnation-item {}
+
+            .product__table__section .product__pagination__box .pagnation-list .pagnation-item.active {}
+
+            .product__table__section .product__pagination__box .pagnation-list .pagnation-item a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: var(--font-size-15);
+                line-height: var(--line-height-15);
+                color: #888;
+                border: 1px solid #e6e6e6;
+                border-radius: 50px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .product__table__section .product__pagination__box .pagnation-list .pagnation-item.active a {
+                background-color: var(--color-main);
+                color: var(--color-white);
+                border: 1px solid var(--color-main);
+            }
+
+            /*  */
+        </style>
+        <section class="product__table__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-11">
+                        <div class="product__cnt__box">
+                            <div class="cnt__text">
+                                <p class="text">
+                                    총<span id="product__cnt">2</span>개의 상품이 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <form class="product__sort__box">
+                            <div class="sort__category">
+                                <div class="sort__text">
+                                    <label class="text">추천순
+                                        <input type="radio" name="sort">
+                                    </label>
+                                    <label class="text">판매인기순
+                                        <input type="radio" name="sort">
+                                    </label>
+                                    <label class="text">낮은가격순
+                                        <input type="radio" name="sort">
+                                    </label>
+                                    <label class="text">높은가격순
+                                        <input type="radio" name="sort">
+                                    </label>
+                                    <label class="text">상품평순
+                                        <input type="radio" name="sort">
+                                    </label>
+                                    <label class="text">등록일순
+                                        <input type="radio" name="sort">
+                                    </label>
+                                </div>
+                            </div>
+                            <select class="view__cnt">
+                                <option class="text" value="10">10개씩보기</option>
+                                <option class="text" value="20">20개씩보기</option>
+                                <option class="text" value="30">30개씩보기</option>
+                                <option class="text" value="40">40개씩보기</option>
+                            </select>
+                        </form>
+                        <div class="product__table__box">
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <div class="img__box">
+                                    <div class="product__img">
+                                        <img src="./assets/image/product.jpg" alt="상품" />
+                                    </div>
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="cart__img">
+                                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                                    </div>
+                                </div>
+                                <div class="title__box">
+                                    <p class="title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품
+                                        타이틀입니다.제품 타이틀입니다.
+                                    </p>
+                                </div>
+                                <div class="text__box">
+                                    <p class="text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이
+                                        들어갑니다.제품 상세 설명이 들어갑니다.
+                                    </p>
+                                </div>
+                                <div class="price__box">
+                                    <div class="discount">
+                                        <p class="text">10%</p>
+                                    </div>
+                                    <div class="price">
+                                        <p class="text original-price">15,000원</p>
+                                        <p class="text sale-price">13,500원</p>
+                                    </div>
+                                </div>
+                                <div class="badge__box">
+                                    <div class="badge reco">
+                                        <span class="text">추천</span>
+                                    </div>
+                                    <div class="badge best">
+                                        <span class="text">BEST</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__pagination__box">
+                            <ol class="pagnation-list">
+                                <li class="pagnation-item active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="pagnation-item">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="pagnation-item">
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="pagnation-item">
+                                    <a href="#">4</a>
+                                </li>
+                                <li class="pagnation-item">
+                                    <a href="#">5</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
+    <!-- footer 영역 | css-Number : /baby-footer.css -->
+    <link rel="stylesheet" href="./assets/css/style/baby-footer.css" />
     <footer>
-        <!-- footer 영역 | css-Number : /baby-footer.css -->
-        <link rel="stylesheet" href="./assets/css/style/baby-footer.css" />
         <!-- footer 정보 부분 -->
         <div class="footer01">
             <div class="container">
@@ -624,6 +1375,9 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/dropdown.js"></script>
+    <script src="./assets/js/mainCarousel.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
 </body>
 
 </html>
