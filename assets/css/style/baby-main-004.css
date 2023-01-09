@@ -386,7 +386,7 @@
 
 @media all and (max-width: 480px) {
   .hot_item_each {
-    padding-right: 7px;
+    /* padding-right: 7px; */
   }
   .hot_item_each:nth-child(2n) {
     padding-left: 7px;
