@@ -62,7 +62,7 @@
   background-color: var(--color-white);
   left: 50%;
   transform: translateX(-50%);
-  top: 57px;
+  top: 56px;
   border-radius: 0 0 15px 15px;
   box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
   overflow: hidden;
@@ -108,7 +108,7 @@
   letter-spacing: var(--letter-spacing-14);
   color: var(--color-text);
   margin: 3px 0;
-  padding: 3px;
+  padding: 7px 3px;
 }
 .gnb_itemList a:hover{
   background-color: var(--color-main);
@@ -120,7 +120,7 @@
 }
 .gnb_itemList a:last-child {
   margin-bottom: 0;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 
 

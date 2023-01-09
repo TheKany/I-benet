@@ -1,1640 +1,1509 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아이배냇 홈</title>
+    <script src="https://kit.fontawesome.com/8e24f8194e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/preLoad.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>아이배냇 홈</title>
-  <script src="https://kit.fontawesome.com/8e24f8194e.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <!-- slick -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./assets/js/preLoad.js"></script>
+    <!-- css 기본 속성 -->
+    <link rel="stylesheet" href="./assets/css/base/_variable.css" />
+    <link rel="stylesheet" href="./assets/css/base/_grid.css" />
+    <link rel="stylesheet" href="./assets/css/base/_normalize.css" />
+    <link rel="stylesheet" href="./assets/css/base/_reset.css" />
+  </head>
 
-  <!-- css 기본 속성 -->
-  <link rel="stylesheet" href="./assets/css/base/_variable.css" />
-  <link rel="stylesheet" href="./assets/css/base/_grid.css" />
-  <link rel="stylesheet" href="./assets/css/base/_normalize.css" />
-  <link rel="stylesheet" href="./assets/css/base/_reset.css" />
-</head>
+  <body>
+    <!-- 최상단 배너 | css-Number : /_baby-001.css -->
+    <link rel="stylesheet" href="./assets/css/style/_baby-001.css" />
+    <article class="header_top">
+      <a class="web-banner">신규가입 시, 배냇밀 이유식 2팩 <strong>무료체험 신청하기</strong></a>
+      <a class="mobile-banner">배냇밀 타임특가 구매하러가기</a>
+    </article>
 
-<body>
-  <!-- 최상단 배너 | css-Number : /_baby-001.css -->
-  <link rel="stylesheet" href="./assets/css/style/_baby-001.css" />
-  <article class="header_top">
-    <a class="web-banner">신규가입 시, 배냇밀 이유식 2팩 <strong>무료체험 신청하기</strong></a>
-    <a class="mobile-banner">배냇밀 타임특가 구매하러가기</a>
-  </article>
-
-  <!-- 페이지 공통 헤더 -->
-  <header>
-    <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
-    <link rel="stylesheet" href="./assets/css/style/_header-001.css" />
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-4">
-          <!-- 웹 상단 헤더  -->
-          <div class="web_header">
-            <!-- 편의상 임의로 페이지 이동 함수 추가 -->
-            <!-- 로고 영역 -->
-            <div class="header_left">
-              <h1 class="logo">
-                <a href="/index.html">
-                  <img src="./assets/image/logo.png" alt="아이배냇" />
-                </a>
-              </h1>
-            </div>
-
-            <!-- 검색창부터 배송조회 아이콘 까지 -->
-            <div class="header_right">
-              <div class="input_group">
-                <label for="searching">
-                  <input type="text" size="15" id="searching" />
-                  <img src="./assets/icon/search_icon.png" alt="" />
-                </label>
-              </div>
-              <ol class="header_navList">
-                <li class="header_navList_item header-login">
-                  <a href="#">로그인</a>
-                </li>
-                <li class="header_navList_item header-mypage">
-                  <a href="#">마이페이지</a>
-                </li>
-                <li class="header_navList_item header-bag">
-                  <a href="#" class="tracking">
-                    <img src="./assets/icon/shoppingBag.png" alt="장바구니" />
+    <!-- 페이지 공통 헤더 -->
+    <header>
+      <!-- 로고부터 아이콘 까지 | css-Number : /_header-001.css -->
+      <link rel="stylesheet" href="./assets/css/style/_header-001.css" />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-4">
+            <!-- 웹 상단 헤더  -->
+            <div class="web_header">
+              <!-- 편의상 임의로 페이지 이동 함수 추가 -->
+              <!-- 로고 영역 -->
+              <div class="header_left">
+                <h1 class="logo">
+                  <a href="/index.html">
+                    <img src="./assets/image/logo.png" alt="아이배냇" />
                   </a>
-                  <strong>1</strong>
-                </li>
-                <li class="header_navList_item header-join">
-                  <a href="#"><img src="./assets/icon/join_icon.png" alt="회원가입" /></a>
-                  <img src="./assets/icon/join_badge.png" alt="" />
-                </li>
-                <li class="header_navList_item header-tracking">
-                  <a href="#"><img src="./assets/icon/tracking_icon.png" alt="배송조회" /></a>
-                  <div class="tracking">
-                    <img src="./assets/icon/tracking_talk.png" alt="" />
-                    <p>배송지를 등록하고<span>구매가능한 상품을 확인하세요!</span></p>
-                    <button type="button" id="tracking_login">로그인</button>
-                    <button type="button" id="tracking_searchAdrr">
-                      <img src="./assets/icon/search_addr.png" alt="" />
-                      주소검색
-                    </button>
-                  </div>
-                </li>
-              </ol>
-            </div>
-          </div>
-
-          <!-- 모바일 상단 헤더 -->
-          <div class="mobile-header">
-            <div class="mobile total-menu">
-              <img src="./assets/icon/mobile_total.png" alt="" />
-            </div>
-            <div class="m-logo">
-              <a href="/index.html">
-                <img src="./assets/image/logo.png" alt="아이배냇 메인로고" />
-              </a>
-            </div>
-            <div class="m-right">
-              <div class="m-icon-tracking">
-                <img src="./assets/icon/tracking_icon.png" alt="배송조회" />
+                </h1>
               </div>
-              <div class="m-icon-join">
-                <img src="./assets/icon/join_icon.png" alt="회원가입" />
-                <img src="./assets/icon/mobile_join.png" alt="1초 회원가입" />
+
+              <!-- 검색창부터 배송조회 아이콘 까지 -->
+              <div class="header_right">
+                <div class="input_group">
+                  <label for="searching">
+                    <input type="text" size="15" id="searching" />
+                    <img src="./assets/icon/search_icon.png" alt="" />
+                  </label>
+                </div>
+                <ol class="header_navList">
+                  <li class="header_navList_item header-login">
+                    <a href="#">로그인</a>
+                  </li>
+                  <li class="header_navList_item header-mypage">
+                    <a href="#">마이페이지</a>
+                  </li>
+                  <li class="header_navList_item header-bag">
+                    <a href="#" class="tracking">
+                      <img src="./assets/icon/shoppingBag.png" alt="장바구니" />
+                    </a>
+                    <strong>1</strong>
+                  </li>
+                  <li class="header_navList_item header-join">
+                    <a href="#"><img src="./assets/icon/join_icon.png" alt="회원가입" /></a>
+                    <img src="./assets/icon/join_badge.png" alt="" />
+                  </li>
+                  <li class="header_navList_item header-tracking">
+                    <a href="#"><img src="./assets/icon/tracking_icon.png" alt="배송조회" /></a>
+                    <div class="tracking">
+                      <img src="./assets/icon/tracking_talk.png" alt="" />
+                      <p>배송지를 등록하고<span>구매가능한 상품을 확인하세요!</span></p>
+                      <button type="button" id="tracking_login">로그인</button>
+                      <button type="button" id="tracking_searchAdrr">
+                        <img src="./assets/icon/search_addr.png" alt="" />
+                        주소검색
+                      </button>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <!-- 모바일 상단 헤더 -->
+            <div class="mobile-header">
+              <div class="mobile total-menu">
+                <img src="./assets/icon/mobile_total.png" alt="" />
+              </div>
+              <div class="m-logo">
+                <a href="/index.html">
+                  <img src="./assets/image/logo.png" alt="아이배냇 메인로고" />
+                </a>
+              </div>
+              <div class="m-right">
+                <div class="m-icon-tracking">
+                  <img src="./assets/icon/tracking_icon.png" alt="배송조회" />
+                </div>
+                <div class="m-icon-join">
+                  <img src="./assets/icon/join_icon.png" alt="회원가입" />
+                  <img src="./assets/icon/mobile_join.png" alt="1초 회원가입" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 웹 gnb | css-Number : /_header-002.css -->
-    <link rel="stylesheet" href="./assets/css/style/_header-002.css" />
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-sm-4">
-          <nav class="gnb_main">
-            <h2 hidden>메뉴</h2>
-            <div class="gnb_menu">
-              <!-- 전체메뉴보기(헴버거) -->
-              <div class="menu00 big_menu total">
-                <button class="gnb_item toggle_btn">
-                  <img class="open_btn" src="./assets/icon/view_total_icon.png" alt="전체보기" />
-                  <img class="close_btn" src="./assets/icon/view_total_icon.png" alt="전체보기" />
-                </button>
+      <!-- 웹 gnb | css-Number : /_header-002.css -->
+      <link rel="stylesheet" href="./assets/css/style/_header-002.css" />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-4">
+            <nav class="gnb_main">
+              <h2 hidden>메뉴</h2>
+              <div class="gnb_menu">
+                <!-- 전체메뉴보기(헴버거) -->
+                <div class="menu00 big_menu total">
+                  <button class="gnb_item toggle_btn">
+                    <img class="open_btn" src="./assets/icon/view_total_icon.png" alt="전체보기" />
+                    <img class="close_btn" src="./assets/icon/view_total_icon.png" alt="전체보기" />
+                  </button>
 
-                <div class="total_menu">
-                  <div class="container">
-                    <div class="empty_box col-lg-12">
-                      <div class="gnb_itemList total empty"></div>
-                      <div class="gnb_itemList total">
-                        <p>이유식</p>
-                        <a href="#">준비기(4-5개월)</a>
-                        <a href="#">초기(6개월 전후)</a>
-                        <a href="#">중기(7-8개월)</a>
-                        <a href="#">후기 2식(9-10개월)</a>
-                        <a href="#">후기 3식(9-10개월)</a>
-                        <a href="#">병행기(10-11개월)</a>
-                        <a href="#">완료기(12개월 이후)</a>
-                        <p>유아식</p>
-                        <a href="#">첫밥(13개월 이후)</a>
-                        <a href="#">첫밥+국·반찬</a>
-                        <a href="#">반찬·국</a>
-                      </div>
-                      <div class="gnb_itemList total">
-                        <a href="#">이유식</a>
-                        <a href="#">유아식</a>
-                        <a href="#">디저트</a>
-                      </div>
-                      <div class="gnb_itemList total">
-                        <a href="#">분유 / 유아식</a>
-                        <a href="#">퓨레</a>
-                        <a href="#">간식 / 음료</a>
-                        <a href="#">요리 / 재료 / 반찬</a>
-                        <a href="#">건강기능식품</a>
-                      </div>
-                      <div class="gnb_itemList total empty"></div>
-                      <div class="gnb_itemList total">
-                        <a href="#">무료체험신청</a>
-                        <a href="#">이벤트</a>
-                      </div>
-                      <div class="gnb_itemList total">
-                        <a href="#">배냇밀 소개</a>
-                        <a href="#">충주팩토리</a>
-                        <a href="#">재료 이야기</a>
-                        <a href="#">안심온도계</a>
-                      </div>
-                      <div class="gnb_itemList total">
-                        <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
-                        <a href="#">이용가이드</a>
-                        <a href="/SHOPWEB_US0609.html">1:1 상담신청</a>
-                        <a href="/SHOPWEB_US0611.html">FAQ</a>
-                        <a href="#">영양상 FAQ</a>
-                      </div>
-                      <div class="gnb_itemList total">
-                        <a href="#">주문/배송조회</a>
-                        <a href="#">장바구니</a>
-                        <a href="#">배송지 관리</a>
-                        <a href="#">고객센터</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="container">
-                    <div class="container_box col-lg-12">
-                      <div class="display_box">
-                        <div class="text_box">
-                          <p class="text">배냇밀의 추천상품</p>
+                  <div class="total_menu">
+                    <div class="container">
+                      <div class="empty_box col-lg-12">
+                        <div class="gnb_itemList total empty"></div>
+                        <div class="gnb_itemList total">
+                          <p>이유식</p>
+                          <a href="#">준비기(4-5개월)</a>
+                          <a href="#">초기(6개월 전후)</a>
+                          <a href="#">중기(7-8개월)</a>
+                          <a href="#">후기 2식(9-10개월)</a>
+                          <a href="#">후기 3식(9-10개월)</a>
+                          <a href="#">병행기(10-11개월)</a>
+                          <a href="#">완료기(12개월 이후)</a>
+                          <p>유아식</p>
+                          <a href="#">첫밥(13개월 이후)</a>
+                          <a href="#">첫밥+국·반찬</a>
+                          <a href="#">반찬·국</a>
                         </div>
-                        <div class="item_box">
-                          <div class="item">
-                            <a href="#">
-                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
-                            </a>
-                          </div>
-                          <div class="item">
-                            <a href="#">
-                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
-                            </a>
-                          </div>
-                          <div class="item">
-                            <a href="#">
-                              <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
-                            </a>
-                          </div>
+                        <div class="gnb_itemList total">
+                          <a href="#">이유식</a>
+                          <a href="#">유아식</a>
+                          <a href="#">디저트</a>
+                        </div>
+                        <div class="gnb_itemList total">
+                          <a href="#">분유 / 유아식</a>
+                          <a href="#">퓨레</a>
+                          <a href="#">간식 / 음료</a>
+                          <a href="#">요리 / 재료 / 반찬</a>
+                          <a href="#">건강기능식품</a>
+                        </div>
+                        <div class="gnb_itemList total empty"></div>
+                        <div class="gnb_itemList total">
+                          <a href="#">무료체험신청</a>
+                          <a href="#">이벤트</a>
+                        </div>
+                        <div class="gnb_itemList total">
+                          <a href="#">배냇밀 소개</a>
+                          <a href="#">충주팩토리</a>
+                          <a href="#">재료 이야기</a>
+                          <a href="#">안심온도계</a>
+                        </div>
+                        <div class="gnb_itemList total">
+                          <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
+                          <a href="#">이용가이드</a>
+                          <a href="/SHOPWEB_US0609.html">1:1 상담신청</a>
+                          <a href="/SHOPWEB_US0611.html">FAQ</a>
+                          <a href="#">영양상 FAQ</a>
+                        </div>
+                        <div class="gnb_itemList total">
+                          <a href="#">주문/배송조회</a>
+                          <a href="#">장바구니</a>
+                          <a href="#">배송지 관리</a>
+                          <a href="#">고객센터</a>
                         </div>
                       </div>
                     </div>
+                    <div class="container">
+                      <div class="container_box col-lg-12">
+                        <div class="display_box">
+                          <div class="text_box">
+                            <p class="text">배냇밀의 추천상품</p>
+                          </div>
+                          <div class="item_box">
+                            <div class="item">
+                              <a href="#">
+                                <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
+                              </a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
+                              </a>
+                            </div>
+                            <div class="item">
+                              <a href="#">
+                                <img src="https://i.stack.imgur.com/DPGsM.png" alt="" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- 식단 주문하기 -->
-              <div class="menu01 big_menu big">
-                <!-- 임의로 페이지 이동 함수 추가 -->
-                <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button>
-                <div class="gnb_itemList drop01">
-                  <p>이유식</p>
-                  <a href="#">준비기(4-5개월)</a>
-                  <a href="#">초기(6개월 전후)</a>
-                  <a href="#">중기(7-8개월)</a>
-                  <a href="#">후기 2식(9-10개월)</a>
-                  <a href="#">후기 3식(9-10개월)</a>
-                  <a href="#">병행기(10-11개월)</a>
-                  <a href="#">완료기(12개월 이후)</a>
-                  <p>유아식</p>
-                  <a href="#">첫밥(13개월 이후)</a>
-                  <a href="#">첫밥+국·반찬</a>
-                  <a href="#">반찬·국</a>
+                <!-- 식단 주문하기 -->
+                <div class="menu01 big_menu big">
+                  <!-- 임의로 페이지 이동 함수 추가 -->
+                  <button class="gnb_item" onclick="location.href = 'SHOPWEB_UR0101.html'">식단 주문하기</button>
+                  <div class="gnb_itemList drop01">
+                    <p>이유식</p>
+                    <a href="#">준비기(4-5개월)</a>
+                    <a href="#">초기(6개월 전후)</a>
+                    <a href="#">중기(7-8개월)</a>
+                    <a href="#">후기 2식(9-10개월)</a>
+                    <a href="#">후기 3식(9-10개월)</a>
+                    <a href="#">병행기(10-11개월)</a>
+                    <a href="#">완료기(12개월 이후)</a>
+                    <p>유아식</p>
+                    <a href="#">첫밥(13개월 이후)</a>
+                    <a href="#">첫밥+국·반찬</a>
+                    <a href="#">반찬·국</a>
+                  </div>
                 </div>
-              </div>
-              <!-- 낱개 주문하기 -->
-              <div class="menu02 big_menu big">
-                <button class="gnb_item">낱개 주문하기</button>
-                <div class="gnb_itemList drop02">
-                  <a href="#">이유식</a>
-                  <a href="#">유아식</a>
-                  <a href="#">디저트</a>
+                <!-- 낱개 주문하기 -->
+                <div class="menu02 big_menu big">
+                  <button class="gnb_item">낱개 주문하기</button>
+                  <div class="gnb_itemList drop02">
+                    <a href="#">이유식</a>
+                    <a href="#">유아식</a>
+                    <a href="#">디저트</a>
+                  </div>
                 </div>
-              </div>
-              <!-- 유아식품 -->
-              <div class="menu03 big_menu big">
-                <button class="gnb_item">유아식품</button>
-                <div class="gnb_itemList drop03">
-                  <a href="#">분유 / 유아식</a>
-                  <a href="#">퓨레</a>
-                  <a href="#">간식 / 음료</a>
-                  <a href="#">요리 / 재료 / 반찬</a>
-                  <a href="#">건강기능식품</a>
+                <!-- 유아식품 -->
+                <div class="menu03 big_menu big">
+                  <button class="gnb_item">유아식품</button>
+                  <div class="gnb_itemList drop03">
+                    <a href="#">분유 / 유아식</a>
+                    <a href="#">퓨레</a>
+                    <a href="#">간식 / 음료</a>
+                    <a href="#">요리 / 재료 / 반찬</a>
+                    <a href="#">건강기능식품</a>
+                  </div>
                 </div>
-              </div>
-              <!-- 기획전 -->
-              <div class="menu04 big_menu big">
-                <button class="gnb_item">기획전</button>
-                <!-- <div class="gnb_itemList drop04">
+                <!-- 기획전 -->
+                <div class="menu04 big_menu big">
+                  <button class="gnb_item">기획전</button>
+                  <!-- <div class="gnb_itemList drop04">
                             <a href="#">이유식</a>
                             <a href="#">유아식</a>
                             <a href="#">디저트</a>
                           </div> -->
-              </div>
-              <!-- 이벤트 -->
-              <div class="menu05 big_menu big">
-                <button class="gnb_item">이벤트</button>
-                <div class="gnb_itemList drop05">
-                  <a href="#">무료체험신청</a>
-                  <a href="#">이벤트</a>
+                </div>
+                <!-- 이벤트 -->
+                <div class="menu05 big_menu big">
+                  <button class="gnb_item">이벤트</button>
+                  <div class="gnb_itemList drop05">
+                    <a href="#">무료체험신청</a>
+                    <a href="#">이벤트</a>
+                  </div>
+                </div>
+                <!-- 배냇밀 스토리 -->
+                <div class="menu06 big_menu big">
+                  <button class="gnb_item">배냇밀 스토리</button>
+                  <div class="gnb_itemList drop06">
+                    <a href="#">배냇밀 소개</a>
+                    <a href="#">충주팩토리</a>
+                    <a href="#">재료 이야기</a>
+                    <a href="#">안심온도계</a>
+                  </div>
+                </div>
+                <!-- 고객센터 -->
+                <div class="menu07 big_menu big">
+                  <button class="gnb_item">고객센터</button>
+                  <div class="gnb_itemList drop07">
+                    <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
+                    <a href="#">이용가이드</a>
+                    <a href="/SHOPWEB_US0609.html">1:1 상담신청</a>
+                    <a href="/SHOPWEB_US0611.html">FAQ</a>
+                    <a href="#">영양상 FAQ</a>
+                  </div>
+                </div>
+                <!-- 마이페이지 -->
+                <div class="menu08 big_menu big">
+                  <button class="gnb_item">마이페이지</button>
+                  <div class="gnb_itemList drop08">
+                    <a href="#">주문/배송조회</a>
+                    <a href="#">장바구니</a>
+                    <a href="#">배송지 관리</a>
+                    <a href="#">고객센터</a>
+                  </div>
                 </div>
               </div>
-              <!-- 배냇밀 스토리 -->
-              <div class="menu06 big_menu big">
-                <button class="gnb_item">배냇밀 스토리</button>
-                <div class="gnb_itemList drop06">
-                  <a href="#">배냇밀 소개</a>
-                  <a href="#">충주팩토리</a>
-                  <a href="#">재료 이야기</a>
-                  <a href="#">안심온도계</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- 모바일 gnb -->
+      <nav class="m-gnb">
+        <h2 class="visually hidden" hidden>메뉴</h2>
+        <div class="gnb-menu">
+          <button type="button" class="g-menu01">정기주문</button>
+          <button type="button" class="g-menu02">낱개주문</button>
+          <button type="button" class="g-menu03">유아식품</button>
+          <button type="button" class="g-menu04">기획전</button>
+          <button type="button" class="g-menu05">브랜드스토리</button>
+        </div>
+      </nav>
+
+      <!-- 모바일 : css-Number : /_header-002-m-2.css  -->
+      <link rel="stylesheet" href="./assets/css/style/_header-002-m.css" />
+      <nav class="m-side">
+        <div class="nav__box">
+          <!-- 서브메뉴 닫는 박스 -->
+          <div class="close__button__box">
+            <div class="button">
+              <img src="./assets/icon/mobile_x_button.png" alt="" />
+            </div>
+          </div>
+
+          <!-- 로그인 전 -->
+          <div class="join__box width-align">
+            <div class="join__text__box">
+              <p class="text">로그인 하여 더 많은 정보를 확인해 보세요.</p>
+            </div>
+            <div class="join__button__box">
+              <button class="button__text point">회원가입</button>
+              <button class="button__text">로그인</button>
+            </div>
+          </div>
+
+          <!-- 로그인 후 -->
+          <div class="login__box width-align">
+            <div class="info__box">
+              <div class="img__box">
+                <div class="user__img">
+                  <a href="">
+                    <img src="./assets/icon/user_default_icon.png" alt="" />
+                  </a>
                 </div>
               </div>
-              <!-- 고객센터 -->
-              <div class="menu07 big_menu big">
-                <button class="gnb_item">고객센터</button>
-                <div class="gnb_itemList drop07">
-                  <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
-                  <a href="#">이용가이드</a>
-                  <a href="/SHOPWEB_US0609.html">1:1 상담신청</a>
-                  <a href="/SHOPWEB_US0611.htm">FAQ</a>
-                  <a href="#">영양상 FAQ</a>
+              <div class="name__box">
+                <div class="user__name">
+                  <a class="link__text" href="">
+                    <span>홍길동님</span>
+                    <img src="./assets/icon/arrow-black.png" alt="" />
+                  </a>
                 </div>
-              </div>
-              <!-- 마이페이지 -->
-              <div class="menu08 big_menu big">
-                <button class="gnb_item">마이페이지</button>
-                <div class="gnb_itemList drop08">
-                  <a href="#">주문/배송조회</a>
-                  <a href="#">장바구니</a>
-                  <a href="#">배송지 관리</a>
-                  <a href="#">고객센터</a>
+                <div class="baby__info">
+                  <!-- 아기정보가 없는 경우 -->
+                  <a class="link__text point" href="">
+                    <span>아기정보를 입력해주세요</span>
+                    <img src="./assets/icon/arrow-pink.png" alt="" />
+                  </a>
+                  <!-- 아기정보가 있는 경우 -->
                 </div>
               </div>
             </div>
-          </nav>
+
+            <!-- 유저 메뉴박스 -->
+            <div class="menu__box">
+              <div class="menu__item">
+                <a href="" class="link__text">마이페이지</a>
+              </div>
+              <div class="menu__item">
+                <a href="" class="link__text">주문조회</a>
+              </div>
+              <div class="menu__item">
+                <a href="" class="link__text">장바구니</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 배너 -->
+          <div class="banner__box">
+            <div class="slick__box m__side__slick width-align">
+              <div class="banner__img__box">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+              </div>
+              <div class="banner__img__box">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+              </div>
+              <div class="banner__img__box">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+              </div>
+              <div class="banner__img__box">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+              </div>
+              <div class="banner__img__box">
+                <img loading="lazy" src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- 식단주문하기 -->
+          <div class="order__box">
+            <div class="order__title__box">
+              <p class="title width-align">식단주문하기</p>
+            </div>
+            <div class="sub__menu__box width-align">
+              <a class="link__text" href="">준비기(4-5개월)</a>
+              <a class="link__text" href="">초기(6개월 전후)</a>
+              <a class="link__text" href="">중기(7-8개월)</a>
+              <a class="link__text" href="">후기 2식(9-10개월)</a>
+              <a class="link__text" href="">후기 3식(10-11개월)</a>
+              <a class="link__text" href="">병행기(10-11개월)</a>
+              <a class="link__text" href="">완료기(12개월 이후)</a>
+              <a class="link__text" href="">첫밥(13개월 이후)</a>
+              <a class="link__text" href="">첫밥+국·반찬()</a>
+              <a class="link__text" href="">반찬·국</a>
+            </div>
+          </div>
+          <!-- 모바일 사이드 메뉴 -->
+          <div class="meun__box">
+            <div class="m_side_menu m_side_menu01">
+              <div class="menu__title__box width-align">
+                <p class="title">유아식품</p>
+                <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
+              </div>
+              <div class="sub__menu__box">
+                <a class="link__text width-align" href="">분유 / 유아식</a>
+                <a class="link__text width-align" href="">퓨레</a>
+                <a class="link__text width-align" href="">간식 / 음료</a>
+                <a class="link__text width-align" href="">요리 / 재료 / 반찬</a>
+                <a class="link__text width-align" href="">건강기능식품</a>
+              </div>
+            </div>
+            <div class="m_side_menu m_side_menu02">
+              <div class="menu__title__box width-align">
+                <p class="title point">낱개 주문하기</p>
+                <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
+              </div>
+              <div class="sub__menu__box">
+                <a class="link__text width-align" href="">이유식</a>
+                <a class="link__text width-align" href="">유아식</a>
+                <a class="link__text width-align" href="">디저트</a>
+              </div>
+            </div>
+            <div class="m_side_menu m_side_menu03">
+              <div class="menu__title__box width-align">
+                <p class="title">배냇밀 스토리</p>
+                <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
+              </div>
+              <div class="sub__menu__box">
+                <a class="link__text width-align" href="">배냇밀 소개</a>
+                <a class="link__text width-align" href="">충주팩토리</a>
+                <a class="link__text width-align" href="">재료 이야기</a>
+                <a class="link__text width-align" href="">안심온도계</a>
+              </div>
+            </div>
+            <div class="m_side_menu m_side_menu04">
+              <div class="menu__title__box width-align">
+                <p class="title">이벤트</p>
+                <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
+              </div>
+              <div class="sub__menu__box">
+                <a class="link__text width-align" href="">무료체험신청</a>
+                <a class="link__text width-align" href="">이벤트</a>
+              </div>
+            </div>
+          </div>
+          <!-- 기타 메뉴 -->
+          <div class="etc__menu__box">
+            <div class="grid__box">
+              <div class="link">
+                <a href="">이용가이드</a>
+              </div>
+              <div class="link">
+                <a href="/SHOPWEB_US0609.html">1:1 상담하기</a>
+              </div>
+              <div class="link">
+                <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
+              </div>
+              <div class="link">
+                <a href="">이물오인혼동내용</a>
+              </div>
+              <div class="link">
+                <a href="">배송안내</a>
+              </div>
+              <div class="link">
+                <a href="">제휴문의</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 페이지 공통 사이드 -->
+    <!-- script 하단에 기입 -->
+    <link rel="stylesheet" href="./assets/css/style/_side.css" />
+    <div id="sidebar" class="side__bar">
+      <div class="side__btn">
+        <div id="side_open_btn" class="right__btn__box btn__box">
+          <img src="./assets/icon/left_arrow.png" alt="" />
+        </div>
+        <div id="side_top_btn" class="top__btn__box btn__box">
+          <img src="./assets/icon/up_arrow.png" alt="" />
+        </div>
+        <div id="side_down_btn" class="down__btn__box btn__box">
+          <img src="./assets/icon/down_arrow.png" alt="" />
+        </div>
+      </div>
+      <div class="side__box">
+        <div class="slick__box">
+          <div class="side__slick">
+            <div class="side__slick__item">
+              <div class="text__box">
+                <span class="text">TODAY VIEW</span>
+                <span class="number">3</span>
+              </div>
+              <div class="img__box">
+                <img src="./assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지" />
+              </div>
+            </div>
+            <div class="side__slick__item">
+              <div class="text__box">
+                <span class="text">TODAY VIEW</span>
+                <span class="number">3</span>
+              </div>
+              <div class="img__box">
+                <img src="./assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지" />
+              </div>
+            </div>
+            <div class="side__slick__item">
+              <div class="text__box">
+                <span class="text">TODAY VIEW</span>
+                <span class="number">3</span>
+              </div>
+              <div class="img__box">
+                <img src="./assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지" />
+              </div>
+            </div>
+          </div>
+          <div class="arrow__box">
+            <div class="left__arrow side__arrow">
+              <img src="./assets/icon/left_arrow.png" alt="" />
+            </div>
+            <div class="page__number">
+              <p class="text current__number">1</p>
+              <p class="text devide">/</p>
+              <p class="text total__number"></p>
+            </div>
+            <div class="right__arrow side__arrow">
+              <img src="./assets/icon/right_arrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="side__menu__box">
+          <a href="" class="link__text point">식단 주문하기</a>
+          <a href="" class="link__text">이유식 상담하기</a>
+          <a href="" class="link__text">무료체험 신청하기</a>
+          <a href="" class="link__text">배냇밀 식단표</a>
+        </div>
+        <div class="cs__box">
+          <div class="tel__box">
+            <p class="text">CS CENTER</p>
+            <p class="tel">1833-4312</p>
+          </div>
+          <div class="business__hour__box">
+            <p class="text">월~금 AM 09:00 - PM 18:00</p>
+            <p class="text">점심 PM 12:00 - PM 13:00</p>
+            <p class="text">토, 일 / 공휴일 휴무</p>
+          </div>
+          <div class="sns__box">
+            <a href="" class="link">
+              <img src="./assets/icon/insta_black.png" alt="" />
+            </a>
+            <a href="" class="link">
+              <img src="./assets/icon/naver_black.png" alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <!-- 모바일 gnb -->
-    <nav class="m-gnb">
-      <h2 class="visually hidden" hidden>메뉴</h2>
-      <div class="gnb-menu">
-        <button type="button" class="g-menu01">정기주문</button>
-        <button type="button" class="g-menu02">낱개주문</button>
-        <button type="button" class="g-menu03">유아식품</button>
-        <button type="button" class="g-menu04">기획전</button>
-        <button type="button" class="g-menu05">브랜드스토리</button>
-      </div>
-    </nav>
 
-    <!-- 모바일 : css-Number : /_header-002-m-2.css  -->
-    <link rel="stylesheet" href="./assets/css/style/_header-002-m.css" />
-    <nav class="m-side">
-      <div class="nav__box">
-        <!-- 서브메뉴 닫는 박스 -->
-        <div class="close__button__box">
-          <div class="button">
-            <img src="./assets/icon/mobile_x_button.png" alt="" />
-          </div>
-        </div>
+    <!-- 메인 컨텐츠 영역  -->
+    <main>
+      <!-- 메인 배너(메인 캐로셀 부분) | css-Number : /baby-main-001.css -->
+      <link rel="stylesheet" href="./assets/css/style/baby-main-001.css" />
+      <section class="main_banner">
+        <ol class="main-slick slick">
+          <li>
+            <div><img src="./assets/image/banner1.png" alt="" /></div>
+          </li>
+          <li>
+            <div><img src="./assets/image/banner1.png" alt="" /></div>
+          </li>
+          <li>
+            <div><img src="./assets/image/banner1.png" alt="" /></div>
+          </li>
+          <li>
+            <div><img src="./assets/image/banner1.png" alt="" /></div>
+          </li>
+          <li>
+            <div><img src="./assets/image/banner1.png" alt="" /></div>
+          </li>
+        </ol>
 
-        <!-- 로그인 전 -->
-        <div class="join__box width-align">
-          <div class="join__text__box">
-            <p class="text">로그인 하여 더 많은 정보를 확인해 보세요.</p>
+        <div class="carousel-navigation">
+          <div class="arrow arrow-left cn_arrow-left">
+            <div class="img">
+              <img src="./assets/icon/left_arrow.png" alt="" />
+            </div>
           </div>
-          <div class="join__button__box">
-            <button class="button__text point">회원가입</button>
-            <button class="button__text">로그인</button>
-          </div>
-        </div>
-
-        <!-- 로그인 후 -->
-        <div class="login__box width-align">
-          <div class="info__box">
-            <div class="img__box">
-              <div class="user__img">
-                <a href="">
-                  <img src="./assets/icon/user_default_icon.png" alt="" />
-                </a>
+          <div class="carousel-box">
+            <div class="item">
+              <div class="text_box">
+                <p class="number">01</p>
+                <div>
+                  <p class="banner-text">배냇밀 유아식 프리미엄 반찬</p>
+                </div>
               </div>
             </div>
-            <div class="name__box">
-              <div class="user__name">
-                <a class="link__text" href="">
-                  <span>홍길동님</span>
-                  <img src="./assets/icon/arrow-black.png" alt="" />
-                </a>
+            <div class="item">
+              <div class="text_box">
+                <p class="number">02</p>
+                <div>
+                  <p class="banner-text">배냇밀 유아식 프리미엄 반찬</p>
+                </div>
               </div>
-              <div class="baby__info">
-                <!-- 아기정보가 없는 경우 -->
-                <a class="link__text point" href="">
-                  <span>아기정보를 입력해주세요</span>
-                  <img src="./assets/icon/arrow-pink.png" alt="" />
-                </a>
-                <!-- 아기정보가 있는 경우 -->
+            </div>
+            <div class="item">
+              <div class="text_box">
+                <p class="number">03</p>
+                <div>
+                  <p class="banner-text">배냇밀 유아식 프리미엄 반찬</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="text_box">
+                <p class="number">04</p>
+                <div>
+                  <p class="banner-text">배냇밀 유아식 프리미엄 반찬</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="text_box">
+                <p class="number">05</p>
+                <div>
+                  <p class="banner-text">배냇밀 유아식 프리미엄 반찬</p>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- 유저 메뉴박스 -->
-          <div class="menu__box">
-            <div class="menu__item">
-              <a href="" class="link__text">마이페이지</a>
-            </div>
-            <div class="menu__item">
-              <a href="" class="link__text">주문조회</a>
-            </div>
-            <div class="menu__item">
-              <a href="" class="link__text">장바구니</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 배너 -->
-        <div class="banner__box">
-          <div class="slick__box m__side__slick width-align">
-            <div class="banner__img__box">
-              <img loading="lazy"
-                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="" />
-            </div>
-            <div class="banner__img__box">
-              <img loading="lazy"
-                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="" />
-            </div>
-            <div class="banner__img__box">
-              <img loading="lazy"
-                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="" />
-            </div>
-            <div class="banner__img__box">
-              <img loading="lazy"
-                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="" />
-            </div>
-            <div class="banner__img__box">
-              <img loading="lazy"
-                src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="" />
+          <div class="arrow arrow-right cn_arrow-right">
+            <div class="img">
+              <img src="./assets/icon/right_arrow.png" alt="" />
             </div>
           </div>
         </div>
-        <!-- 식단주문하기 -->
-        <div class="order__box">
-          <div class="order__title__box">
-            <p class="title width-align">식단주문하기</p>
-          </div>
-          <div class="sub__menu__box width-align">
-            <a class="link__text" href="">준비기(4-5개월)</a>
-            <a class="link__text" href="">초기(6개월 전후)</a>
-            <a class="link__text" href="">중기(7-8개월)</a>
-            <a class="link__text" href="">후기 2식(9-10개월)</a>
-            <a class="link__text" href="">후기 3식(10-11개월)</a>
-            <a class="link__text" href="">병행기(10-11개월)</a>
-            <a class="link__text" href="">완료기(12개월 이후)</a>
-            <a class="link__text" href="">첫밥(13개월 이후)</a>
-            <a class="link__text" href="">첫밥+국·반찬()</a>
-            <a class="link__text" href="">반찬·국</a>
-          </div>
-        </div>
-        <!-- 모바일 사이드 메뉴 -->
-        <div class="meun__box">
-          <div class="m_side_menu m_side_menu01">
-            <div class="menu__title__box width-align">
-              <p class="title">유아식품</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
-            </div>
-            <div class="sub__menu__box">
-              <a class="link__text width-align" href="">분유 / 유아식</a>
-              <a class="link__text width-align" href="">퓨레</a>
-              <a class="link__text width-align" href="">간식 / 음료</a>
-              <a class="link__text width-align" href="">요리 / 재료 / 반찬</a>
-              <a class="link__text width-align" href="">건강기능식품</a>
-            </div>
-          </div>
-          <div class="m_side_menu m_side_menu02">
-            <div class="menu__title__box width-align">
-              <p class="title point">낱개 주문하기</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
-            </div>
-            <div class="sub__menu__box">
-              <a class="link__text width-align" href="">이유식</a>
-              <a class="link__text width-align" href="">유아식</a>
-              <a class="link__text width-align" href="">디저트</a>
-            </div>
-          </div>
-          <div class="m_side_menu m_side_menu03">
-            <div class="menu__title__box width-align">
-              <p class="title">배냇밀 스토리</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
-            </div>
-            <div class="sub__menu__box">
-              <a class="link__text width-align" href="">배냇밀 소개</a>
-              <a class="link__text width-align" href="">충주팩토리</a>
-              <a class="link__text width-align" href="">재료 이야기</a>
-              <a class="link__text width-align" href="">안심온도계</a>
-            </div>
-          </div>
-          <div class="m_side_menu m_side_menu04">
-            <div class="menu__title__box width-align">
-              <p class="title">이벤트</p>
-              <img src="./assets/icon/mobile_side_menu_arrow.png" alt="arrow" />
-            </div>
-            <div class="sub__menu__box">
-              <a class="link__text width-align" href="">무료체험신청</a>
-              <a class="link__text width-align" href="">이벤트</a>
-            </div>
-          </div>
-        </div>
-        <!-- 기타 메뉴 -->
-        <div class="etc__menu__box">
-          <div class="grid__box">
-            <div class="link">
-              <a href="">이용가이드</a>
-            </div>
-            <div class="link">
-              <a href="/SHOPWEB_US0609.html">1:1 상담하기</a>
-            </div>
-            <div class="link">
-              <a href="/SHOPWEB_US06MAIN.html">공지사항</a>
-            </div>
-            <div class="link">
-              <a href="">이물오인혼동내용</a>
-            </div>
-            <div class="link">
-              <a href="">배송안내</a>
-            </div>
-            <div class="link">
-              <a href="">제휴문의</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+      </section>
 
-  <!-- 페이지 공통 사이드 -->
-  <!-- script 하단에 기입 -->
-  <link rel="stylesheet" href="./assets/css/style/_side.css" />
-  <div id="sidebar" class="side__bar">
-    <div class="side__btn">
-      <div id="side_open_btn" class="right__btn__box btn__box">
-        <img src="./assets/icon/left_arrow.png" alt="" />
-      </div>
-      <div id="side_top_btn" class="top__btn__box btn__box">
-        <img src="./assets/icon/up_arrow.png" alt="" />
-      </div>
-      <div id="side_down_btn" class="down__btn__box btn__box">
-        <img src="./assets/icon/down_arrow.png" alt="" />
-      </div>
-    </div>
-    <div class="side__box">
-      <div class="slick__box">
-        <div class="side__slick">
-          <div class="side__slick__item">
-            <div class="text__box">
-              <span class="text">TODAY VIEW</span>
-              <span class="number">3</span>
-            </div>
-            <div class="img__box">
-              <img src="./assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지" />
-            </div>
-          </div>
-          <div class="side__slick__item">
-            <div class="text__box">
-              <span class="text">TODAY VIEW</span>
-              <span class="number">3</span>
-            </div>
-            <div class="img__box">
-              <img src="./assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지" />
-            </div>
-          </div>
-          <div class="side__slick__item">
-            <div class="text__box">
-              <span class="text">TODAY VIEW</span>
-              <span class="number">3</span>
-            </div>
-            <div class="img__box">
-              <img src="./assets/image/side_img.jpg" alt="사이드박스 메뉴 이미지" />
-            </div>
-          </div>
-        </div>
-        <div class="arrow__box">
-          <div class="left__arrow side__arrow">
-            <img src="./assets/icon/left_arrow.png" alt="" />
-          </div>
-          <div class="page__number">
-            <p class="text current__number">1</p>
-            <p class="text devide">/</p>
-            <p class="text total__number"></p>
-          </div>
-          <div class="right__arrow side__arrow">
-            <img src="./assets/icon/right_arrow.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="side__menu__box">
-        <a href="" class="link__text point">식단 주문하기</a>
-        <a href="" class="link__text">이유식 상담하기</a>
-        <a href="" class="link__text">무료체험 신청하기</a>
-        <a href="" class="link__text">배냇밀 식단표</a>
-      </div>
-      <div class="cs__box">
-        <div class="tel__box">
-          <p class="text">CS CENTER</p>
-          <p class="tel">1833-4312</p>
-        </div>
-        <div class="business__hour__box">
-          <p class="text">월~금 AM 09:00 - PM 18:00</p>
-          <p class="text">점심 PM 12:00 - PM 13:00</p>
-          <p class="text">토, 일 / 공휴일 휴무</p>
-        </div>
-        <div class="sns__box">
-          <a href="" class="link">
-            <img src="./assets/icon/insta_black.png" alt="" />
-          </a>
-          <a href="" class="link">
-            <img src="./assets/icon/naver_black.png" alt="" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 메인 컨텐츠 영역  -->
-  <main>
-    <!-- 메인 배너(메인 캐로셀 부분) | css-Number : /baby-main-001.css -->
-    <link rel="stylesheet" href="./assets/css/style/baby-main-001.css" />
-    <section class="main_banner">
-      <ol class="main-slick slick">
-        <li>
-          <div><img src="./assets/image/banner1.png" alt="" /></div>
-        </li>
-        <li>
-          <div><img src="./assets/image/banner1.png" alt="" /></div>
-        </li>
-        <li>
-          <div><img src="./assets/image/banner1.png" alt="" /></div>
-        </li>
-        <li>
-          <div><img src="./assets/image/banner1.png" alt="" /></div>
-        </li>
-        <li>
-          <div><img src="./assets/image/banner1.png" alt="" /></div>
-        </li>
-      </ol>
-
-      <div class="carousel-navigation">
-        <div class="arrow arrow-left cn_arrow-left">
-          <div class="img">
-            <img src="./assets/icon/left_arrow.png" alt="" />
-          </div>
-        </div>
-        <div class="carousel-box">
-          <div class="item">
-            <div class="text_box">
-              <p class="number">01</p>
-              <div>
-                <p class="banner-text">배냇밀 유아식
-                  프리미엄 반찬</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="text_box">
-              <p class="number">02</p>
-              <div>
-                <p class="banner-text">배냇밀 유아식
-                  프리미엄 반찬</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="text_box">
-              <p class="number">03</p>
-              <div>
-                <p class="banner-text">배냇밀 유아식
-                  프리미엄 반찬</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="text_box">
-              <p class="number">04</p>
-              <div>
-                <p class="banner-text">배냇밀 유아식
-                  프리미엄 반찬</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="text_box">
-              <p class="number">05</p>
-              <div>
-                <p class="banner-text">배냇밀 유아식
-                  프리미엄 반찬</p>
-              </div>
+      <!-- 아치형 아이콘들 | css-Number : /baby-main-002.css -->
+      <link rel="stylesheet" href="./assets/css/style/baby-main-002.css" />
+      <section class="info_img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-12 col-sm-4">
+              <ul class="info_list">
+                <li class="info_list_item">
+                  <a href="#">
+                    <div class="il_imgBox">
+                      <img class="intro-img" src="./assets/image/intro01.png" alt="" />
+                      <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+                    </div>
+                    <div class="il_comment">이유식 소개</div>
+                  </a>
+                </li>
+                <li class="info_list_item m-del">
+                  <a href="#">
+                    <div class="il_imgBox">
+                      <img class="intro-img" src="./assets/image/intro02.png" alt="" />
+                      <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+                    </div>
+                    <div class="il_comment">이용가이드</div>
+                  </a>
+                </li>
+                <li class="info_list_item">
+                  <a href="#">
+                    <div class="il_imgBox">
+                      <img class="intro-img" src="./assets/image/intro03.png" alt="" />
+                      <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+                    </div>
+                    <div class="il_comment">1:1 상담</div>
+                  </a>
+                </li>
+                <li class="info_list_item m-del">
+                  <a href="#">
+                    <div class="il_imgBox">
+                      <img class="intro-img" src="./assets/image/intro04.png" alt="" />
+                      <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+                    </div>
+                    <div class="il_comment">식재료 소개</div>
+                  </a>
+                </li>
+                <li class="info_list_item">
+                  <a href="#">
+                    <div class="il_imgBox">
+                      <img class="intro-img" src="./assets/image/intro05.png" alt="" />
+                      <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+                    </div>
+                    <div class="w-il_comment">무료체험 신청</div>
+                    <div class="m-il_comment">무료 체험</div>
+                  </a>
+                </li>
+                <li class="info_list_item m-del">
+                  <a href="#">
+                    <div class="il_imgBox">
+                      <img class="intro-img" src="./assets/image/intro06.png" alt="" />
+                      <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+                    </div>
+                    <div class="il_comment">HACCP 인증</div>
+                  </a>
+                </li>
+                <li class="info_list_item m-info-item">
+                  <a href="#">
+                    <div class="il_imgBox">
+                      <img class="intro-img" src="./assets/image/intro06.png" alt="" />
+                      <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+                    </div>
+                    <div class="il_comment">이벤트</div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="arrow arrow-right cn_arrow-right">
-          <div class="img">
-            <img src="./assets/icon/right_arrow.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 아치형 아이콘들 | css-Number : /baby-main-002.css -->
-    <link rel="stylesheet" href="./assets/css/style/baby-main-002.css" />
-    <section class="info_img">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 col-md-12 col-sm-4">
-            <ul class="info_list">
-              <li class="info_list_item">
-                <a href="#">
-                  <div class="il_imgBox">
-                    <img class="intro-img" src="./assets/image/intro01.png" alt="" />
-                    <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
+      <!-- 월령별 가이드 | css-Number : /baby-main-003.css -->
+      <link rel="stylesheet" href="./assets/css/style/baby-main-003.css" />
+      <section class="baby_guide">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-4">
+              <!-- 텍스트 -->
+              <div class="baby_guide_text">
+                <p>배냇밀 단계 소개</p>
+                <span>
+                  월령별 가이드를 확인하세요
+                  <img src="./assets/icon/circle_right_arrow.png" alt="" />
+                </span>
+              </div>
+              <!-- 버튼 -->
+              <div class="baby_guide_btn">
+                <!-- 이유식 탭 -->
+                <div class="solidFood">
+                  <div class="solidFood_list_item bg-row-name">
+                    <p>이유식</p>
                   </div>
-                  <div class="il_comment">이유식 소개</div>
-                </a>
-              </li>
-              <li class="info_list_item m-del">
-                <a href="#">
-                  <div class="il_imgBox">
-                    <img class="intro-img" src="./assets/image/intro02.png" alt="" />
-                    <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
-                  </div>
-                  <div class="il_comment">이용가이드</div>
-                </a>
-              </li>
-              <li class="info_list_item">
-                <a href="#">
-                  <div class="il_imgBox">
-                    <img class="intro-img" src="./assets/image/intro03.png" alt="" />
-                    <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
-                  </div>
-                  <div class="il_comment">1:1 상담</div>
-                </a>
-              </li>
-              <li class="info_list_item m-del">
-                <a href="#">
-                  <div class="il_imgBox">
-                    <img class="intro-img" src="./assets/image/intro04.png" alt="" />
-                    <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
-                  </div>
-                  <div class="il_comment">식재료 소개</div>
-                </a>
-              </li>
-              <li class="info_list_item">
-                <a href="#">
-                  <div class="il_imgBox">
-                    <img class="intro-img" src="./assets/image/intro05.png" alt="" />
-                    <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
-                  </div>
-                  <div class="w-il_comment">무료체험 신청</div>
-                  <div class="m-il_comment">무료 체험</div>
-                </a>
-              </li>
-              <li class="info_list_item m-del">
-                <a href="#">
-                  <div class="il_imgBox">
-                    <img class="intro-img" src="./assets/image/intro06.png" alt="" />
-                    <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
-                  </div>
-                  <div class="il_comment">HACCP 인증</div>
-                </a>
-              </li>
-              <li class="info_list_item m-info-item">
-                <a href="#">
-                  <div class="il_imgBox">
-                    <img class="intro-img" src="./assets/image/intro06.png" alt="" />
-                    <img class="intro-hover" src="./assets/image/intro-hover.png" alt="" />
-                  </div>
-                  <div class="il_comment">이벤트</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 월령별 가이드 | css-Number : /baby-main-003.css -->
-    <link rel="stylesheet" href="./assets/css/style/baby-main-003.css" />
-    <section class="baby_guide">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 col-md-11 col-sm-4">
-            <!-- 텍스트 -->
-            <div class="baby_guide_text">
-              <p>배냇밀 단계 소개</p>
-              <span>
-                월령별 가이드를 확인하세요
-                <img src="./assets/icon/circle_right_arrow.png" alt="" />
-              </span>
-            </div>
-            <!-- 버튼 -->
-            <div class="baby_guide_btn">
-              <!-- 이유식 탭 -->
-              <div class="solidFood">
-                <div class="solidFood_list_item bg-row-name">
-                  <p>이유식</p>
+                  <button class="solidFood_list_item baby_guide_badege_btn active">
+                    <p>준비기</p>
+                  </button>
+                  <button class="solidFood_list_item baby_guide_badege_btn">
+                    <p>초기</p>
+                  </button>
+                  <button class="solidFood_list_item baby_guide_badege_btn">
+                    <p>중기</p>
+                  </button>
+                  <button class="solidFood_list_item baby_guide_badege_btn">
+                    <p>후기</p>
+                  </button>
+                  <button class="solidFood_list_item baby_guide_badege_btn">
+                    <p>후기2식</p>
+                  </button>
+                  <button class="solidFood_list_item baby_guide_badege_btn">
+                    <p>후기3식</p>
+                  </button>
+                  <button class="solidFood_list_item baby_guide_badege_btn">
+                    <p>병행기</p>
+                  </button>
+                  <button class="solidFood_list_item baby_guide_badege_btn">
+                    <p>완료기</p>
+                  </button>
                 </div>
-                <button class="solidFood_list_item baby_guide_badege_btn active">
-                  <p>준비기</p>
-                </button>
-                <button class="solidFood_list_item baby_guide_badege_btn">
-                  <p>초기</p>
-                </button>
-                <button class="solidFood_list_item baby_guide_badege_btn">
-                  <p>중기</p>
-                </button>
-                <button class="solidFood_list_item baby_guide_badege_btn">
-                  <p>후기</p>
-                </button>
-                <button class="solidFood_list_item baby_guide_badege_btn">
-                  <p>후기2식</p>
-                </button>
-                <button class="solidFood_list_item baby_guide_badege_btn">
-                  <p>후기3식</p>
-                </button>
-                <button class="solidFood_list_item baby_guide_badege_btn">
-                  <p>병행기</p>
-                </button>
-                <button class="solidFood_list_item baby_guide_badege_btn">
-                  <p>완료기</p>
-                </button>
-              </div>
-              <!-- 유아식 탭 -->
-              <div class="babyrice">
-                <div class="babyrice_list_item bg-row-name">
-                  <p>유아식</p>
-                </div>
-                <button class="babyrice_list_item baby_guide_badege_btn">
-                  <p>첫밥</p>
-                </button>
-                <button class="babyrice_list_item baby_guide_badege_btn">
-                  <p>반찬·국</p>
-                </button>
-              </div>
-            </div>
-            <!-- 모바일 버튼-->
-            <div class="m-guide-btn">
-              <div class="mg-row">
-                <button class="mg-btn m_baby_guide_badege_btn active">
-                  <p>준비기</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>초기</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>중기</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>후기</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>후기2식</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>후기3식</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>병행기</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>완료기</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>첫밥</p>
-                </button>
-                <button class="mg-btn m_baby_guide_badege_btn">
-                  <p>반찬·국</p>
-                </button>
-              </div>
-            </div>
-            <!-- 캐러셀 -->
-            <div class="babyGuide_carousel">
-              <button class="arrow-left">
-                <img src="./assets/icon/circle_left_arrow.png" alt="" />
-              </button>
-
-              <div class="babyGuide_img">
-                <div class="second-slick babyGuide_img_list">
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">준비기</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
+                <!-- 유아식 탭 -->
+                <div class="babyrice">
+                  <div class="babyrice_list_item bg-row-name">
+                    <p>유아식</p>
                   </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">초기</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">중기</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">후기</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">후기2식</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">후기3식</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">병행기</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">완료기</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">첫밥</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="babyGuide_img_item">
-                    <a href="">
-                      <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
-                      <div class="m__text__box">
-                        <div class="title__box">
-                          <p class="title point">4-5개월</p>
-                          <p class="text">반찬·국</p>
-                        </div>
-                        <div class="text__box">
-                          <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
-                        </div>
-                        <div class="info__box">
-                          <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼,
-                            아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다.
-                            한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.
-                          </p>
-                        </div>
-                        <div class="button__box">
-                          <p class="link__text">가이드 더보기</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+                  <button class="babyrice_list_item baby_guide_badege_btn">
+                    <p>첫밥</p>
+                  </button>
+                  <button class="babyrice_list_item baby_guide_badege_btn">
+                    <p>반찬·국</p>
+                  </button>
                 </div>
               </div>
-
-              <button class="arrow-right">
-                <img src="./assets/icon/circle_right_arrow.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 배냇밀 pick 모바일에서만 보임 | css-Number : /benetpick-only-m.css -->
-    <link rel="stylesheet" href="./assets/css/style/benetpick-only-m.css" />
-    <section class="m-benetpick">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="m-bp-container">
-              <div class="pick-item">
-                <div class="p-text">
-                  <p class="p-text01">#배냇밀 pick</p>
-                  <p class="p-text02">오늘의 낱개 이유식</p>
-                </div>
-                <div class="p-imgBox">
-                  <img src="./assets/image/pick01.png" alt="배냇밀 pick 이유식 사진" />
-                </div>
-              </div>
-
-              <div class="pick-item">
-                <div class="p-text">
-                  <p class="p-text01">#배냇밀 pick</p>
-                  <p class="p-text02">오늘의 낱개 유아식</p>
-                </div>
-                <div class="p-imgBox">
-                  <img src="./assets/image/pick02.png" alt="배냇밀 pick 유아식 사진" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 배냇밀 추천 상품 | css-Number : /baby-main-004.css -->
-    <link rel="stylesheet" href="./assets/css/style/baby-main-004.css" />
-    <section class="hot_item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 col-md-11 col-sm-4">
-            <!-- 추천상품 text -->
-            <div class="hot_item_text">
-              <p>우리 아이 첫 간식도 배냇밀</p>
-              <span>
-                배냇밀의 추천 상품을 알려드려요
-                <img src="./assets/icon/circle_right_arrow.png" alt="" />
-              </span>
-            </div>
-
-            <!-- 추천상품 카테고리 -->
-            <div class="hot_item_category">
-              <button type="button" class="hic-btn active">
-                <p>간식</p>
-              </button>
-              <button type="button" class="hic-btn">
-                <p>음료</p>
-              </button>
-              <button type="button" class="hic-btn">
-                <p>재료</p>
-              </button>
-              <button type="button" class="hic-btn">
-                <p>반찬</p>
-              </button>
-              <button type="button" class="hic-btn">
-                <p>건강기능식품</p>
-              </button>
-            </div>
-
-            <div class="hot_item_container">
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.
-                </div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.
-                  </div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
+              <!-- 모바일 버튼-->
+              <div class="m-guide-btn">
+                <div class="mg-row">
+                  <button class="mg-btn m_baby_guide_badege_btn active">
+                    <p>준비기</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>초기</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>중기</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>후기</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>후기2식</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>후기3식</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>병행기</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>완료기</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>첫밥</p>
+                  </button>
+                  <button class="mg-btn m_baby_guide_badege_btn">
+                    <p>반찬·국</p>
+                  </button>
                 </div>
               </div>
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.</div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.</div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
-                </div>
-              </div>
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.</div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.</div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
-                </div>
-              </div>
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.</div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.</div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
-                </div>
-              </div>
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.</div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.</div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
-                </div>
-              </div>
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.</div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.</div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
-                </div>
-              </div>
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.</div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.</div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
-                </div>
-              </div>
-              <!-- 목록 item -->
-              <div class="hot_item_each">
-                <div class="item_img">
-                  <div class="hi_imgBox">
-                    <img src="./assets/image/product.jpg" alt="상품" />
-                  </div>
-                  <div class="item_discount">
-                    <p>10%</p>
-                  </div>
-                  <div class="item_cart">
-                    <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                  </div>
-                </div>
-                <div class="item_title">제품 타이틀입니다.</div>
-                <div class="item_subTitle">
-                  <div class="is-text">제품 상세 설명이 들어갑니다.</div>
-                </div>
-                <div class="item_price">
-                  <p>10%</p>
-                  <div class="price_number">
-                    <p class="original-price">15,000원</p>
-                    <p class="sale-price">13,500원</p>
-                  </div>
-                </div>
-                <div class="item_badge">
-                  <div class="item_badge_reco"><span>추천</span></div>
-                  <div class="item_badge_best"><span>BEST</span></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 모바일용 더보기-->
-            <div class="view-more">
-              <button type="button" class="viewMore-btn">VIEW MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 작은 배너 캐로셀 | css-Number : /baby-main-005.css -->
-    <link rel="stylesheet" href="./assets/css/style/baby-main-005.css" />
-    <section class="mini_carousel">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-4">
-            <div class="mini_creo_region">
-              <!-- 이전 버튼 -->
-              <div class="mc_btn">
-                <button class="mc_prev_btn">
+              <!-- 캐러셀 -->
+              <div class="babyGuide_carousel">
+                <button class="arrow-left">
                   <img src="./assets/icon/circle_left_arrow.png" alt="" />
                 </button>
-              </div>
-              <!-- 캐로셀 이미지 2개씩 -->
-              <div class="mini_carousel_box">
-                <div class="img-item">
-                  <div class="img_frame">
-                    <a href="">
-                      <img src="./assets/image/mini_carousel-1.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="img_frame">
-                    <a href="">
-                      <img src="./assets/image/mini_carousel-2.png" alt="" />
-                    </a>
+
+                <div class="babyGuide_img">
+                  <div class="second-slick babyGuide_img_list">
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">준비기</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">초기</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">중기</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">후기</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">후기2식</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">후기3식</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">병행기</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">완료기</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">첫밥</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="babyGuide_img_item">
+                      <a href="">
+                        <img class="baby_guide_imgSlide" src="./assets/image/bg01.png" alt="" />
+                        <div class="m__text__box">
+                          <div class="title__box">
+                            <p class="title point">4-5개월</p>
+                            <p class="text">반찬·국</p>
+                          </div>
+                          <div class="text__box">
+                            <p class="text">배냇밀과 함께하는 이유식의 첫 걸음, 준비기 단계</p>
+                          </div>
+                          <div class="info__box">
+                            <p class="text">준비기는 이유식을 처음 접하는 아이를 위한 단계입니다. 처음 시도하는 만큼, 아이에게 많이 먹이기 보다 떠먹는 연습을 시키는 단계입니다. 한 가지 재료씩 시도하여 아이에게 이유식을 적응시켜 줍니다.</p>
+                          </div>
+                          <div class="button__box">
+                            <p class="link__text">가이드 더보기</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div class="img-item">
-                  <div class="img_frame">
-                    <a href="">
-                      <img src="./assets/image/mini_carousel-1.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="img_frame">
-                    <a href="">
-                      <img src="./assets/image/mini_carousel-2.png" alt="" />
-                    </a>
-                  </div>
-                </div>
-                <div class="img-item">
-                  <div class="img_frame">
-                    <a href="">
-                      <img src="./assets/image/mini_carousel-1.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="img_frame">
-                    <a href="">
-                      <img src="./assets/image/mini_carousel-2.png" alt="" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- 다음 버튼 -->
-              <div class="mc_btn">
-                <button class="mc_next_btn">
+
+                <button class="arrow-right">
                   <img src="./assets/icon/circle_right_arrow.png" alt="" />
                 </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- best 상품 | css-Number : /baby-main-006.css -->
-    <link rel="stylesheet" href="./assets/css/style/baby-main-006.css" />
-    <section class="best_products">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 col-md-11 col-sm-4">
-            <!-- best 상품 문구 -->
-            <div class="bp_text">
-              <p>배냇밀 Best 제품 한눈에 보기</p>
-              <p>배냇밀 엄마들의 인기상품을 알려드려요</p>
-            </div>
-
-            <!-- best 상품 사진들 -->
-            <div class="bp_pic">
-              <!-- best 상품 큰 사진 -->
-              <div class="bp_lg_container">
-                <div class="bp_imgBox lg-img">
-                  <img src="./assets/image/hot_big.png" alt="" />
-                </div>
-              </div>
-
-              <!-- best 상품 작은 사진 -->
-              <div class="bp_sm_container">
-                <div class="bp_sm_item sm-item01">
-                  <div class="bp_imgBox sm-img">
-                    <img class="product" src="./assets/image/hot_item.png" alt="" />
-                    <div class="item_cart">
-                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                    </div>
+      <!-- 배냇밀 pick 모바일에서만 보임 | css-Number : /benetpick-only-m.css -->
+      <link rel="stylesheet" href="./assets/css/style/benetpick-only-m.css" />
+      <section class="m-benetpick">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="m-bp-container">
+                <div class="pick-item">
+                  <div class="p-text">
+                    <p class="p-text01">#배냇밀 pick</p>
+                    <p class="p-text02">오늘의 낱개 이유식</p>
                   </div>
-                  <div class="bp_imgBox_text">
-                    <p class="product_title">제품명</p>
-                    <p class="product_text">간단한 소개 글</p>
+                  <div class="p-imgBox">
+                    <img src="./assets/image/pick01.png" alt="배냇밀 pick 이유식 사진" />
                   </div>
                 </div>
 
-                <div class="bp_sm_item sm-item02">
-                  <div class="bp_imgBox sm-img">
-                    <img class="product" src="./assets/image/hot_item.png" alt="" />
-                    <div class="item_cart">
-                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                    </div>
+                <div class="pick-item">
+                  <div class="p-text">
+                    <p class="p-text01">#배냇밀 pick</p>
+                    <p class="p-text02">오늘의 낱개 유아식</p>
                   </div>
-                  <div class="bp_imgBox_text">
-                    <p class="product_title">제품명</p>
-                    <p class="product_text">간단한 소개 글</p>
-                  </div>
-                </div>
-
-                <div class="bp_sm_item sm-item03">
-                  <div class="bp_imgBox sm-img">
-                    <img class="product" src="./assets/image/hot_item.png" alt="" />
-                    <div class="item_cart">
-                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                    </div>
-                  </div>
-                  <div class="bp_imgBox_text">
-                    <p class="product_title">제품명</p>
-                    <p class="product_text">간단한 소개 글</p>
-                  </div>
-                </div>
-
-                <div class="bp_sm_item sm-item04">
-                  <div class="bp_imgBox sm-img">
-                    <img class="product" src="./assets/image/hot_item.png" alt="" />
-                    <div class="item_cart">
-                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
-                    </div>
-                  </div>
-                  <div class="bp_imgBox_text">
-                    <p class="product_title">제품명</p>
-                    <p class="product_text">간단한 소개 글</p>
+                  <div class="p-imgBox">
+                    <img src="./assets/image/pick02.png" alt="배냇밀 pick 유아식 사진" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 공지사항 | css-Number : /baby-main-007.css -->
-    <link rel="stylesheet" href="./assets/css/style/baby-main-007.css" />
-    <section class="baby_notice">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 col-md-11 col-sm-4">
-            <div class="notice_row">
-              <!-- 공지사항 : 배냇밀에서 알려드려요 -->
-              <div class="notice_board">
-                <div class="nb_text">
-                  <p>공지사항</p>
-                  <span>
-                    배냇밀에서 알려드려요
+      <!-- 배냇밀 추천 상품 | css-Number : /baby-main-004.css -->
+      <link rel="stylesheet" href="./assets/css/style/baby-main-004.css" />
+      <section class="hot_item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-4">
+              <!-- 추천상품 text -->
+              <div class="hot_item_text">
+                <p>우리 아이 첫 간식도 배냇밀</p>
+                <span>
+                  배냇밀의 추천 상품을 알려드려요
+                  <img src="./assets/icon/circle_right_arrow.png" alt="" />
+                </span>
+              </div>
+
+              <!-- 추천상품 카테고리 -->
+              <div class="hot_item_category">
+                <button type="button" class="hic-btn active">
+                  <p>간식</p>
+                </button>
+                <button type="button" class="hic-btn">
+                  <p>음료</p>
+                </button>
+                <button type="button" class="hic-btn">
+                  <p>재료</p>
+                </button>
+                <button type="button" class="hic-btn">
+                  <p>반찬</p>
+                </button>
+                <button type="button" class="hic-btn">
+                  <p>건강기능식품</p>
+                </button>
+              </div>
+
+              <div class="hot_item_container">
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco">
+                      <span>추천</span>
+                    </div>
+                    <div class="item_badge_best">
+                      <span>BEST</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco"><span>추천</span></div>
+                    <div class="item_badge_best"><span>BEST</span></div>
+                  </div>
+                </div>
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco"><span>추천</span></div>
+                    <div class="item_badge_best"><span>BEST</span></div>
+                  </div>
+                </div>
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco"><span>추천</span></div>
+                    <div class="item_badge_best"><span>BEST</span></div>
+                  </div>
+                </div>
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco"><span>추천</span></div>
+                    <div class="item_badge_best"><span>BEST</span></div>
+                  </div>
+                </div>
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco"><span>추천</span></div>
+                    <div class="item_badge_best"><span>BEST</span></div>
+                  </div>
+                </div>
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco"><span>추천</span></div>
+                    <div class="item_badge_best"><span>BEST</span></div>
+                  </div>
+                </div>
+                <!-- 목록 item -->
+                <div class="hot_item_each">
+                  <div class="item_img">
+                    <div class="hi_imgBox">
+                      <img src="./assets/image/product.jpg" alt="상품" />
+                    </div>
+                    <div class="item_discount">
+                      <p>10%</p>
+                    </div>
+                    <div class="item_cart">
+                      <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                    </div>
+                  </div>
+                  <div class="item_title">제품 타이틀입니다.</div>
+                  <div class="item_subTitle">
+                    <div class="is-text">제품 상세 설명이 들어갑니다.</div>
+                  </div>
+                  <div class="item_price">
+                    <p>10%</p>
+                    <div class="price_number">
+                      <p class="original-price">15,000원</p>
+                      <p class="sale-price">13,500원</p>
+                    </div>
+                  </div>
+                  <div class="item_badge">
+                    <div class="item_badge_reco"><span>추천</span></div>
+                    <div class="item_badge_best"><span>BEST</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 모바일용 더보기-->
+              <div class="view-more">
+                <button type="button" class="viewMore-btn">VIEW MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 작은 배너 캐로셀 | css-Number : /baby-main-005.css -->
+      <link rel="stylesheet" href="./assets/css/style/baby-main-005.css" />
+      <section class="mini_carousel">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-4">
+              <div class="mini_creo_region">
+                <!-- 이전 버튼 -->
+                <div class="mc_btn">
+                  <button class="mc_prev_btn">
+                    <img src="./assets/icon/circle_left_arrow.png" alt="" />
+                  </button>
+                </div>
+                <!-- 캐로셀 이미지 2개씩 -->
+                <div class="mini_carousel_box">
+                  <div class="img-item">
+                    <div class="img_frame">
+                      <a href="">
+                        <img src="./assets/image/mini_carousel-1.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="img_frame">
+                      <a href="">
+                        <img src="./assets/image/mini_carousel-2.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="img-item">
+                    <div class="img_frame">
+                      <a href="">
+                        <img src="./assets/image/mini_carousel-1.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="img_frame">
+                      <a href="">
+                        <img src="./assets/image/mini_carousel-2.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="img-item">
+                    <div class="img_frame">
+                      <a href="">
+                        <img src="./assets/image/mini_carousel-1.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="img_frame">
+                      <a href="">
+                        <img src="./assets/image/mini_carousel-2.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 다음 버튼 -->
+                <div class="mc_btn">
+                  <button class="mc_next_btn">
                     <img src="./assets/icon/circle_right_arrow.png" alt="" />
-                    <a class="m-total">전체보기 <i class="fa-solid fa-chevron-right"></i></a>
-                  </span>
-                </div>
-                <div class="nb_contents">
-                  <ul class="nb_contents_list">
-                    <li class="nb_list_item">
-                      <a href="#">9월 배송 휴무 안내<span>2022.08.29</span></a>
-                    </li>
-                    <li class="nb_list_item">
-                      <a href="#">[당첨자발표] 육아 해방의 날 댓글 이벤트 당첨자안내<span>2022.08.29</span></a>
-                    </li>
-                    <li class="nb_list_item">
-                      <a href="#">[당첨자발표] 포토 후기 이벤트 당첨자안내<span>2022.08.29</span></a>
-                    </li>
-                    <li class="nb_list_item">
-                      <a href="#">[당첨자발표] 준비기, 초기 이벤트 당첨자안내(8월)<span>2022.08.29</span></a>
-                    </li>
-                    <li class="nb_list_item">
-                      <a href="#">[당첨자발표] 7월 영양식단 이벤트<span>2022.08.29</span></a>
-                    </li>
-                  </ul>
+                  </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <!-- 배냇밀몰 : 배냇밀에서 도와드려요 -->
-              <div class="custom_help">
-                <!-- text -->
-                <div class="ch_text">
-                  <p>배냇밀몰</p>
-                  <span>
-                    배냇밀에서 도와드려요
-                    <img src="./assets/icon/circle_right_arrow.png" alt="" />
-                    <a class="m-total">전체보기 <i class="fa-solid fa-chevron-right"></i></a>
-                  </span>
+      <!-- best 상품 | css-Number : /baby-main-006.css -->
+      <link rel="stylesheet" href="./assets/css/style/baby-main-006.css" />
+      <section class="best_products">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-4">
+              <!-- best 상품 문구 -->
+              <div class="bp_text">
+                <p>배냇밀 Best 제품 한눈에 보기</p>
+                <p>배냇밀 엄마들의 인기상품을 알려드려요</p>
+              </div>
+
+              <!-- best 상품 사진들 -->
+              <div class="bp_pic">
+                <!-- best 상품 큰 사진 -->
+                <div class="bp_lg_container">
+                  <div class="bp_imgBox lg-img">
+                    <img src="./assets/image/hot_big.png" alt="" />
+                  </div>
                 </div>
-                <div class="ch_wrap">
-                  <!-- each 태그 -->
-                  <div class="ch_contents">
-                    <div class="ch_tag">
-                      <img src="./assets/icon/notice_arrow.png" alt="" />
-                      <span>FAQ 바로가기</span>
+
+                <!-- best 상품 작은 사진 -->
+                <div class="bp_sm_container">
+                  <div class="bp_sm_item sm-item01">
+                    <div class="bp_imgBox sm-img">
+                      <img class="product" src="./assets/image/hot_item.png" alt="" />
+                      <div class="item_cart">
+                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                      </div>
+                    </div>
+                    <div class="bp_imgBox_text">
+                      <p class="product_title">제품명</p>
+                      <p class="product_text">간단한 소개 글</p>
                     </div>
                   </div>
-                  <!-- each 태그 -->
-                  <div class="ch_contents">
-                    <div class="ch_tag">
-                      <img src="./assets/icon/notice_arrow.png" alt="" />
-                      <span>이유식 플래너 예약하기</span>
+
+                  <div class="bp_sm_item sm-item02">
+                    <div class="bp_imgBox sm-img">
+                      <img class="product" src="./assets/image/hot_item.png" alt="" />
+                      <div class="item_cart">
+                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                      </div>
+                    </div>
+                    <div class="bp_imgBox_text">
+                      <p class="product_title">제품명</p>
+                      <p class="product_text">간단한 소개 글</p>
                     </div>
                   </div>
-                  <!-- each 태그 -->
-                  <div class="ch_contents">
-                    <div class="ch_tag">
-                      <img src="./assets/icon/notice_arrow.png" alt="" />
-                      <span>1:1 문의하기</span>
+
+                  <div class="bp_sm_item sm-item03">
+                    <div class="bp_imgBox sm-img">
+                      <img class="product" src="./assets/image/hot_item.png" alt="" />
+                      <div class="item_cart">
+                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                      </div>
+                    </div>
+                    <div class="bp_imgBox_text">
+                      <p class="product_title">제품명</p>
+                      <p class="product_text">간단한 소개 글</p>
                     </div>
                   </div>
-                  <!-- each 태그 -->
-                  <div class="ch_contents">
-                    <div class="ch_tag">
-                      <img src="./assets/icon/notice_arrow.png" alt="" />
-                      <span class="ch-w">배송지역 바로가기</span>
-                      <span class="ch-m">새벽배송 안내</span>
+
+                  <div class="bp_sm_item sm-item04">
+                    <div class="bp_imgBox sm-img">
+                      <img class="product" src="./assets/image/hot_item.png" alt="" />
+                      <div class="item_cart">
+                        <img src="./assets/icon/shopping_cart.png" alt="쇼핑하기" />
+                      </div>
+                    </div>
+                    <div class="bp_imgBox_text">
+                      <p class="product_title">제품명</p>
+                      <p class="product_text">간단한 소개 글</p>
                     </div>
                   </div>
                 </div>
@@ -1642,120 +1511,205 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- footer 영역 | css-Number : /baby-footer.css -->
-  <link rel="stylesheet" href="./assets/css/style/baby-footer.css" />
-  <footer>
-    <!-- footer 정보 부분 -->
-    <div class="footer01">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 col-md-11 col-sm-4">
-            <div class="footer_main">
-              <div class="ci-tr">
-                배냇밀 사업자정보
-                <img src="./assets/icon/circle_down_arrow.png" alt="" />
+      <!-- 공지사항 | css-Number : /baby-main-007.css -->
+      <link rel="stylesheet" href="./assets/css/style/baby-main-007.css" />
+      <section class="baby_notice">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-4">
+              <div class="notice_row">
+                <!-- 공지사항 : 배냇밀에서 알려드려요 -->
+                <div class="notice_board">
+                  <div class="nb_text">
+                    <p>공지사항</p>
+                    <span>
+                      배냇밀에서 알려드려요
+                      <img src="./assets/icon/circle_right_arrow.png" alt="" />
+                      <a class="m-total">전체보기 <i class="fa-solid fa-chevron-right"></i></a>
+                    </span>
+                  </div>
+                  <div class="nb_contents">
+                    <ul class="nb_contents_list">
+                      <li class="nb_list_item">
+                        <a href="#">9월 배송 휴무 안내<span>2022.08.29</span></a>
+                      </li>
+                      <li class="nb_list_item">
+                        <a href="#">[당첨자발표] 육아 해방의 날 댓글 이벤트 당첨자안내<span>2022.08.29</span></a>
+                      </li>
+                      <li class="nb_list_item">
+                        <a href="#">[당첨자발표] 포토 후기 이벤트 당첨자안내<span>2022.08.29</span></a>
+                      </li>
+                      <li class="nb_list_item">
+                        <a href="#">[당첨자발표] 준비기, 초기 이벤트 당첨자안내(8월)<span>2022.08.29</span></a>
+                      </li>
+                      <li class="nb_list_item">
+                        <a href="#">[당첨자발표] 7월 영양식단 이벤트<span>2022.08.29</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 배냇밀몰 : 배냇밀에서 도와드려요 -->
+                <div class="custom_help">
+                  <!-- text -->
+                  <div class="ch_text">
+                    <p>배냇밀몰</p>
+                    <span>
+                      배냇밀에서 도와드려요
+                      <img src="./assets/icon/circle_right_arrow.png" alt="" />
+                      <a class="m-total">전체보기 <i class="fa-solid fa-chevron-right"></i></a>
+                    </span>
+                  </div>
+                  <div class="ch_wrap">
+                    <!-- each 태그 -->
+                    <div class="ch_contents">
+                      <div class="ch_tag">
+                        <img src="./assets/icon/notice_arrow.png" alt="" />
+                        <span>FAQ 바로가기</span>
+                      </div>
+                    </div>
+                    <!-- each 태그 -->
+                    <div class="ch_contents">
+                      <div class="ch_tag">
+                        <img src="./assets/icon/notice_arrow.png" alt="" />
+                        <span>이유식 플래너 예약하기</span>
+                      </div>
+                    </div>
+                    <!-- each 태그 -->
+                    <div class="ch_contents">
+                      <div class="ch_tag">
+                        <img src="./assets/icon/notice_arrow.png" alt="" />
+                        <span>1:1 문의하기</span>
+                      </div>
+                    </div>
+                    <!-- each 태그 -->
+                    <div class="ch_contents">
+                      <div class="ch_tag">
+                        <img src="./assets/icon/notice_arrow.png" alt="" />
+                        <span class="ch-w">배송지역 바로가기</span>
+                        <span class="ch-m">새벽배송 안내</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="company_info">
-                <table class="ci_table">
-                  <th hidden>배냇밀 사업자 정보</th>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-                  <tr>
-                    <td class="ci_col_name">회사명</td>
-                    <td class="ci_data_name">아이배냇(주)</td>
-                  </tr>
-                  <tr>
-                    <td class="ci_col_name">사업자 등록번호</td>
-                    <td class="ci_data_name">131-86-06834</td>
-                  </tr>
-                  <tr>
-                    <td class="ci_col_name">주소</td>
-                    <td class="ci_data_name">서울특별시 송파구 백제고분로 488(호련빌딩)</td>
-                  </tr>
-                  <tr>
-                    <td class="ci_col_name"></td>
-                    <td class="ci_data_name">충청북도 충주시 대소원면 영평리 849번지 아이배냇 충주 공장</td>
-                  </tr>
-                  <tr>
-                    <td class="ci_col_name">통신판매업 신고번호</td>
-                    <td class="ci_data_name">제2020-충북충주-0062호</td>
-                  </tr>
-                  <tr>
-                    <td class="ci_col_name">대표전화</td>
-                    <td class="ci_data_name">1833-4312 | FAX 02-3431-4315</td>
-                  </tr>
-                  <tr>
-                    <td class="ci_col_name">개인정보관리 책임자</td>
-                    <td class="ci_data_name">조성재 | 대표자 : 민병관</td>
-                  </tr>
-                </table>
-              </div>
+    <!-- footer 영역 | css-Number : /baby-footer.css -->
+    <link rel="stylesheet" href="./assets/css/style/baby-footer.css" />
+    <footer>
+      <!-- footer 정보 부분 -->
+      <div class="footer01">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-4">
+              <div class="footer_main">
+                <div class="ci-tr">
+                  배냇밀 사업자정보
+                  <img src="./assets/icon/circle_down_arrow.png" alt="" />
+                </div>
+                <div class="company_info">
+                  <table class="ci_table">
+                    <th hidden>배냇밀 사업자 정보</th>
 
-              <div class="customer_service">
-                <table class="cs_table">
-                  <tbody class="cs_tbody">
-                    <tr class="cs_tr">
-                      <td class="cs_th">
-                        <p>고객센터</p>
-                      </td>
+                    <tr>
+                      <td class="ci_col_name">회사명</td>
+                      <td class="ci_data_name">아이배냇(주)</td>
                     </tr>
-                    <tr class="cs_tr">
-                      <td class="cs_td01">
-                        <p>1833-4312</p>
-                      </td>
+                    <tr>
+                      <td class="ci_col_name">사업자 등록번호</td>
+                      <td class="ci_data_name">131-86-06834</td>
                     </tr>
-                    <tr class="cs_tr">
-                      <td class="cs_td02">
-                        <p>월~금 09:00 &minus; 18:00<span>점심 PM 12:00 &minus; 13:00</span></p>
-                        <p>토, 일 / 공휴일 휴무</p>
-                      </td>
+                    <tr>
+                      <td class="ci_col_name">주소</td>
+                      <td class="ci_data_name">서울특별시 송파구 백제고분로 488(호련빌딩)</td>
                     </tr>
-                    <tr class="cs_tr">
-                      <td class="cs_td03">
-                        <div class="link-naver"><img src="./assets/icon/footer_naver.png" alt="네이버 바로가기" /></div>
-                        <div class="link-insta"><img src="./assets/icon/footer_insta.png" alt="인스타그램 바로가기" /></div>
-                        <div class="link-youtube"><img src="./assets/icon/footer_youtube.png" alt="유튜브 바로가기" /></div>
-                      </td>
+                    <tr>
+                      <td class="ci_col_name"></td>
+                      <td class="ci_data_name">충청북도 충주시 대소원면 영평리 849번지 아이배냇 충주 공장</td>
                     </tr>
-                  </tbody>
-                </table>
+                    <tr>
+                      <td class="ci_col_name">통신판매업 신고번호</td>
+                      <td class="ci_data_name">제2020-충북충주-0062호</td>
+                    </tr>
+                    <tr>
+                      <td class="ci_col_name">대표전화</td>
+                      <td class="ci_data_name">1833-4312 | FAX 02-3431-4315</td>
+                    </tr>
+                    <tr>
+                      <td class="ci_col_name">개인정보관리 책임자</td>
+                      <td class="ci_data_name">조성재 | 대표자 : 민병관</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="customer_service">
+                  <table class="cs_table">
+                    <tbody class="cs_tbody">
+                      <tr class="cs_tr">
+                        <td class="cs_th">
+                          <p>고객센터</p>
+                        </td>
+                      </tr>
+                      <tr class="cs_tr">
+                        <td class="cs_td01">
+                          <p>1833-4312</p>
+                        </td>
+                      </tr>
+                      <tr class="cs_tr">
+                        <td class="cs_td02">
+                          <p>월~금 09:00 &minus; 18:00<span>점심 PM 12:00 &minus; 13:00</span></p>
+                          <p>토, 일 / 공휴일 휴무</p>
+                        </td>
+                      </tr>
+                      <tr class="cs_tr">
+                        <td class="cs_td03">
+                          <div class="link-naver"><img src="./assets/icon/footer_naver.png" alt="네이버 바로가기" /></div>
+                          <div class="link-insta"><img src="./assets/icon/footer_insta.png" alt="인스타그램 바로가기" /></div>
+                          <div class="link-youtube"><img src="./assets/icon/footer_youtube.png" alt="유튜브 바로가기" /></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 사이트 가장 하단 부분 -->
-    <div class="footer02">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 col-md-11 col-sm-4">
-            <div class="footer_last">
-              <p>COPYRIGHTSⓒ venetmeal.com ALL RIGHTS RESERVED.</p>
-              <a href="#">
-                <p>이용약관</p>
-              </a>
-              <a href="#">
-                <p>개인정보처리방침</p>
-              </a>
-              <a href="#">
-                <p>이용안내</p>
-              </a>
+      <!-- 사이트 가장 하단 부분 -->
+      <div class="footer02">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-4">
+              <div class="footer_last">
+                <p>COPYRIGHTSⓒ venetmeal.com ALL RIGHTS RESERVED.</p>
+                <a href="#">
+                  <p>이용약관</p>
+                </a>
+                <a href="#">
+                  <p>개인정보처리방침</p>
+                </a>
+                <a href="#">
+                  <p>이용안내</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="./assets/js/dropdown.js"></script>
-  <script src="./assets/js/mainCarousel.js"></script>
-  <script src="./assets/js/tmp.js"></script>
-  <script src="./assets/js/sidebar.js"></script>
-</body>
-
+    <script src="./assets/js/dropdown.js"></script>
+    <script src="./assets/js/mainCarousel.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/tmp.js"></script>
+  </body>
 </html>
