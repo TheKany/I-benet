@@ -128,7 +128,8 @@
 .babyGuide_carousel .arrow-left {
   position: absolute;
   left: -60px;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .babyGuide_carousel .arrow-right {
@@ -138,7 +139,7 @@
 }
 
 .m__text__box{
-  background: url('../../image/bg01.png') center / cover no-repeat;
+  background: url('../../assets/image/bg01.png') center / cover no-repeat;
   padding: 40px;
 }
 
