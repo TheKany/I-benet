@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
     let sideBar = document.getElementById('sidebar');
     let sideOepnBtn = document.getElementById('side_open_btn');
     let sideTopBtn = document.getElementById('side_top_btn');

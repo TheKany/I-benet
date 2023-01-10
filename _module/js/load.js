@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', function () {
-    var allElements = document.getElementsByTagName('*');
+    var allElements = document.querySelectorAll('.include-file');
     Array.prototype.forEach.call(allElements, function (el) {
-        var includePath = el.dataset.includePath;
+        let includePath = el.dataset.includePath;
         if (includePath) {
-            var xhttp = new XMLHttpRequest();
+            let xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     el.outerHTML = this.responseText;
@@ -13,4 +13,5 @@ window.addEventListener('DOMContentLoaded', function () {
             xhttp.send();
         }
     });
+    console.log('load.js end')
 });
