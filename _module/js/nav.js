@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+    console.log('nav.js start')
     // 웹 네브바
     let navBigMenus = document.querySelectorAll('.big_menu');
     let navTotlaMenuLists = document.querySelectorAll('.gnb_itemList.total');

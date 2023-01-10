@@ -1,10 +1,12 @@
-window.addEventListener('load', () => {
+window.addEventListener('load', function () {
+
   // 메인 캐러셀 슬릭
   {
+
     let carouselIndexItem = document.querySelectorAll('.carousel-box .item');
     let countCarouseIndexItem = Number(carouselIndexItem.length);
     let slickCount = countCarouseIndexItem - 1;
-
+    console.log($('.main-slick'))
     if (document.querySelector('.main-slick')) {
       $('.main-slick').slick({
         centerMode: true,
@@ -283,4 +285,5 @@ window.addEventListener('load', () => {
       sideCarouselInit()
     }
   }
+  console.log('carousel.js end')
 })
