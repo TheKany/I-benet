@@ -6,12 +6,11 @@ window.addEventListener('DOMContentLoaded', function () {
             let xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    el.outerHTML = this.responseText;
+                    el.outerHTML = this.response;
                 }
             };
             xhttp.open('GET', includePath, true);
             xhttp.send();
         }
     });
-    console.log('load.js end')
 });
